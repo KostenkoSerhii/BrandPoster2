@@ -1,0 +1,86 @@
+$icons: (0:0)
+$icons: map-merge($icons,('bag': (X: -185px, Y:-76px, W: 17px, H: 19px, TW: 205px, TH: 201px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('car': (X: 0px, Y:-185px, W: 25px, H: 16px, TW: 205px, TH: 201px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('certificate': (X: -185px, Y:-48px, W: 20px, H: 18px, TW: 205px, TH: 201px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('facebook': (X: -185px, Y:-131px, W: 10px, H: 19px, TW: 205px, TH: 201px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('facebook@2x': (X: -185px, Y:0px, W: 20px, H: 38px, TW: 205px, TH: 201px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('magnifier': (X: 0px, Y:0px, W: 175px, H: 175px, TW: 205px, TH: 201px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('reload': (X: -185px, Y:-105px, W: 16px, H: 16px, TW: 205px, TH: 201px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+//
+//.icon-bag
+//  width: 17px
+//  height: 19px
+//  background-image: url('../img/sprite.png')
+//  background-position: -185px -76px
+//
+//.icon-car
+//  width: 25px
+//  height: 16px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -185px
+//
+//.icon-certificate
+//  width: 20px
+//  height: 18px
+//  background-image: url('../img/sprite.png')
+//  background-position: -185px -48px
+//
+//.icon-facebook
+//  width: 10px
+//  height: 19px
+//  background-image: url('../img/sprite.png')
+//  background-position: -185px -131px
+//
+//.icon-facebook@2x
+//  width: 20px
+//  height: 38px
+//  background-image: url('../img/sprite.png')
+//  background-position: -185px 0px
+//
+//.icon-magnifier
+//  width: 175px
+//  height: 175px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px 0px
+//
+//.icon-reload
+//  width: 16px
+//  height: 16px
+//  background-image: url('../img/sprite.png')
+//  background-position: -185px -105px
+//
