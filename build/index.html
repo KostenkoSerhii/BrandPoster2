@@ -19,20 +19,141 @@
       <!--begin bar-->
       <div class="topline">
         <!--begin container-->
-        <div class="container"> <input class="search" type="text" placeholder="Поиск по сайту">
-          <!--begin topline__links-list-->
-          <ul class="topline__links-list">
-            <li class=""></li>
-            <li class=""></li>
-            <li class=""></li>
-            <li class=""></li>
-          </ul>
-          <!--end topline__links-list-->
+        <div class="container">
+          <!-- begin topline__left -->
+          <div class="topline__left"> <input class="search" type="text" placeholder="Поиск по сайту"> </div>
+          <!-- end topline__left -->
+          <!-- begin topline__middle -->
+          <div class="topline__middle">
+            <ul class="topline__links-list">
+              <li class="topline__links-list-item">Магазины в Москве</li>
+              <li class="topline__links-list-item">Бесплатная доставка</li>
+              <li class="topline__links-list-item">Возврат 365</li>
+              <li class="topline__links-list-item">Сертификаты</li>
+            </ul>
+          </div>
+          <!-- end topline__middle -->
+          <!-- begin topline__right -->
+          <div class="topline__right">
+            <div class="phone-callback-block"> <a class="phone" href="tel:+71234567890">+7 (123) <span>456 78 90</span></a> <a class="callback" href="#">Заказать звонок</a> </div>
+            <div class="authorization-block"> <a class="login" href="#">Вход</a> <a class="registration" href="#">Регистрация</a> </div>
+          </div>
+          <!-- end topline__right -->
         </div>
         <!--end container-->
       </div>
       <!--end bar-->
-      <p>Hello from partials/_header.html</p>
+      <header class="header">
+        <!-- begin container -->
+        <div class="container">
+          <a class="header__logo" href="#" style="background-image: url('img/logo.png');"></a>
+          <ul class="header__menu">
+            <li class="header__menu-item">Постельное белье</li>
+            <li class="header__menu-item">подушки</li>
+            <li class="header__menu-item">одеяла</li>
+            <li class="header__menu-item">покрывала</li>
+            <li class="header__menu-item">пледы</li>
+            <li class="header__menu-item">полотенца</li>
+            <li class="header__menu-item">простыни</li>
+            <li class="header__menu-item header__menu-item--pink">sale!</li>
+          </ul>
+          <a class="basket" href="#"> <strong class="basket__title">Корзина</strong>
+            <p class="basket__product"><span>6</span> товаров</p>
+            <div class="basket__img" style="background-image: url('img/basket.png');"></div>
+          </a>
+        </div>
+        <!-- end container -->
+      </header>
+      <!-- begin first-screen -->
+      <div class="first-screen">
+        <h1 class="h1">Brand Postel</h1>
+        <!-- begin container -->
+        <div class="container">
+          <div class="slider">
+            <div class="slider__prev"></div>
+            <div class="slider__next"></div>
+            <div class="slider__slide">
+              <h2 class="h2">Постельное белье <span>высокого качества</span></h2>
+            </div>
+            <div class="slider__slide">
+              <h2 class="h2">Постельное белье <span>высокого качества</span></h2>
+            </div>
+          </div>
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end first-screen -->
+      <!-- begin banners -->
+      <div class="banners">
+        <!-- begin container -->
+        <div class="container">
+          <div class="banner" style="background-image: url('img/banner1.jpg');"></div>
+          <div class="banner" style="background-image: url('img/banner2.jpg');"></div>
+          <div class="banner" style="background-image: url('img/banner3.jpg');"></div>
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end banners -->
+      <!-- begin catalog -->
+      <div class="catalog">
+        <!-- begin container -->
+        <div class="container">
+          <h3 class="h3 catalog__h3"> Каталог товаров</h3>
+          <div class="three-col-list">
+            <div class="product three-col-list__item ">
+              <div class="product__img" style="background-image: url('img/prod1.jpg');"></div>
+              <h4 class="h4">Постельное белье</h4>
+            </div>
+            <div class="product three-col-list__item ">
+              <div class="product__img" style="background-image: url('img/prod2.jpg');"></div>
+              <h4 class="h4">Подушки</h4>
+            </div>
+            <div class="product three-col-list__item ">
+              <div class="product__img" style="background-image: url('img/prod3.jpg');"></div>
+              <h4 class="h4">Одеяла</h4>
+            </div>
+            <div class="product three-col-list__item ">
+              <div class="product__img" style="background-image: url('img/prod4.jpg');"></div>
+              <h4 class="h4">Покрывала</h4>
+            </div>
+            <div class="product three-col-list__item ">
+              <div class="product__img" style="background-image: url('img/prod5.jpg');"></div>
+              <h4 class="h4">Пледы</h4>
+            </div>
+            <div class="product three-col-list__item ">
+              <div class="product__img" style="background-image: url('img/prod6.jpg');"></div>
+              <h4 class="h4">Полотенца</h4>
+            </div>
+          </div>
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end catalog -->
+      <!-- begin about-us -->
+      <div class="about-us">
+        <!-- begin container -->
+        <div class="container">
+          <h3 class="h3 about-us__h3">О нас</h3>
+          <p class="article">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора
+            мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. </p>
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end about-us -->
+      <!-- begin other-page-links -->
+      <div class="other-page-links">
+        <!-- begin container -->
+        <div class="container">
+          <ul class="">
+            <li>Информация по доставке</li>
+            <li>Возвтрат товара</li>
+            <li>Отзывы о нас</li>
+            <li>Клубная карта</li>
+          </ul>
+        </div>
+        <!-- end container -->
+      </div>
+      <!-- end other-page-links -->
       <!-- 	
 
 <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
