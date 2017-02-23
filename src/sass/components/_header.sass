@@ -1,10 +1,208 @@
-.header__inner
+.header__wrapper
 	padding-top: 35px
 	padding-bottom: 34px
+	position: relative
+	+clr
+	+r(991)
+		padding: 0
 .header__logo
-	width: 281px
 	height: 40px
+	margin-top: 20px
+	width: 281px
+	//+css-lock(200, 281, 1200, 1600, "width")
 	+cover
-	display: inline-block
+	background-size: contain
+	display: block
+	float: left
+	+r(991)
+		margin-top: 32px
+		margin-left: 13px
+	+r(767)
+		margin-left: 0
+	+r(560)
+		width: 130px
+		height: 30px
+		margin-top: 15px
 .header__menu
+	float: left
+	margin-top: 33px
+	//margin-left: 113px
+	+css-lock(0, 99, 1300, 1600, "margin-left")
+	+r(1299)
+		margin-top: 23px
+		+css-lock(450, 750, 992, 1300, "width")
+	+r(991)
+		display: none
+.header__menu-item
 	display: inline-block
+	margin-bottom: 10px
+	//margin-right: 15px
+	//margin-left: 15px
+	+css-lock(5, 15, 1300, 1600, "margin-right")
+	+css-lock(5, 15, 1300, 1600, "margin-left")
+	//&:last-of-type
+	//	margin-right: 0
+.header__menu-link
+	text-transform: uppercase
+	@extend .mainMenuStile
+	+rmin(1200)
+		position: relative
+		transition: all .3s
+		&:before
+			content: ''
+			position: absolute
+			bottom: -12px
+			height: 1px
+			width: 0px
+			background: $pink
+			transition: all .3s
+		&:hover
+			color: $pink
+			&:before
+				width: 52px
+				//width: 36%
+	+r(1420)
+		//font-size: 13px
+.header__menu-link--pink
+	color: $pink
+	+rmin(1200)
+		&:hover
+			&:before
+				width: 100%
+.basket
+	float: right
+	width: 210px
+	height: 99px
+	background-color: #e7e7e7
+	position: relative
+	z-index: 1
+	padding-top: 11px
+	text-align: right
+	&:after
+		z-index: 2
+		position: absolute
+		content: ''
+		left: -28px
+		top: 0
+		border-style: solid
+		border-color: transparent #e7e7e7
+		border-width: 0px 28px 99px 0px
+	+r(991)
+		right: -19px
+	+r(767)
+		right: -25px
+	+r(560)
+		width: 120px
+		height: 60px
+		&:after
+			border-width: 0px 15px 60px 0px
+			left: -15px
+.basket-text
+	margin-top: 18px
+	margin-right: 7px
+	display: inline-block
+	vertical-align: top
+	+r(560)
+		margin-top: 5px
+.basket__title
+	color: #242424
+	font: 600 21px/1em "PR", sans-serif
+	text-transform: uppercase
+	+r(560)
+		font-size: 14px
+.basket__count
+	color: #858484
+	font: 600 15px/1em "PR", sans-serif
+	+r(560)
+		font-size: 12px
+.basket__img
+	display: inline-block
+	width: 74px
+	height: 74px
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	background-color: #fff
+	border-radius: 50%
+	margin-right: 14px
+	background-size: 30px 30px
+	+r(560)
+		width: 40px
+		height: 40px
+		margin-right: 5px
+.nav-responsive
+	display: none
+	+r(991)
+		text-align: center
+		width: 100%
+		padding-bottom: 45px
+		background-color: #2d2d2d
+		display: block
+		position: absolute
+		top: 0
+		z-index: 2
+//.mob-topline
+//	+r(991)
+//		min-height: 54px
+//+r(767)
+//		min-height: 50px
+//.mob-search-block
+//	width: 160px
+//	+r(991)
+//		margin-left: 19px
+//	+r(767)
+//	 /* поправить */
+//		margin-left: 25px
+.mobnav-main
+	margin-top: 5px
+.mobnav-main__item
+	border-bottom: 1px solid #242424
+	padding: 21px 0
+	&:last-of-type
+		position: relative
+		border-color: #fff
+		&:before
+			content: ''
+			position: absolute
+			top: -1px
+			left: 0
+			width: 100%
+			height: 1px
+			background: $pink
+	+r(560)
+		padding: 10px 0
+.mobnav-main__link
+	color: $white
+	font: 400 26px "PR", sans-serif
+	text-transform: uppercase
+	+css-lock(16, 26, 560, 639)
+.mobnav-main__link--pink
+	color: $pink
+.mobnav-second__item
+	padding: 16px 0
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0px
+		left: 50%
+		transform: translateX(-50%)
+		width: 66%
+		height: 1px
+		background: #242424
+	+r(560)
+		padding: 10px 0
+.mobnav-second__link
+	color: $gray
+	font: 400 18px "PR", sans-serif
+	+css-lock(14, 18, 560, 639)
+.mobnav-second
+	margin-bottom: 46px
+	+r(560)
+		margin-bottom: 20px
+.nav-responsive__phone
+	display: inline-block
+	margin-bottom: 9px
+	font-size: 32px
+	+css-lock(20, 32, 560, 639)
+.nav-responsive__callback
+	+css-lock(14, 18, 560, 639)
