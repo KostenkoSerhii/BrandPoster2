@@ -1,38 +1,60 @@
-	<!--begin bar-->
+	<!--begin topline-->
 	<div class="topline">
 		<!--begin container-->
-		<div class="container">
-			<!-- begin topline__left -->
-			<div class="topline__left">
-				<input class="search" type="text" placeholder="Поиск по сайту">
-			</div>
-			<!-- end topline__left -->
-
-			<!-- begin topline__middle -->
-			<div class="topline__middle">
-				<ul class="topline__links-list">
-					<li class="topline__links-list-item">Магазины в Москве</li>
-					<li class="topline__links-list-item">Бесплатная доставка</li>
-					<li class="topline__links-list-item">Возврат 365</li>
-					<li class="topline__links-list-item">Сертификаты</li>
-				</ul>
-			</div>
-			<!-- end topline__middle -->
-			<!-- begin topline__right -->
-			<div class="topline__right">
-				<div class="phone-callback-block">
-					<a class="phone" href="tel:+71234567890">+7 (123) <span>456 78 90</span></a>
-					<a class="callback" href="#">Заказать звонок</a>
+		<div class="container ">
+			<!--begin topline__wrapper-->
+			<div class="topline__wrapper">
+				<!-- begin topline__left -->
+				<div class="topline__left">
+					<div class="search-block">
+						<form>
+							<input class="search-block__input" type="search" name="search" placeholder="Поиск по сайту">
+							<a class="search-block__button" href="#" style="background-image: url('img/magnifier.png');"></a>
+						</form>
+					</div>
 				</div>
-				<div class="authorization-block">
-					<a class="login" href="#">Вход</a>
-					<a class="registration" href="#">Регистрация</a>
+				<!-- end topline__left -->
+				<!-- begin topline__middle -->
+				<div class="topline__middle">
+					<ul class="topline__list">
+						<li class="topline__list-item">
+							<i class="topline__marker topline__marker-bag" style="background-image: url('img/bag.png')"></i>
+							<a class="topline__list-link" href="#">Магазины в Москве</a>
+						</li>
+						<li class="topline__list-item">
+							<i class="topline__marker topline__marker-car" style="background-image: url('img/car.png')"></i>
+							<a class="topline__list-link" href="#">Бесплатная доставка</a>
+						</li>
+						<li class="topline__list-item">
+							<i class="topline__marker topline__marker-reload" style="background-image: url('img/reload.png')"></i>
+							<a class="topline__list-link" href="#">Возврат 365</a>
+						</li>
+						<li class="topline__list-item">
+							<i class="topline__marker topline__marker-certif" style="background-image: url('img/certificate.png')"></i>
+							<a class="topline__list-link" href="#">Сертификаты</a>
+						</li>
+					</ul>
 				</div>
-			</div>
-			<!-- end topline__right -->
+				<!-- end topline__middle -->
+				<!-- begin topline__right -->
+				<div class="topline__right">
+					<div class="phone-callback topline__phone-callback">
+						<a class="phone" href="tel:+71234567890">+7 (123) <span>456 78 90</span></a>
+						<a class="callback" href="#">Заказать звонок</a>
+					</div>
+					<div class="authorization-block">
+						<a class="login" href="#">Вход</a>
+						<a class="registration" href="#">Регистрация</a>
+					</div>
+					<div class="menu-btn"><div></div></div>
+				</div>
+				<!-- end topline__right -->
 
+			</div>
+			<!--end topline__wrapper-->
+			
 		</div>
 		<!--end container-->
 
 	</div>
-	<!--end bar-->
+	<!--end topline-->

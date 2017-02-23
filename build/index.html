@@ -16,51 +16,66 @@
       <!-- 	
 <h1>Index page</h1>
  -->
-      <!--begin bar-->
-      <div class="topline">
-        <!--begin container-->
-        <div class="container">
-          <!-- begin topline__left -->
-          <div class="topline__left"> <input class="search" type="text" placeholder="Поиск по сайту"> </div>
-          <!-- end topline__left -->
-          <!-- begin topline__middle -->
-          <div class="topline__middle">
-            <ul class="topline__links-list">
-              <li class="topline__links-list-item">Магазины в Москве</li>
-              <li class="topline__links-list-item">Бесплатная доставка</li>
-              <li class="topline__links-list-item">Возврат 365</li>
-              <li class="topline__links-list-item">Сертификаты</li>
-            </ul>
-          </div>
-          <!-- end topline__middle -->
-          <!-- begin topline__right -->
-          <div class="topline__right">
-            <div class="phone-callback-block"> <a class="phone" href="tel:+71234567890">+7 (123) <span>456 78 90</span></a> <a class="callback" href="#">Заказать звонок</a> </div>
-            <div class="authorization-block"> <a class="login" href="#">Вход</a> <a class="registration" href="#">Регистрация</a> </div>
-          </div>
-          <!-- end topline__right -->
-        </div>
-        <!--end container-->
-      </div>
-      <!--end bar-->
       <header class="header">
         <!-- begin container -->
-        <div class="container">
-          <a class="header__logo" href="#" style="background-image: url('img/logo.png');"></a>
-          <ul class="header__menu">
-            <li class="header__menu-item">Постельное белье</li>
-            <li class="header__menu-item">подушки</li>
-            <li class="header__menu-item">одеяла</li>
-            <li class="header__menu-item">покрывала</li>
-            <li class="header__menu-item">пледы</li>
-            <li class="header__menu-item">полотенца</li>
-            <li class="header__menu-item">простыни</li>
-            <li class="header__menu-item header__menu-item--pink">sale!</li>
-          </ul>
-          <a class="basket" href="#"> <strong class="basket__title">Корзина</strong>
-            <p class="basket__product"><span>6</span> товаров</p>
-            <div class="basket__img" style="background-image: url('img/basket.png');"></div>
-          </a>
+        <!--begin topline-->
+        <div class="topline">
+          <!--begin container-->
+          <div class="container ">
+            <!--begin topline__wrapper-->
+            <div class="topline__wrapper">
+              <!-- begin topline__left -->
+              <div class="topline__left">
+                <div class="search-block">
+                  <form> <input class="search-block__input" type="search" name="search" placeholder="Поиск по сайту">
+                    <a class="search-block__button" href="#" style="background-image: url('img/magnifier.png');"></a>
+                  </form>
+                </div>
+              </div>
+              <!-- end topline__left -->
+              <!-- begin topline__middle -->
+              <div class="topline__middle">
+                <ul class="topline__list">
+                  <li class="topline__list-item"> <i class="topline__marker topline__marker-bag" style="background-image: url('img/bag.png')"></i> <a class="topline__list-link" href="#">Магазины в Москве</a> </li>
+                  <li class="topline__list-item"> <i class="topline__marker topline__marker-car" style="background-image: url('img/car.png')"></i> <a class="topline__list-link" href="#">Бесплатная доставка</a> </li>
+                  <li class="topline__list-item"> <i class="topline__marker topline__marker-reload" style="background-image: url('img/reload.png')"></i> <a class="topline__list-link" href="#">Возврат 365</a> </li>
+                  <li class="topline__list-item"> <i class="topline__marker topline__marker-certif" style="background-image: url('img/certificate.png')"></i> <a class="topline__list-link" href="#">Сертификаты</a> </li>
+                </ul>
+              </div>
+              <!-- end topline__middle -->
+              <!-- begin topline__right -->
+              <div class="topline__right">
+                <div class="phone-callback topline__phone-callback"> <a class="phone" href="tel:+71234567890">+7 (123) <span>456 78 90</span></a> <a class="callback" href="#">Заказать звонок</a> </div>
+                <div class="authorization-block"> <a class="login" href="#">Вход</a> <a class="registration" href="#">Регистрация</a> </div>
+                <div class="menu-btn">
+                  <div></div>
+                </div>
+              </div>
+              <!-- end topline__right -->
+            </div>
+            <!--end topline__wrapper-->
+          </div>
+          <!--end container-->
+        </div>
+        <!--end topline-->
+        <div class="header__inner">
+          <div class="container">
+            <a class="header__logo" href="#" style="background-image: url('img/logo.png');"></a>
+            <ul class="header__menu">
+              <li class="header__menu-item"><a class="header__menu-link" href="#">Постельное белье</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">подушки</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">одеяла</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">покрывала</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">пледы</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">полотенца</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#">простыни</a></li>
+              <li class="header__menu-item header__menu-item--pink"><a class="header__menu-link" href="#">sale!</a></li>
+            </ul>
+            <a class="basket" href="#"> <strong class="basket__title">Корзина</strong>
+              <p class="basket__product"><span>6</span> товаров</p>
+              <div class="basket__img" style="background-image: url('img/basket.png');"></div>
+            </a>
+          </div>
         </div>
         <!-- end container -->
       </header>

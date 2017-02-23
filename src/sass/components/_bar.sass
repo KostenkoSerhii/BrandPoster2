@@ -1,4 +1,187 @@
-.search
+.topline
+	padding: 10px 0
+	background-color: #242424
+	width: 100%
+	+r(991)
+		padding:  9px 0
+	+r(767)
+		padding:  11px 0
+.topline__wrapper
+	padding: 0 17px
+	width: 100%
+	position: relative
+	+clr
+	+r(1420)
+		padding: 0
+.topline__left
+	float: left
+	width: 150px
+	margin-top: 3px
+	+r(1420)
+		width: 130px
+	+r(991)
+		width: 200px
+.topline__middle
+	+vcenter
+	+r(1420)
+		left: 40%
+	+r(991)
+		display: none
+.topline__right
+	float: right
+	text-align: right
+	display: table
+.search-block
+	display: inline-block
+	position: relative
+	width: 100%
+.topline__search-block
+	margin-top: 4px
+.search-block__input
 	+placeholder-color($silver)
 	font: $topline-font
 	color: $silver
+	background: transparent
+	padding: 5px 0px 5px 18px
+	width: 100%
+.search-block__button
+	width: 14px
+	height: 14px
+	+cover
+	display: block
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+.topline__list
+	max-width: 900px
+.topline__list-item
+	display: inline-block
+	margin: 0 15px
+	+r(1420)
+		margin: 0 5px
+.topline__list-link
+	@extend .grayLinkStyle
+	//+rmin(1200)
+	//	transition: color .3s
+	//	&:hover
+	//		color: $white
+	+r(1199)
+		font-size: 12px
+.topline__marker 
+	width: 25px
+	height: 19px
+	+cover
+	background-size: contain
+	display: inline-block
+	vertical-align: bottom
+.topline__marker-bag
+	width: 17px
+	height: 19px
+.topline__marker-car
+	width: 25px
+	height: 16px
+.topline__marker-reload
+	width: 16px
+	height: 16px
+.topline__marker-certif
+	width: 20px
+	height: 18px
+.phone-callback
+	width: 150px
+	text-align: right
+	+r(767)
+		display: none
+.topline__phone-callback
+	margin-top: 3px
+	margin-right: 12px
+.authorization-block
+	width: 151px
+	display: table-cell
+	vertical-align: middle
+	position: relative
+	&:before, &:after
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 1px
+		height: 34px
+		background-color: #363636
+	&:before
+		left: 0
+	&:after
+		display: none
+	+r(991)
+		&:after
+			display: block
+			right: -20px
+	+r(767)
+		display: none
+.phone
+	color: $white
+	font: 400 18px/1em "PR", sans-serif
+	span
+		font-weight: 600
+.callback
+	color: $pink
+	font: 600 13px/1em "PR", sans-serif
+	text-decoration: underline
+	display: block
+	vertical-align: top
+	&:hover
+		text-decoration: none
+.login, .registration
+	font: 400 17px/1.3em "PR", sans-serif
+	letter-spacing: -1px
+.login
+	color: $white
+	margin-right: 8px
+.registration
+	color: $gray-darken
+.menu-btn
+	display: none
+	+r(991)
+		margin-left: 38px
+		display: inline-block
+		vertical-align: top
+		position: relative
+		top: 3px
+		width: 28px
+		height: 20px
+		overflow: visible
+		div
+			height: 3px
+			width: 100%
+			z-index: 2
+			background: white
+			position: absolute
+			top: 50%
+			margin-top: -2px
+			transition: all .3s
+			&:before, &:after
+				transition: all .3s
+				content: ''
+				position: absolute
+				height: 3px
+				width: 100%
+				background: inherit
+				left: 0
+			&:before
+				top: -8px
+				transform-origin: top right
+			&:after
+				bottom: -9px
+				transform-origin: bottom right
+.menu-btn-is-active
+	div
+		height: 2px
+		+rotate(90)
+		&:before, &:after
+			width: 50%
+			height: 2px
+		&:before
+			transform: translateX(16px) rotate(45deg)
+			top: 1px	
+		&:after
+			transform: translateX(16px) rotate(-45deg)
+			bottom: 1px

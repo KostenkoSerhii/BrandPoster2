@@ -1,22 +1,25 @@
 <header class="header">
 	<!-- begin container -->
-	<div class="container">
-		<a class="header__logo" href="#" style="background-image: url('img/logo.png');"></a>
-		<ul class="header__menu">
-			<li class="header__menu-item">Постельное белье</li>
-			<li class="header__menu-item">подушки</li>
-			<li class="header__menu-item">одеяла</li>
-			<li class="header__menu-item">покрывала</li>
-			<li class="header__menu-item">пледы</li>
-			<li class="header__menu-item">полотенца</li>
-			<li class="header__menu-item">простыни</li>
-			<li class="header__menu-item header__menu-item--pink">sale!</li>
-		</ul>
-		<a class="basket" href="#">
-			<strong class="basket__title">Корзина</strong>
-			<p class="basket__product"><span>6</span> товаров</p>
-			<div class="basket__img" style="background-image: url('img/basket.png');"></div>
-		</a>
+	{% include "partials/_bar.html" %}
+	<div class="header__inner">
+		<div class="container">
+			<a class="header__logo" href="#" style="background-image: url('img/logo.png');"></a>
+			<ul class="header__menu">
+			<li class="header__menu-item"><a class="header__menu-link" href="#">Постельное белье</a></li>
+			<li class="header__menu-item"><a class="header__menu-link" href="#">подушки</a></li>
+			<li class="header__menu-item"><a class="header__menu-link" href="#">одеяла</a></li>
+			<li class="header__menu-item"><a class="header__menu-link" href="#">покрывала</a></li>
+			<li class="header__menu-item"><a class="header__menu-link" href="#">пледы</a></li>
+			<li class="header__menu-item"><a class="header__menu-link" href="#">полотенца</a></li>
+			<li class="header__menu-item"><a class="header__menu-link" href="#">простыни</a></li>
+				<li class="header__menu-item header__menu-item--pink"><a class="header__menu-link" href="#">sale!</a></li>
+			</ul>
+			<a class="basket" href="#">
+				<strong class="basket__title">Корзина</strong>
+				<p class="basket__product"><span>6</span> товаров</p>
+				<div class="basket__img" style="background-image: url('img/basket.png');"></div>
+			</a>
+		</div>
 	</div>
 	<!-- end container -->
 </header>
