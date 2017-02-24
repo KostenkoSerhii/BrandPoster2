@@ -20,13 +20,29 @@ $(document).ready(function(){
 	$(".menu-btn").on("click", function(){
 		var _this = $(this);
 		_this.toggleClass("menu-btn-is-active");
-		$("body").addClass("body-ovh");
 		$(".js-nav-responsive").slideToggle(300);
 		if(windowWidth <= 991 && windowWidth >= 768){
 			$(".js-hidden").toggleClass("is-hidden");
 		};
 	});
 
+	$(".scroll-js").on("click", function(e){
+		e.preventDefault();
+		var a = $(this).attr("href");
+		var b = $(a).offset().top;
+		$("html, body").animate({
+			scrollTop: b
+		}, 500);
+	});
+	$(".mob-scroll-js").on("click", function(e){
+		e.preventDefault();
+		var a = $(this).attr("href");
+		var b = $(a).offset().top;
+		$("html, body").animate({
+			scrollTop: b
+		}, 500);
+		$(".menu-btn").trigger("click");
+	});
 
 
 	//ready

@@ -1,43 +1,112 @@
 .footer
 	background-color: #efefef
-	padding-top: 70px
-	padding-bottom: 48px
+	+css-lock(27, 53, 992, 1599, "padding-top")
 .footer__left
-	//display: inline-block
-	width: 250px
+	+css-lock(185, 250, 992, 1200, "width")
+	+r(991)
+		width: 250px
+		float: left
+		margin-top: 9px
+	+r(639)
+		float: none
+		text-align: center
+		margin: 0 auto
 .footer-main-content
 	display: table
 	height: 100%
 	width: 100%
 	text-align: justify
+	+r(991)
+		display: block
+		+clr
 .footer__left, .footer__middle, .footer__right
 	display: table-cell
 	vertical-align: middle
+	+r(991)
+		display: block
+.footer__middle
+	+r(1200)
+		max-width: 650px
+	//+css-lock(550, 650, 922, 1200, "width")
+	+r(991)
+		display: none
 .footer__location, .footer__phone
 	font: 400 20px/1.8em $PR
+	+css-lock(16, 20, 992, 1200)
+	+r(991)
+		font-size: 20px
+		line-height: 1em
+.footer__contact
+	margin-bottom: 5px
+	&:last-of-type
+		margin-bottom: 0
 .footer__location
 	color: #a5a5a5
+	display: inline-block
+	margin-right: 3px
 .footer__phone
 	color: $black-lighten
+	letter-spacing: -1px
 .footer__menu
-	padding:  0 60px
+	padding:  8px 0px 0
 	border-left: 1px solid #dedede
 	border-right: 1px solid #dedede
 	min-height: 90px
-	max-width: 923px
-	margin:  0 auto
-
+	+css-lock(0, 67, 923, 1599, "margin-left")
+	+css-lock(550, 923, 1200, 1599, "width")
+	text-align: center
 .footer__menu-item
 	display: inline-block
-	min-width: 160px
 	text-align: left
-.footer__menu-link
+	+css-lock(10, 72, 1200, 1599, "margin-right")
+	&:last-of-type
+		margin-right: 0
+	//margin-right: 37px
+.footer_submenu-link
 	color: $black-light
-	display: inline-block
 	transition: all .3s
 	border-bottom: 1px solid #c1c1c1
 	font: 400 18px/2em $PR
+	letter-spacing: -1px
+	+css-lock(16, 18, 1200, 1599)
 	&:hover
 		color: $pink
 		text-decoration: none
 		border-color: transparent
+.footer__right
+	+css-lock(160, 277, 992, 1200, "width")		
+	+r(991)
+		float: right
+		width: 366px
+	+r(767)
+		width: 293px
+	+r(639)
+		float: none
+		margin:  20px auto 0
+		width: 260px
+.form-block
+	+css-lock(160, 277, 992, 1200, "width")
+	text-align: right
+	+r(991)
+		width: 100%
+.form-block__input
+	display: inline-block
+	+placeholder-color(#c1c1c1)
+	padding: 19px 12px
+	width: 100%
+	font: 400 18px $PR
+	color: #c1c1c1
+	border: 1px solid transparent
+	transition: all .3s
+	&:focus
+		border-color: $gray-darken
+
+.form-block__btn
+	display: none
+.footer__bottomline
+	margin-top: 50px
+	padding: 19px 0
+	background-color: #585858
+	color: #7f7f7f
+	text-align: center
+	font: 400 16px/1em $PR
