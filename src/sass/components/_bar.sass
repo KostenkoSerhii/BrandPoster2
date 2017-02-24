@@ -98,6 +98,8 @@
 .topline__phone-callback
 	display: inline-block
 	+css-lock(2, 12, 992, 1599, "margin-right")
+	+r(991)
+		margin-right: 10px
 .authorization-block
 	display: inline-block
 	+css-lock(140, 151, 992, 1599, "width")
@@ -117,9 +119,10 @@
 	&:after
 		display: none
 	+r(991)
+		width: 147px
 		&:after
 			display: block
-			right: -20px
+			right: -24px
 	+r(767)
 		display: none
 .phone

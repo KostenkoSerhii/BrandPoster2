@@ -1565,9 +1565,15 @@ body a {
     float: right;
     width: auto;
   }
+  .topline__phone-callback{
+    margin-right: 10px;
+  }
+  .authorization-block{
+    width: 147px;
+  }
   .authorization-block:after{
     display: block;
-    right: -20px;
+    right: -24px;
   }
   .menu-btn{
     margin-left: 38px;
