@@ -1,0 +1,48 @@
+.catalog
+	padding-top: 80px
+.catalog__h3
+	margin-bottom: 70px
+.product__h4
+	color: $gray-darnest
+	font: 900 30px/1em "PRB", sans-serif
+	text-transform: uppercase
+	transition: color .3s
+.product
+	width: 484px
+	display: inline-block
+	height: 484px
+	border-top: 1px solid #f1f1f1
+	border-bottom: 1px solid #f1f1f1
+	margin-bottom: 58px
+	position: relative
+	padding-top: 60px
+	+rmin(1200)
+		&:before, &:after
+			content: ''
+			position: absolute
+			width: 0
+			left: 50%
+			transform: translateX(-50%)
+			transition: all .3s
+			height: 1px
+			background: $pink
+			z-index: 1
+		&:before
+			top: 0
+		&:after
+			bottom: 0
+		&:hover
+			.product__h4
+				color: $pink
+			&:before, &:after
+				width: 100%
+
+
+	a
+		display: block
+.product__img
+	width: 448px
+	margin: 0 auto
+	height: 335px
+	+cover
+	background-size: contain

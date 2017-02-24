@@ -1,0 +1,48 @@
+.banners
+	padding-top: 60px
+	padding-bottom: 60px
+.banner
+	display: inline-block
+	width: 484px
+	position: relative
+	text-align: left
+	//+css-lock(300, 484, 991, 1599, "width")
+.banner__link
+	display: block
+	height: 190px
+	padding: 25px 27px
+	+cover
+.banner__title
+	color: $white
+	font: 900 55px/1em "PBK", sans-serif
+	text-transform: uppercase
+.banner__price
+	width: 227px
+	height: 78px
+	position: absolute
+	right: 0
+	bottom: 29px
+	background: rgba(255,255,255, 0.8)
+	color: $pink
+	font: 900 35px/1em "PBK", sans-serif
+	padding-top: 24px
+	padding-left: 16px
+	text-transform: uppercase
+	&:after
+		z-index: 1
+		position: absolute
+		content: ''
+		left: -29px
+		top: 0
+		border-style: solid
+		border-color: transparent rgba(255,255,255, 0.8)
+		border-width: 0px 29px 78px 0px
+	span
+		font: 300 35px/1em "PR", sans-serif
+		text-transform: none
+.banner__date
+	color: $white
+	font: 400 45px/1em "PR", sans-serif
+	text-transform: uppercase
+	display: block
+	margin-top: 12px

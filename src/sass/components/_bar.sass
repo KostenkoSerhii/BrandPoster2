@@ -149,41 +149,39 @@
 		width: 28px
 		height: 20px
 		overflow: visible
+		&:before, &:after
+			transition: all .3s
+			content: ''
+			position: absolute
+			height: 3px
+			width: 28px
+			background: white
+			left: 0
+		&:before
+			top: 0px
+			transform-origin: top left
+		&:after
+			bottom: 0px
+			transform-origin: bottom left
 		div
 			height: 3px
-			width: 100%
+			width: 28px
 			z-index: 2
 			background: white
 			position: absolute
 			top: 50%
 			margin-top: -2px
-			transition: all .3s
-			&:before, &:after
-				transition: all .3s
-				content: ''
-				position: absolute
-				height: 3px
-				width: 100%
-				background: inherit
-				left: 0
-			&:before
-				top: -8px
-				transform-origin: top right
-			&:after
-				bottom: -9px
-				transform-origin: bottom right
+			transition: all .2s
 	+r(767)
 		margin-left: 0
 .menu-btn-is-active
-	div
-		height: 2px
-		+rotate(90)
+	+r(991)
+		div
+			opacity: 0
 		&:before, &:after
-			width: 50%
-			height: 2px
+			width: 26px
 		&:before
-			transform: translateX(16px) rotate(45deg)
-			top: 1px	
+			transform: translateX(6px) rotate(45deg)
 		&:after
-			transform: translateX(16px) rotate(-45deg)
-			bottom: 1px
+			transform: translateX(6px) rotate(-45deg)
+		

@@ -45,8 +45,8 @@
               <!-- end topline__middle -->
               <!-- begin topline__right -->
               <div class="topline__right">
-                <div class="phone-callback topline__phone-callback"> <a class="phone" href="tel:+71234567890">+7 (123) <span>456 78 90</span></a> <a class="callback" href="#">Заказать звонок</a> </div>
-                <div class="authorization-block"> <a class="login" href="#">Вход</a> <a class="registration" href="#">Регистрация</a> </div>
+                <div class="phone-callback topline__phone-callback js-hidden"> <a class="phone" href="tel:+71234567890">+7 (123) <span>456 78 90</span></a> <a class="callback" href="#">Заказать звонок</a> </div>
+                <div class="authorization-block js-hidden"> <a class="login" href="#">Вход</a> <a class="registration" href="#">Регистрация</a> </div>
                 <div class="menu-btn">
                   <div></div>
                 </div>
@@ -106,13 +106,15 @@
         <!-- begin container -->
         <div class="container">
           <div class="slider">
-            <div class="slider__prev"></div>
-            <div class="slider__next"></div>
-            <div class="slider__slide">
-              <h2 class="h2">Постельное белье <span>высокого качества</span></h2>
+            <div class="slider__slide" style="background-image: url('img/slide1-bg.jpg')">
+              <div class="slider__content">
+                <h2 class="h2">Постельное белье<br><span>высокого качества</span></h2>
+              </div>
             </div>
-            <div class="slider__slide">
-              <h2 class="h2">Постельное белье <span>высокого качества</span></h2>
+            <div class="slider__slide" style="background-image: url('img/slide2-bg.jpg')">
+              <div class="slider__content">
+                <h2 class="h2">Постельное белье<br><span>высокого качества</span></h2>
+              </div>
             </div>
           </div>
         </div>
@@ -123,9 +125,25 @@
       <div class="banners">
         <!-- begin container -->
         <div class="container">
-          <div class="banner" style="background-image: url('img/banner1.jpg');"></div>
-          <div class="banner" style="background-image: url('img/banner2.jpg');"></div>
-          <div class="banner" style="background-image: url('img/banner3.jpg');"></div>
+          <div class="three-col-list">
+            <div class="banner three-col-list__item">
+              <a class="banner__link" href="#" style="background-image: url('img/banner1-bg.jpg');"> <strong class="banner__title">Постельное
+						белье
+					</strong>
+                <div class="banner__price">от 599<span>руб</span></div>
+              </a>
+            </div>
+            <div class="banner three-col-list__item">
+              <a class="banner__link" href="#" style="background-image: url('img/banner2-bg.jpg');"> <strong class="banner__title">Акция</strong> <span class="banner__date">02.03.17</span> </a>
+            </div>
+            <div class="banner three-col-list__item">
+              <a class="banner__link" href="#" style="background-image: url('img/banner3-bg.jpg');"> <strong class="banner__title">Постельное
+						белье
+					</strong>
+                <div class="banner__price">от 599<span>руб</span></div>
+              </a>
+            </div>
+          </div>
         </div>
         <!-- end container -->
       </div>
@@ -134,31 +152,43 @@
       <div class="catalog">
         <!-- begin container -->
         <div class="container">
-          <h3 class="h3 catalog__h3"> Каталог товаров</h3>
+          <h3 class="h3 catalog__h3">Каталог товаров</h3>
           <div class="three-col-list">
             <div class="product three-col-list__item ">
-              <div class="product__img" style="background-image: url('img/prod1.jpg');"></div>
-              <h4 class="h4">Постельное белье</h4>
+              <a href="#">
+                <div class="product__img" style="background-image: url('img/prod1.jpg');"></div>
+                <h4 class="product__h4">Постельное белье</h4>
+              </a>
             </div>
             <div class="product three-col-list__item ">
-              <div class="product__img" style="background-image: url('img/prod2.jpg');"></div>
-              <h4 class="h4">Подушки</h4>
+              <a href="#">
+                <div class="product__img" style="background-image: url('img/prod2.jpg');"></div>
+                <h4 class="product__h4">Подушки</h4>
+              </a>
             </div>
             <div class="product three-col-list__item ">
-              <div class="product__img" style="background-image: url('img/prod3.jpg');"></div>
-              <h4 class="h4">Одеяла</h4>
+              <a href="#">
+                <div class="product__img" style="background-image: url('img/prod3.jpg');"></div>
+                <h4 class="product__h4">Одеяла</h4>
+              </a>
             </div>
             <div class="product three-col-list__item ">
-              <div class="product__img" style="background-image: url('img/prod4.jpg');"></div>
-              <h4 class="h4">Покрывала</h4>
+              <a href="#">
+                <div class="product__img" style="background-image: url('img/prod4.jpg');"></div>
+                <h4 class="product__h4">Покрывала</h4>
+              </a>
             </div>
             <div class="product three-col-list__item ">
-              <div class="product__img" style="background-image: url('img/prod5.jpg');"></div>
-              <h4 class="h4">Пледы</h4>
+              <a href="#">
+                <div class="product__img" style="background-image: url('img/prod5.jpg');"></div>
+                <h4 class="product__h4">Пледы</h4>
+              </a>
             </div>
             <div class="product three-col-list__item ">
-              <div class="product__img" style="background-image: url('img/prod6.jpg');"></div>
-              <h4 class="h4">Полотенца</h4>
+              <a href="#">
+                <div class="product__img" style="background-image: url('img/prod6.jpg');"></div>
+                <h4 class="product__h4">Полотенца</h4>
+              </a>
             </div>
           </div>
         </div>
