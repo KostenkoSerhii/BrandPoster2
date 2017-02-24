@@ -1,33 +1,63 @@
 .banners
-	padding-top: 60px
-	padding-bottom: 60px
+	padding-top: 57px
+	margin-bottom: 60px
+	+css-lock(30, 60, 992, 1599, "margin-bottom")
+	+r(991)
+		padding-top: 43px
+	+r(767)
+		padding-top: 51px
 .banner
 	display: inline-block
 	width: 484px
 	position: relative
 	text-align: left
-	//+css-lock(300, 484, 991, 1599, "width")
+	+css-lock(300, 484, 992, 1599, "width")
+	+r(991)
+		width: 484px
 .banner__link
 	display: block
 	height: 190px
-	padding: 25px 27px
+	padding: 19px 27px
 	+cover
+	+r(560)
+		height: 150px
 .banner__title
 	color: $white
 	font: 900 55px/1em $PBK
 	text-transform: uppercase
+	display: inline-block
+	+css-lock(30, 55, 992, 1599)
+	+css-lock(40, 0, 992, 1599, "margin-top")
+	+r(991)
+		font-size: 55px
+		margin-top: 0
+	+r(560)
+		font-size: 30px
+.banner__title--large
+	font-size: 70px
+	line-height: 0.9em
+	+css-lock(30, 70, 992, 1599)
+	+r(991)
+		font-size: 70px
+	+r(560)
+		margin-top: 20px
 .banner__price
 	width: 227px
 	height: 78px
 	position: absolute
 	right: 0
-	bottom: 29px
+	bottom: 31px
 	background: rgba(255,255,255, 0.8)
 	color: $pink
 	font: 900 35px/1em $PBK
 	padding-top: 24px
 	padding-left: 16px
 	text-transform: uppercase
+	+css-lock(130, 227, 992, 1599, "width")
+	+css-lock(60, 78, 992, 1599, "height")
+	+css-lock(18, 25, 992, 1599, "padding-top")
+	+css-lock(5, 16, 992, 1599, "padding-left")
+	+css-lock(25, 35, 992, 1599)
 	&:after
 		z-index: 1
 		position: absolute
@@ -36,13 +66,45 @@
 		top: 0
 		border-style: solid
 		border-color: transparent rgba(255,255,255, 0.8)
-		border-width: 0px 29px 78px 0px
+		//border-width: 0px 29px 78px 0px
+		border-right-width: 29px
+		border-top-width: 0px
+		border-left-width: 0
+		border-bottom-width: 78px
+		+css-lock(60, 78, 992, 1599, "border-bottom-width")
+		+r(991)
+			border-bottom-width: 78px
+		+r(560)
+			border-bottom-width: 60px
+	+r(991)
+		width: 227px
+		height: 78px
+		padding-left: 16px
+		font-size: 35px
+		padding-top: 24px
+	+r(560)
+		width: 130px
+		height: 60px
+		padding-top: 16px
+		padding-left: 0px
+		font-size: 25px
+		bottom: 8px
 	span
 		font: 300 35px/1em $PR
 		text-transform: none
+		+css-lock(22, 35, 992, 1599)
+		+r(991)
+			font-size: 35px
+		+r(560)
+			font-size: 22px
 .banner__date
 	color: $white
 	font: 400 45px/1em $PR
 	text-transform: uppercase
 	display: block
 	margin-top: 12px
+	+css-lock(25, 45, 992, 1599)
+	+r(991)
+		font-size: 45px
+	+r(560)
+		font-size: 25px

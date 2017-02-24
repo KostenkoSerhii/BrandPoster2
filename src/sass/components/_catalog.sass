@@ -1,43 +1,45 @@
 .catalog
-	padding-top: 80px
+	//padding-top: 80px
+	padding-bottom: 
+	+css-lock(25, 80, 992, 1599, "padding-top")
+	+r(991)
+		padding-top: 24px
 .catalog__h3
-	margin-bottom: 70px
+	+css-lock(46, 68, 992, 1599, "margin-bottom")
 .product__h4
-	color: $gray-darnest
-	font: 900 30px/1em $PBK
-	text-transform: uppercase
 	transition: color .3s
+	//margin-top: 23px
+	+css-lock(0, 23, 992, 1599, "margin-top")
+	+css-lock(20, 30, 992, 1599)
+	+r(991)
+		margin-top: 23px
+		font-size: 30px
+	+r(560)
+		font-size: 20px
+		margin-top: 0px
 .product
-	width: 484px
+	//width: 484px
 	display: inline-block
-	height: 484px
-	border-top: 1px solid #f1f1f1
-	border-bottom: 1px solid #f1f1f1
+	//height: 484px
+	border: 1px solid #f1f1f1
 	margin-bottom: 58px
 	position: relative
-	padding-top: 60px
-	+rmin(1200)
-		&:before, &:after
-			content: ''
-			position: absolute
-			width: 0
-			left: 50%
-			transform: translateX(-50%)
-			transition: all .3s
-			height: 1px
-			background: $pink
-			z-index: 1
-		&:before
-			top: 0
-		&:after
-			bottom: 0
-		&:hover
-			.product__h4
-				color: $pink
-			&:before, &:after
-				width: 100%
-
-
+	//padding-top: 55px
+	+css-lock(300, 484, 992, 1599, "width")
+	+css-lock(300, 484, 992, 1599, "height")
+	+css-lock(10, 55, 992, 1599, "padding-top")
+	transition: all .3s
+	&:hover
+		border-color: $pink
+		.product__h4
+			color: $pink
+	+r(991)
+		width: 484px
+		height: 484px
+		padding-top: 55px
+	+r(560)
+		padding-top: 10px
+		height: 245px
 	a
 		display: block
 .product__img
@@ -46,3 +48,11 @@
 	height: 335px
 	+cover
 	background-size: contain
+	+css-lock(270, 448, 992, 1599, "width")
+	+css-lock(240, 335, 992, 1599, "height")
+	+r(991)
+		width: 448px
+		height: 335px
+	+r(560)
+		width: 240px
+		height: 200px

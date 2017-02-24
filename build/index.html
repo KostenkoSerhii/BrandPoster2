@@ -104,7 +104,7 @@
       <div class="first-screen">
         <h1 class="h1">Brand Postel</h1>
         <!-- begin container -->
-        <div class="container">
+        <div class="container first-screen__container">
           <div class="slider">
             <div class="slider__slide" style="background-image: url('img/slide1-bg.jpg')">
               <div class="slider__content">
@@ -133,17 +133,20 @@
                 <div class="banner__price">от 599<span>руб</span></div>
               </a>
             </div>
-            <div class="banner three-col-list__item">
-              <a class="banner__link" href="#" style="background-image: url('img/banner2-bg.jpg');"> <strong class="banner__title">Акция</strong> <span class="banner__date">02.03.17</span> </a>
-            </div>
-            <div class="banner three-col-list__item">
-              <a class="banner__link" href="#" style="background-image: url('img/banner3-bg.jpg');"> <strong class="banner__title">Постельное
-						белье
-					</strong>
-                <div class="banner__price">от 599<span>руб</span></div>
-              </a>
-            </div>
-          </div>
+            <!-- 			<div class="banner three-col-list__item" >
+	<a class="banner__link" href="#" style="background-image: url('img/banner2-bg.jpg');">
+		<strong class="banner__title banner__title--large">Акция</strong>
+		<span class="banner__date">02.03.17</span>
+	</a>
+</div>
+<div class="banner three-col-list__item" >
+	<a class="banner__link" href="#" style="background-image: url('img/banner3-bg.jpg');">
+		<strong class="banner__title">Постельное
+			белье
+		</strong>
+		<div class="banner__price">от 599<span>руб</span></div>
+	</a>
+</div> --></div>
         </div>
         <!-- end container -->
       </div>
@@ -157,37 +160,37 @@
             <div class="product three-col-list__item ">
               <a href="#">
                 <div class="product__img" style="background-image: url('img/prod1.jpg');"></div>
-                <h4 class="product__h4">Постельное белье</h4>
+                <h4 class="h4 product__h4">Постельное белье</h4>
               </a>
             </div>
             <div class="product three-col-list__item ">
               <a href="#">
                 <div class="product__img" style="background-image: url('img/prod2.jpg');"></div>
-                <h4 class="product__h4">Подушки</h4>
+                <h4 class="h4 product__h4">Подушки</h4>
               </a>
             </div>
             <div class="product three-col-list__item ">
               <a href="#">
                 <div class="product__img" style="background-image: url('img/prod3.jpg');"></div>
-                <h4 class="product__h4">Одеяла</h4>
+                <h4 class="h4 product__h4">Одеяла</h4>
               </a>
             </div>
             <div class="product three-col-list__item ">
               <a href="#">
                 <div class="product__img" style="background-image: url('img/prod4.jpg');"></div>
-                <h4 class="product__h4">Покрывала</h4>
+                <h4 class="h4 product__h4">Покрывала</h4>
               </a>
             </div>
             <div class="product three-col-list__item ">
               <a href="#">
                 <div class="product__img" style="background-image: url('img/prod5.jpg');"></div>
-                <h4 class="product__h4">Пледы</h4>
+                <h4 class="h4 product__h4">Пледы</h4>
               </a>
             </div>
             <div class="product three-col-list__item ">
               <a href="#">
                 <div class="product__img" style="background-image: url('img/prod6.jpg');"></div>
-                <h4 class="product__h4">Полотенца</h4>
+                <h4 class="h4 product__h4">Полотенца</h4>
               </a>
             </div>
           </div>
@@ -199,25 +202,68 @@
       <div class="about-us">
         <!-- begin container -->
         <div class="container">
-          <h3 class="h3 about-us__h3">О нас</h3>
-          <p class="about-us__article">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора
-            мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. </p>
+          <h3 class="h3 h3--negative-indent">О нас</h3>
+          <div class="about-us__article">
+            <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+            <p> При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+              восприятия.</p>
+          </div>
         </div>
         <!-- end container -->
-        <div class="about-us__wrapper">
+        <div class="about-us__inner">
           <!-- begin container -->
-          <div class="container">
+          <div class="container container--zero-padding">
             <ul class="about-us__ul">
-              <li><a href="#">Информация по доставке</a></li>
-              <li><a href="#">Возвтрат товара</a></li>
-              <li><a href="#">Отзывы о нас</a></li>
-              <li><a href="#">Клубная карта</a></li>
+              <li class="about-us__li"><a href="#">Информация по доставке</a></li>
+              <li class="about-us__li"><a href="#">Возврат товара</a></li>
+              <li class="about-us__li"><a href="#">Отзывы о нас</a></li>
+              <li class="about-us__li"><a href="#">Клубная карта</a></li>
             </ul>
           </div>
           <!-- end container -->
         </div>
       </div>
       <!-- end about-us -->
+      <footer class="footer">
+        <!-- begin container -->
+        <div class="container">
+          <div class="footer-main-content">
+            <!-- begin footer__left -->
+            <div class="footer__left">
+              <div class="footer__contact"> <span class="footer__location">Москва</span> <a class="footer__phone" href="tel:+84997535555">8 (499) 753-55-55</a> </div>
+              <div class="footer__contact"> <span class="footer__location">РФ</span> <a class="footer__phone" href="tel:+88001001202"> 8 (800) 100-12-02</a> </div>
+            </div>
+            <!-- end footer__left -->
+            <!-- begin footer__middle -->
+            <div class="footer__middle">
+              <ul class="footer__menu">
+                <li class="footer__menu-item"><a class="footer__menu-link cdfgd" href="#">Доставка и оплата</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Клубная карта</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Таблица размеров</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Города доставки</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Возврат</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Клубная карта</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Таблица размеров</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <!-- end footer__middle -->
+            <!-- begin footer__right -->
+            <div class="footer__right">
+              <form> <input type="text" name="email" placeholder="Email рассылка"> </form>
+            </div>
+            <!-- end footer__right -->
+          </div>
+        </div>
+        <!-- end container -->
+        <div class="footer__bottomline">
+          <!--begin container-->
+          <div class="container">
+            <p>ТМ Brand Postel. 2015-2017. All rights reserved</p>
+          </div>
+          <!--end container-->
+        </div>
+      </footer>
       <!-- 	
 
 <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>

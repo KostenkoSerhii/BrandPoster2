@@ -1,19 +1,29 @@
+.first-screen__container
+	+r(991)
+		padding: 0!important
 .slider
 	overflow: hidden
 .slider__slide
-	+css-lock(403, 670, 991, 1599, "min-height")
+	+css-lock(400, 670, 991, 1599, "min-height")
 	+cover
 	position: relative
+	+r(639)
+		min-height: 250px
+
 .slider__content
 	text-align: center
 	display: table
-	+css-lock(403, 670, 991, 1599, "min-height")
+	+css-lock(400, 670, 991, 1599, "min-height")
 	width: 100%
+	+r(639)
+		min-height: 250px
 
 .slick-prev, .slick-next
 	top: auto
 	bottom: 30px
 	z-index: 1
+	+r(991)
+		bottom: 27px
 .slick-prev
 	+s(prev)
 	left: 50%

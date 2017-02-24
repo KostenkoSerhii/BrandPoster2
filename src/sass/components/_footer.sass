@@ -1,0 +1,43 @@
+.footer
+	background-color: #efefef
+	padding-top: 70px
+	padding-bottom: 48px
+.footer__left
+	//display: inline-block
+	width: 250px
+.footer-main-content
+	display: table
+	height: 100%
+	width: 100%
+	text-align: justify
+.footer__left, .footer__middle, .footer__right
+	display: table-cell
+	vertical-align: middle
+.footer__location, .footer__phone
+	font: 400 20px/1.8em $PR
+.footer__location
+	color: #a5a5a5
+.footer__phone
+	color: $black-lighten
+.footer__menu
+	padding:  0 60px
+	border-left: 1px solid #dedede
+	border-right: 1px solid #dedede
+	min-height: 90px
+	max-width: 923px
+	margin:  0 auto
+
+.footer__menu-item
+	display: inline-block
+	min-width: 160px
+	text-align: left
+.footer__menu-link
+	color: $black-light
+	display: inline-block
+	transition: all .3s
+	border-bottom: 1px solid #c1c1c1
+	font: 400 18px/2em $PR
+	&:hover
+		color: $pink
+		text-decoration: none
+		border-color: transparent
