@@ -9,28 +9,35 @@
 .topline__wrapper
 	padding: 0 17px
 	width: 100%
-	position: relative
+	display: table
+	height: 100%
 	+clr
 	+r(1420)
 		padding: 0
+	+r(991)
+		display: block
+.topline__left, .topline__middle, .topline__right
+	display: table-cell
+	vertical-align: middle
+	+r(991)
+		display: block
 .topline__left
-	float: left
 	width: 150px
 	margin-top: 3px
 	+r(1420)
 		width: 130px
 	+r(991)
 		width: 200px
+		float: left
 .topline__middle
-	+vcenter
-	+r(1420)
-		left: 40%
 	+r(991)
 		display: none
 .topline__right
-	float: right
+	+css-lock(302, 322, 992, 1599, "width")
 	text-align: right
-	display: table
+	+r(991)
+		float: right
+		width: auto
 .search-block
 	display: inline-block
 	position: relative
@@ -54,6 +61,7 @@
 	transform: translateY(-50%)
 .topline__list
 	max-width: 900px
+	+css-lock(0, 265, 992, 1599, "margin-left")
 .topline__list-item
 	display: inline-block
 	margin: 0 15px
@@ -88,12 +96,13 @@
 	+r(767)
 		display: none
 .topline__phone-callback
-	margin-top: 3px
-	margin-right: 12px
+	display: inline-block
+	+css-lock(2, 12, 992, 1599, "margin-right")
 .authorization-block
-	width: 151px
-	display: table-cell
-	vertical-align: middle
+	display: inline-block
+	+css-lock(140, 151, 992, 1599, "width")
+	margin-top: 5px
+	vertical-align: top
 	position: relative
 	&:before, &:after
 		content: ''
@@ -141,7 +150,7 @@
 		display: inline-block
 		vertical-align: top
 		position: relative
-		top: 3px
+		top: 7px
 		width: 28px
 		height: 20px
 		overflow: visible
