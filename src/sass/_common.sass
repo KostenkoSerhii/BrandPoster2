@@ -1,5 +1,6 @@
+
 @font-face 
-	font-family: "PR"
+	font-family: "ProximaNovaRegular"
 	src: url("../fonts/ProximaNovaRegular.eot")
 	src: url("../fonts/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/ProximaNovaRegular.woff") format("woff"),
@@ -7,7 +8,7 @@
 	font-style: normal
 	font-weight: normal
 @font-face 
-	font-family: "PB"
+	font-family: "ProximaNovaBlack"
 	src: url("../fonts/ProximaNovaBlack.eot")
 	src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/ProximaNovaBlack.woff") format("woff"),
@@ -15,11 +16,11 @@
 	font-style: normal
 	font-weight: normal
 @font-face 
-	font-family: "PBK"
-	src: url("../fonts/ProximaNovaBlack.eot")
-	src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/ProximaNovaBlack.woff") format("woff"),
-	url("../fonts/ProximaNovaBlack.ttf") format("truetype")
+	font-family: "ProximaNovaBold"
+	src: url("../fonts/ProximaNovaBold.eot")
+	src: url("../fonts/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaBold.woff") format("woff"),
+	url("../fonts/ProximaNovaBold.ttf") format("truetype")
 	font-style: normal
 	font-weight: normal
 
@@ -45,7 +46,7 @@ body
 	+r(560)
 		font-size: 24px
 	span
-		font: 100 65px "PR", sans-serif
+		font: 100 65px $PR
 		+css-lock(35, 65, 991, 1599)
 		+r(560)
 			font-size: 20px
@@ -53,13 +54,13 @@ body
 	text-align: center
 	color: $pink
 	text-transform: uppercase
-	font: 400 45px/1em "PR", sans-serif
+	font: 400 45px/1em $PR
 .grayLinkStyle
 	color: $gray
-	font: 500 15px/1em "PR", sans-serif
+	font: 500 15px/1em $PR
 .mainMenuStile
 	color: $black
-	font: 400 15px/1.3em "PR", sans-serif
+	font: 400 15px/1.3em $PR
 .three-col-list
 	text-align: center
 .three-col-list__item
