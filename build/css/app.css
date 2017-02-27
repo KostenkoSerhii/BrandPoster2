@@ -420,10 +420,11 @@ body a {
 }
 
 .topline__wrapper {
-  padding: 0 17px;
+  padding: 0 17px 0 10px;
   width: 100%;
   display: table;
   height: 100%;
+  position: relative;
   *zoom: 1;
 }
 
@@ -462,7 +463,7 @@ body a {
   font: 400 14px/1.4em "ProximaNovaRegular", sans-serif;
   color: silver;
   background: transparent;
-  padding: 5px 0px 5px 18px;
+  padding: 5px 0px 5px 27px;
   width: 100%;
 }
 
@@ -485,9 +486,11 @@ body a {
 .search-block__button {
   width: 14px;
   height: 14px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  background-image: url("../img/sprite.png");
+  width: 14px;
+  height: 14px;
+  background-position: -53px -66px;
+  left: 5px;
   display: block;
   position: absolute;
   top: 50%;
@@ -506,39 +509,40 @@ body a {
   margin: 0 15px;
 }
 
-.topline__marker {
-  width: 25px;
-  height: 19px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-size: contain;
+.topline__icon {
   display: inline-block;
   vertical-align: bottom;
 }
 
-.topline__marker-bag {
+.topline__icon-bag {
+  background-image: url("../img/sprite.png");
   width: 17px;
   height: 19px;
+  background-position: 0px -66px;
 }
 
-.topline__marker-car {
+.topline__icon-car {
+  background-image: url("../img/sprite.png");
   width: 25px;
   height: 16px;
+  background-position: -30px 0px;
 }
 
-.topline__marker-reload {
+.topline__icon-reload {
+  background-image: url("../img/sprite.png");
   width: 16px;
   height: 16px;
+  background-position: -27px -66px;
 }
 
-.topline__marker-certif {
+.topline__icon-certificate {
+  background-image: url("../img/sprite.png");
   width: 20px;
   height: 18px;
+  background-position: -65px 0px;
 }
 
 .phone-callback {
-  width: 150px;
   text-align: right;
 }
 
@@ -819,7 +823,7 @@ body a {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 8px;
-  background-position: -30px -18px;
+  background-position: -44px -48px;
   left: 50%;
   margin-left: -40px;
 }
@@ -828,7 +832,7 @@ body a {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 8px;
-  background-position: -30px 0px;
+  background-position: 0px -48px;
   right: 50%;
   margin-right: -40px;
 }
@@ -1564,6 +1568,13 @@ body a {
   .topline__right{
     float: right;
     width: auto;
+    margin-right: 69px;
+  }
+  .search-block__input{
+    padding-left: 22px;
+  }
+  .search-block__button{
+    left: 1px;
   }
   .topline__phone-callback{
     margin-right: 10px;
@@ -1576,11 +1587,13 @@ body a {
     right: -24px;
   }
   .menu-btn{
-    margin-left: 38px;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    top: 7px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: 28px;
     height: 20px;
     overflow: visible;
@@ -1785,9 +1798,6 @@ body a {
   }
   .authorization-block{
     display: none;
-  }
-  .menu-btn{
-    margin-left: 0;
   }
   .header__logo{
     margin-left: 0;

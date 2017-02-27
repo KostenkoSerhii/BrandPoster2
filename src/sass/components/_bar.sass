@@ -1,3 +1,6 @@
+$arr : "bag", "car", "reload" , "certificate"
+
+
 .topline
 	padding: 10px 0
 	background-color: #242424
@@ -7,10 +10,11 @@
 	+r(767)
 		padding:  11px 0
 .topline__wrapper
-	padding: 0 17px
+	padding: 0 17px 0 10px
 	width: 100%
 	display: table
 	height: 100%
+	position: relative
 	+clr
 	+r(1420)
 		padding: 0
@@ -38,6 +42,7 @@
 	+r(991)
 		float: right
 		width: auto
+		margin-right: 69px
 .search-block
 	display: inline-block
 	position: relative
@@ -49,16 +54,21 @@
 	font: $topline-font
 	color: $silver
 	background: transparent
-	padding: 5px 0px 5px 18px
+	padding: 5px 0px 5px 27px
 	width: 100%
+	+r(991)
+		padding-left: 22px
 .search-block__button
 	width: 14px
 	height: 14px
-	+cover
+	+s(magnifier)
+	left: 5px
 	display: block
 	position: absolute
 	top: 50%
 	transform: translateY(-50%)
+	+r(991)
+		left: 1px
 .topline__list
 	max-width: 900px
 	+css-lock(0, 265, 992, 1599, "margin-left")
@@ -71,27 +81,14 @@
 	@extend .grayLinkStyle
 	+r(1199)
 		font-size: 12px
-.topline__marker 
-	width: 25px
-	height: 19px
-	+cover
-	background-size: contain
+.topline__icon 
 	display: inline-block
 	vertical-align: bottom
-.topline__marker-bag
-	width: 17px
-	height: 19px
-.topline__marker-car
-	width: 25px
-	height: 16px
-.topline__marker-reload
-	width: 16px
-	height: 16px
-.topline__marker-certif
-	width: 20px
-	height: 18px
+	@each $icon in $arr
+		&-#{$icon}
+			+s($icon)
 .phone-callback
-	width: 150px
+	//width: 150px
 	text-align: right
 	+r(767)
 		display: none
@@ -149,11 +146,14 @@
 .menu-btn
 	display: none
 	+r(991)
-		margin-left: 38px
-		display: inline-block
-		vertical-align: top
-		position: relative
-		top: 7px
+		//margin-left: 38px
+		display: block
+		//vertical-align: top
+		position: absolute
+		right: 	0
+		top: 50%
+		transform: translateY(-50%)
+		//top: 7px
 		width: 28px
 		height: 20px
 		overflow: visible
@@ -181,8 +181,9 @@
 			margin-top: -2px
 			transition: all .2s
 	+r(767)
-		margin-left: 0
+		//margin-left: 0
 .menu-btn-is-active
+
 	+r(991)
 		div
 			opacity: 0
