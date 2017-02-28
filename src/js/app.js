@@ -26,23 +26,23 @@ $(document).ready(function(){
 		};
 	});
 
-	$(".scroll-js").on("click", function(e){
-		e.preventDefault();
-		var a = $(this).attr("href");
-		var b = $(a).offset().top;
-		$("html, body").animate({
-			scrollTop: b
-		}, 500);
-	});
-	$(".mob-scroll-js").on("click", function(e){
-		e.preventDefault();
-		var a = $(this).attr("href");
-		var b = $(a).offset().top;
-		$("html, body").animate({
-			scrollTop: b
-		}, 500);
-		$(".menu-btn").trigger("click");
-	});
+	//$(".scroll-js").on("click", function(e){
+	//	e.preventDefault();
+	//	var a = $(this).attr("href");
+	//	var b = $(a).offset().top;
+	//	$("html, body").animate({
+	//		scrollTop: b
+	//	}, 500);
+	//});
+	//$(".mob-scroll-js").on("click", function(e){
+	//	e.preventDefault();
+	//	var a = $(this).attr("href");
+	//	var b = $(a).offset().top;
+	//	$("html, body").animate({
+	//		scrollTop: b
+	//	}, 500);
+	//	$(".menu-btn").trigger("click");
+	//});
 
 
 	//ready

@@ -7,18 +7,21 @@
 	max-width: 1145px
 	margin: 0 auto
 	color: $gray-light
-	font: 400 17px/1.6em $PR 
-	+css-lock(13, 41, 992, 1599, "margin-top")
+	font-size: 17px
+	line-height: 1.6em
+	font-family: $PR 
+	+css-lock(13, 39, 992, 1599, "margin-top")
 	+r(991)
 		font-size: 14px
-		padding:  0 20px
+		padding:  0 25px
 	+r(767)
 		padding: 0
-	+r(650)
-		margin-top: 0
+		margin-top: 25px
+		line-height: 1.45em
 	p
-		+rmin(769)
+		+rmin(992)
 			display: inline
+			
 .about-us__inner
 	+css-lock(54, 102, 992, 1599, "margin-top")
 	+r(560)
@@ -40,7 +43,9 @@
 		display: block
 		padding: 34px 22px
 		color: #686868
-		font: 400 22px/1em $PR
+		font-family: $PL
+		font-size: 22px
+		line-height: 1em
 		transition: all .3s
 		text-transform: uppercase
 		border-right: 1px solid #eaeaea

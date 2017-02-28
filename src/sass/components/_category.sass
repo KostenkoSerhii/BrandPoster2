@@ -1,13 +1,13 @@
-.catalog
-	//padding-top: 80px
-	+css-lock(25, 80, 992, 1599, "padding-top")
+.category-block
+	+css-lock(25, 84, 992, 1599, "padding-top")
 	+r(991)
 		padding-top: 24px
-.catalog__h3
+	+r(767)
+		padding-top: 20px
+.category__h3
 	+css-lock(46, 68, 992, 1599, "margin-bottom")
-.product__h4
+.category__h4
 	transition: color .3s
-	//margin-top: 23px
 	+css-lock(0, 23, 992, 1599, "margin-top")
 	+css-lock(20, 30, 992, 1599)
 	+r(991)
@@ -16,33 +16,31 @@
 	+r(560)
 		font-size: 20px
 		margin-top: 0px
-.product
-	//width: 484px
-	display: inline-block
-	//height: 484px
+.category__list
+	text-align: center
+.category__item
 	border: 1px solid #f1f1f1
 	margin-bottom: 58px
 	position: relative
-	//padding-top: 55px
-	+css-lock(300, 484, 992, 1599, "width")
 	+css-lock(300, 484, 992, 1599, "height")
 	+css-lock(10, 55, 992, 1599, "padding-top")
 	transition: all .3s
 	&:hover
 		border-color: $pink
-		.product__h4
+		.category__h4
 			color: $pink
 	+r(991)
-		width: 484px
 		height: 484px
 		padding-top: 55px
+		&:last-of-type
+			margin-bottom: 0!important
 	+r(560)
 		padding-top: 10px
 		height: 245px
 	a
 		display: block
 		height: 100%
-.product__img
+.category__img
 	width: 448px
 	margin: 0 auto
 	height: 335px

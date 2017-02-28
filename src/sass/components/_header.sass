@@ -25,7 +25,7 @@
 		margin-top: 15px
 .header__menu
 	float: left
-	margin-top: 33px
+	margin-top: 35px
 	+css-lock(0, 99, 1300, 1600, "margin-left")
 	+r(1299)
 		margin-top: 23px
@@ -35,12 +35,14 @@
 .header__menu-item
 	display: inline-block
 	margin-bottom: 10px
-
 	+css-lock(5, 15, 1300, 1600, "margin-right")
 	+css-lock(5, 15, 1300, 1600, "margin-left")
 .header__menu-link
 	text-transform: uppercase
-	@extend .mainMenuStile
+	color: $black
+	font-size: 15px
+	height: 1.3em
+	font-family: $PR
 	+rmin(1200)
 		position: relative
 		transition: all .3s
@@ -91,7 +93,7 @@
 			border-width: 0px 15px 60px 0px
 			left: -14px
 .basket-text
-	margin-top: 18px
+	margin-top: 20px
 	margin-right: 7px
 	display: inline-block
 	vertical-align: top
@@ -99,13 +101,17 @@
 		margin-top: 5px
 .basket__title
 	color: #242424
-	font: 600 21px/1em $PR
+	font-size: 21px
+	line-height: 1em
+	font-family: $PR
 	text-transform: uppercase
 	+r(560)
 		font-size: 14px
 .basket__count
 	color: #858484
-	font: 600 15px/1em $PR
+	font-size: 15px
+	line-height: 1em
+	font-family: $PR
 	+r(560)
 		font-size: 12px
 .basket__img
@@ -167,7 +173,8 @@
 		padding: 10px 0
 .mobnav-main__link
 	color: $white
-	font: 400 26px $PR
+	font-size: 26px 
+	font-family: $PR
 	text-transform: uppercase
 	+css-lock(16, 26, 560, 639)
 .mobnav-main__link--pink
@@ -188,7 +195,8 @@
 		padding: 10px 0
 .mobnav-second__link
 	color: $gray
-	font: 400 18px $PR
+	font-size: 18px
+	font-family: $PR
 	+css-lock(14, 18, 560, 639)
 .mobnav-second
 	margin-bottom: 46px

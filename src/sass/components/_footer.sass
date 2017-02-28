@@ -31,7 +31,9 @@
 	+r(991)
 		display: none
 .footer__location, .footer__phone
-	font: 400 20px/1.8em $PR
+	font-size: 20px
+	line-height: 1.8em
+	font-family: $PR
 	+css-lock(16, 20, 992, 1200)
 	+r(991)
 		font-size: 20px
@@ -61,12 +63,13 @@
 	+css-lock(10, 72, 1200, 1599, "margin-right")
 	&:last-of-type
 		margin-right: 0
-	//margin-right: 37px
 .footer_submenu-link
 	color: $black-light
 	transition: all .3s
 	border-bottom: 1px solid #c1c1c1
-	font: 400 18px/2em $PR
+	font-size: 18px
+	line-height: 2em
+	font-family: $PR
 	letter-spacing: -1px
 	+css-lock(16, 18, 1200, 1599)
 	&:hover
@@ -95,10 +98,13 @@
 	background: #fff
 	padding: 19px 12px
 	width: 100%
-	font: 400 18px $PR
+	font-size: 18px
+	font-family: $PR
 	color: #c1c1c1
 	border: 1px solid transparent
 	transition: all .3s
+	+r(991)
+		padding: 16px 12px
 	&:focus
 		border-color: $gray-darken
 .form-block__btn
@@ -109,4 +115,8 @@
 	background-color: #585858
 	color: #7f7f7f
 	text-align: center
-	font: 400 16px/1em $PR
+	font-size: 16px
+	line-height: 1em
+	font-family: $PR
+	+r(991)
+		margin-top: 30px
