@@ -1,20 +1,31 @@
 .catalog
 	padding-top: 48px
+	&__quantity
+		display: inline-block
+		font-family: $PS
+		font-size: 26px
+	&__h1
+		margin-right: 34px
+	&__quantity
+		color: $gray
+	&__container
+		+clr
 .ctopline
 	background: $catalog-topline-color
-.ctopline__wrapper
-	+clr
-	padding: 14px 8px 14px 18px
-	font-size: 0
-	+vertical
-.ctopline__left, .ctopline__right
-	display: inline-block
-	width: 50%
-	vertical-align: middle
-.ctopline__left
-	text-align: left
-.ctopline__right
-	text-align: right
+	margin-bottom: 40px
+	&__wrapper
+		+clr
+		padding: 14px 8px 14px 18px
+		font-size: 0
+		+vertical
+	&__left, &__right
+		display: inline-block
+		width: 50%
+		vertical-align: middle
+	&__left
+		text-align: left
+	&__right
+		text-align: right
 .sorting
 	font-size: 18px
 	.select_wrapper
@@ -25,67 +36,105 @@
 			min-width: auto
 	.select-view	
 		padding: 0 30px 0 0
-.catalog__quantity
-	display: inline-block
-	font-family: $PS
-	font-size: 26px
-.catalog__h1
-	margin-right: 34px
-.catalog__quantity
-	color: $gray
-.catalog__container
-	+clr
-.sorting__title
-	color: #cacaca
-	font-family: $PR
-	margin-right: 26px
+	&__title
+		color: #cacaca
+		font-family: $PR
+		margin-right: 26px
 .cfilter
 	width: 280px
 	float: left
+	&__price-wrapper
+		font-size: 0
+		margin-bottom: 22px
+	&__wrapper
+		display: none
+	&__price-input
+		padding: 12px 8px
+		background-color: #f3f3f3
+		border: 1px solid #e6e6e6
+		width: 128px
+		display: inline-block
+		margin-right: 24px
+		color: $gray
+		font-family: $PR
+		font-size: 20px
+		+placeholder-color($gray)
+		&:last-of-type
+			margin-right: 0
+	&__option
+		padding-bottom: 37px
+		padding-top: 26px
+		border-top: 1px solid #dfdfdf
+		&:first-of-type
+			border-top: none
+	&__title
+		cursor: pointer
+		display: inline-block
+		color: #9f9f9f
+		margin-bottom: 16px
+		position: relative
+		font-family: $PS
+		font-size: 20px
+		line-height: 1em
+		&:after
+			content: ''
+			position: absolute
+			right: -22px
+			top: 50%
+			margin-top: -3px
+			+arr(14, 7, #9ea2a3, b)
+			transition: all .3s
+	&__title.is-open
+		&:after
+			transform: rotateX(180deg)
+	&__title--without-arrow 
+		cursor: default
+		&:after
+			display: none
+	&__btn
+		padding: 30px 
+		background: $pink
+		font-family: $PS
+		font-size: 22px
+		text-transform: uppercase
+		color: $white
+		text-align: center
+		display: block
+		width: 100%
+.check-block
+	&__input
+		display: none
+		&:checked + label >.check-block__icon
+			&:before
+				background: $pink
+	&__text
+		+nosel
+		display: inline-block
+		color: $black
+		font-family: $PR
+		font-size: 18px
+		line-height: 1.78em
+		cursor: pointer
+	&__icon
+		margin-right: 12px
+		display: inline-block
+		cursor: pointer
+		width: 25px
+		height: 25px
+		background-color: #f3f3f3
+		border: 1px solid #e6e6e6
+		position: relative
+		top: 5px
+		&:before
+			content: ''
+			transition: all .2s
+			+vcenter
+			width: 13px
+			height: 13px
+			background: transparent
+		&:hover
+			&:before
+				background-color: #e6e6e6
 .clist
 	float: right
 	max-width: 1257px
-.cfilter__options
-	padding-bottom: 37px
-	border-top: 1px solid #dfdfdf
-	&:first-of-type
-		border-top: none
-.cfilter__title
-	color: #9f9f9f
-	font-family: $PS
-	font-size: 20px
-	line-height: 1em
-.check-block
-.check-block__input
-	display: none
-	&:checked + label >.check-block__icon
-		&:before
-			background: $pink
-.check-block__text
-	+nosel
-	display: inline-block
-	color: $black
-	font-family: $PR
-	font-size: 18px
-	line-height: 1.78em
-	cursor: pointer
-.check-block__icon
-	margin-right: 12px
-	display: inline-block
-	cursor: pointer
-	width: 25px
-	height: 25px
-	background-color: #f3f3f3
-	border: 1px solid #e6e6e6
-	position: relative
-	top: 5px
-	&:before
-		content: ''
-		transition: all .2s
-		+vcenter
-		width: 13px
-		height: 13px
-		background: transparent
-	&:hover
-		&:before
-			background-color: #e6e6e6

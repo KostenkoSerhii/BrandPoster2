@@ -164,20 +164,194 @@
           <!--begin cfilter-->
           <div class="cfilter">
             <form>
-              <div class="cfilter__options ">
-                <div class="cfilter__price"> <span class="cfilter__title">Цена (руб):</span> </div>
+              <!-- begin cfilter__option -->
+              <div class="cfilter__option cfilter__price"> <span class="cfilter__title cfilter__title--without-arrow ">Цена (руб):</span>
+                <div class="cfilter__price-wrapper"> <input class="cfilter__price-input" id="priceInput1" type="text" placeholder="от"> <input class="cfilter__price-input" id="priceInput2" type="text" placeholder="до"> </div>
+                <div id="priceSlider"> </div>
               </div>
-              <div class="cfilter__options "> <span class="cfilter__title">Цена (руб):</span>
-                <div class="check-block"> <input class="check-block__input" type="checkbox" id="opt1"> <label class="check-block__text" for="opt1"> 
+              <!-- end cfilter__option -->
+              <!-- begin cfilter__option -->
+              <div class="cfilter__option "> <span class="cfilter__title js-drop-option">Размер</span>
+                <div class="cfilter__wrapper">
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterSize1"> <label class="check-block__text" for="filterSize1"> 
 							<i class="check-block__icon"></i> 
 							1,5-спальный
 						</label> </div>
-                <div class="check-block"> <input class="check-block__input" type="checkbox" id="opt2"> <label class="check-block__text" for="opt2"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterSize2"> <label class="check-block__text" for="filterSize2"> 
 							<i class="check-block__icon"></i> 
 							2-спальный
 						</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterSize3"> <label class="check-block__text" for="filterSize3"> 
+							<i class="check-block__icon"></i> 
+							Евро
+						</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterSize4"> <label class="check-block__text" for="filterSize4"> 
+							<i class="check-block__icon"></i> 
+							Семейный
+						</label> </div>
+                </div>
               </div>
-            </form>
+              <!-- end cfilter__option -->
+              <!-- begin cfilter__option -->
+              <div class="cfilter__option "> <span class="cfilter__title js-drop-option">Материал</span>
+                <div class="cfilter__wrapper">
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterMaterial1"> <label class="check-block__text" for="filterMaterial1"> 
+								<i class="check-block__icon"></i> 
+								Бязь
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterMaterial2"> <label class="check-block__text" for="filterMaterial2"> 
+								<i class="check-block__icon"></i> 
+								Поплин
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterMaterial3"> <label class="check-block__text" for="filterMaterial3"> 
+								<i class="check-block__icon"></i> 
+								Перкаль
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterMaterial4"> <label class="check-block__text" for="filterMaterial4"> 
+								<i class="check-block__icon"></i> 
+								Сатин
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterMaterial5"> <label class="check-block__text" for="filterMaterial5"> 
+								<i class="check-block__icon"></i> 
+								Жаккард
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterMaterial6"> <label class="check-block__text" for="filterMaterial6"> 
+								<i class="check-block__icon"></i> 
+								Бамбук
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterMaterial7"> <label class="check-block__text" for="filterMaterial7"> 
+								<i class="check-block__icon"></i> 
+								Шелк
+							</label> </div>
+                </div>
+              </div>
+              <!-- end cfilter__option -->
+              <!-- begin cfilter__option -->
+              <div class="cfilter__option "> <span class="cfilter__title js-drop-option">Рисунок</span>
+                <div class="cfilter__wrapper">
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage1"> <label class="check-block__text" for="filterImage1"> 
+								<i class="check-block__icon"></i> 
+								3D эффект
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage2"> <label class="check-block__text" for="filterImage2"> 
+								<i class="check-block__icon"></i> 
+								Узоры
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage3"> <label class="check-block__text" for="filterImage3"> 
+								<i class="check-block__icon"></i> 
+								Геометрия
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage4"> <label class="check-block__text" for="filterImage4"> 
+								<i class="check-block__icon"></i> 
+								Природа
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage5"> <label class="check-block__text" for="filterImage5"> 
+								<i class="check-block__icon"></i> 
+								Море
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage6"> <label class="check-block__text" for="filterImage6"> 
+								<i class="check-block__icon"></i> 
+								Города
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage7"> <label class="check-block__text" for="filterImage7"> 
+								<i class="check-block__icon"></i> 
+								Люди
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage8"> <label class="check-block__text" for="filterImage8"> 
+								<i class="check-block__icon"></i> 
+								Животные
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage9"> <label class="check-block__text" for="filterImage9"> 
+								<i class="check-block__icon"></i> 
+								Птицы
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage10"> <label class="check-block__text" for="filterImage10"> 
+								<i class="check-block__icon"></i> 
+								Бабочки
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage1"> <label class="check-block__text" for="filterImage1"> 
+								<i class="check-block__icon"></i> 
+								Фрукты
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage12"> <label class="check-block__text" for="filterImage12"> 
+								<i class="check-block__icon"></i> 
+								Искусство
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage13"> <label class="check-block__text" for="filterImage13"> 
+								<i class="check-block__icon"></i> 
+								Техника
+							</label> </div>
+                </div>
+              </div>
+              <!-- end cfilter__option -->
+              <!-- begin cfilter__option -->
+              <div class="cfilter__option "> <span class="cfilter__title js-drop-option">Цвет</span>
+                <div class="cfilter__wrapper">
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor1"> <label class="check-block__text" for="filterColor1"> 
+								<i class="check-block__icon"></i> 
+								Белый
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor2"> <label class="check-block__text" for="filterColor2"> 
+								<i class="check-block__icon"></i> 
+								Кремовый
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor3"> <label class="check-block__text" for="filterColor3"> 
+								<i class="check-block__icon"></i> 
+								Бежевый
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor4"> <label class="check-block__text" for="filterColor4"> 
+								<i class="check-block__icon"></i> 
+								Персиковый
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor5"> <label class="check-block__text" for="filterColor5"> 
+								<i class="check-block__icon"></i> 
+								Розовый
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor6"> <label class="check-block__text" for="filterColor6"> 
+								<i class="check-block__icon"></i> 
+								Желтый
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor7"> <label class="check-block__text" for="filterColor7"> 
+								<i class="check-block__icon"></i> 
+								Золотой
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor8"> <label class="check-block__text" for="filterColor8"> 
+								<i class="check-block__icon"></i> 
+								Оранжевый
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor9"> <label class="check-block__text" for="filterColor9"> 
+								<i class="check-block__icon"></i> 
+								Красный
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor10"> <label class="check-block__text" for="filterColor10"> 
+								<i class="check-block__icon"></i> 
+								Бордовый
+							</label> </div>
+                </div>
+              </div>
+              <!-- end  cfilter__option -->
+              <!-- begin cfilter__option -->
+              <div class="cfilter__option "> <span class="cfilter__title js-drop-option">Производитель</span>
+                <div class="cfilter__wrapper">
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer1"> <label class="check-block__text" for="filterManufacturer1"> 
+								<i class="check-block__icon"></i> 
+								Cleo
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer2"> <label class="check-block__text" for="filterManufacturer2"> 
+								<i class="check-block__icon"></i> 
+								Cotton Dreams
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer3"> <label class="check-block__text" for="filterManufacturer3"> 
+								<i class="check-block__icon"></i> 
+								Narcissa
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer4"> <label class="check-block__text" for="filterManufacturer4"> 
+								<i class="check-block__icon"></i> 
+								Prima Casa
+							</label> </div>
+                </div>
+              </div>
+              <!-- end  cfilter__option --><button class="cfilter__btn" type="submit">Применить</button> </form>
           </div>
           <!--end cfilter-->
           <!--begin clist-->
@@ -252,10 +426,6 @@
       <!-- 	
 	
 	
-	
-	<li>Item1</li>
-	
-	<li>Item2</li>
 	
 	 -->
     </div>

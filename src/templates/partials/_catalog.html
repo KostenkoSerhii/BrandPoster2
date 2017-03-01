@@ -39,31 +39,104 @@
 	<!--begin container-->
 	<div class="container catalog__container">
 		<!--begin cfilter-->
+
+
+		{% import "data/data.html" as tests %}
+
 		<div class="cfilter">
 			<form>
-				<div class="cfilter__options ">
-					<div class="cfilter__price">
-						<span class="cfilter__title">Цена (руб):</span>
+				<!-- begin cfilter__option -->
+				<div class="cfilter__option cfilter__price">
+					<span class="cfilter__title cfilter__title--without-arrow ">Цена (руб):</span>
+					<div class="cfilter__price-wrapper">
+						<input class="cfilter__price-input" id="priceInput1" type="text" placeholder="от">
+						<input class="cfilter__price-input" id="priceInput2" type="text" placeholder="до">
+					</div>
+					<div  id="priceSlider">
 					</div>
 				</div>
-				<div class="cfilter__options ">
-					<span class="cfilter__title">Цена (руб):</span>
+				<!-- end cfilter__option -->
+				<!-- begin cfilter__option -->
+				<div class="cfilter__option ">
+					<span class="cfilter__title js-drop-option">Размер</span>
+					<div class="cfilter__wrapper">			
+					{% for test in tests.filterSize %}
 					<div class="check-block">
-						<input class="check-block__input" type="checkbox" id="opt1">
-						<label class="check-block__text" for="opt1"> 
+						<input class="check-block__input" type="checkbox" id="{{test.id}}">
+						<label class="check-block__text" for="{{test.id}}"> 
 							<i class="check-block__icon"></i> 
-							1,5-спальный
+							{{test.opt}}
 						</label>
 					</div>
-					<div class="check-block">
-						<input class="check-block__input" type="checkbox" id="opt2">
-						<label class="check-block__text" for="opt2"> 
-							<i class="check-block__icon"></i> 
-							2-спальный
-						</label>
+					{% endfor %}
 					</div>
-
 				</div>
+				<!-- end cfilter__option -->
+				<!-- begin cfilter__option -->
+				<div class="cfilter__option ">
+					<span class="cfilter__title js-drop-option">Материал</span>
+					<div class="cfilter__wrapper">
+						{% for test in tests.filterMaterial %}
+						<div class="check-block">
+							<input class="check-block__input" type="checkbox" id="{{test.id}}">
+							<label class="check-block__text" for="{{test.id}}"> 
+								<i class="check-block__icon"></i> 
+								{{test.opt}}
+							</label>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+				<!-- end cfilter__option -->
+				<!-- begin cfilter__option -->
+				<div class="cfilter__option ">
+					<span class="cfilter__title js-drop-option">Рисунок</span>
+					<div class="cfilter__wrapper">
+						{% for test in tests.filterImage %}
+						<div class="check-block">
+							<input class="check-block__input" type="checkbox" id="{{test.id}}">
+							<label class="check-block__text" for="{{test.id}}"> 
+								<i class="check-block__icon"></i> 
+								{{test.opt}}
+							</label>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+				<!-- end cfilter__option -->
+				<!-- begin cfilter__option -->
+				<div class="cfilter__option ">
+					<span class="cfilter__title js-drop-option">Цвет</span>
+					<div class="cfilter__wrapper">
+						{% for test in tests.filterColor %}
+						<div class="check-block">
+							<input class="check-block__input" type="checkbox" id="{{test.id}}">
+							<label class="check-block__text" for="{{test.id}}"> 
+								<i class="check-block__icon"></i> 
+								{{test.opt}}
+							</label>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+				<!-- end  cfilter__option -->
+				<!-- begin cfilter__option -->
+				<div class="cfilter__option ">
+					<span class="cfilter__title js-drop-option">Производитель</span>
+					<div class="cfilter__wrapper">
+						{% for test in tests.filterManufacturer %}
+						<div class="check-block">
+							<input class="check-block__input" type="checkbox" id="{{test.id}}">
+							<label class="check-block__text" for="{{test.id}}"> 
+								<i class="check-block__icon"></i> 
+								{{test.opt}}
+							</label>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+				<!-- end  cfilter__option -->
+				<button class="cfilter__btn" type="submit">Применить</button>
 			</form>
 		</div>
 		<!--end cfilter-->

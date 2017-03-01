@@ -3,6 +3,7 @@
 //=include lib/jquery.min.js
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
+//=include lib/nouislider.min.js
 
 sayHello();
 $(document).ready(function(){
@@ -27,6 +28,14 @@ $(document).ready(function(){
 	});
 
 //=include components/select.js
+//=include components/noUiSlider.js
+
+// filter drop
+$(".js-drop-option").on("click", function(){
+	var _this = $(this);
+	_this.toggleClass("is-open").next(".cfilter__wrapper").slideToggle();
+
+});
 
 	//$(".scroll-js").on("click", function(e){
 	//	e.preventDefault();
