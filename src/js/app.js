@@ -26,6 +26,8 @@ $(document).ready(function(){
 		};
 	});
 
+//=include components/select.js
+
 	//$(".scroll-js").on("click", function(e){
 	//	e.preventDefault();
 	//	var a = $(this).attr("href");

@@ -1,0 +1,56 @@
+$select-color: $black
+$select-bg-not: #fff
+$select-border-color: #e2e2e2
+$select-font: 400 15px/1em Arial, sans-serif
+$select-active-li: #eaeaea
+$select-hover-li: #f9f9f9
+$select_wrapper-width: auto
+.select-view	
+	color: $select-color
+	cursor: pointer
+	font-family: $PR
+	font-size: 18px
+	padding: 0 20px 0 0
+	position: relative
+	&:after
+		transition: all .3s
+		content: ''
+		position: absolute
+		right: 10px
+		top: 50%
+		margin-top: -2px
+		+arr(8, 6, $select-color, b)
+.select_wrapper
+	display: inline-block
+	width: $select_wrapper-width
+	position: relative
+	.active
+		&:after
+			transform: rotateX(180deg)
+ul.select-options
+	background: $select-bg-not
+	position: absolute
+	display: none
+	cursor: pointer
+	border: 1px solid #e2e2e2
+	z-index: 22
+	text-align: left
+	// height: 200px
+	// overflow-y: scroll
+	li
+		color: $select-color
+		font-family: $PR
+		font-size: 15px
+		padding: 5px 8px
+		transition: background .4s
+
+		&[rel="hide"] 
+			display: none
+		&.active
+			background: $select-active-li
+			&:hover
+				background: $select-active-li
+		&:hover
+			background: $select-hover-li
+.select-hidden
+	display: none
