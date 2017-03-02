@@ -52,7 +52,11 @@
 						<input class="cfilter__price-input" id="priceInput1" type="text" placeholder="от">
 						<input class="cfilter__price-input" id="priceInput2" type="text" placeholder="до">
 					</div>
-					<div  id="priceSlider">
+					<div class="cfilter__slider"  id="priceSlider">
+					</div>
+					<div class="cfilter__price-wrapper">
+						<span class="cfilter__price-min" id="cfilter-price-min">1</span>
+						<span class="cfilter__price-max" id="cfilter-price-max"></span>
 					</div>
 				</div>
 				<!-- end cfilter__option -->
@@ -60,15 +64,15 @@
 				<div class="cfilter__option ">
 					<span class="cfilter__title js-drop-option">Размер</span>
 					<div class="cfilter__wrapper">			
-					{% for test in tests.filterSize %}
-					<div class="check-block">
-						<input class="check-block__input" type="checkbox" id="{{test.id}}">
-						<label class="check-block__text" for="{{test.id}}"> 
-							<i class="check-block__icon"></i> 
-							{{test.opt}}
-						</label>
-					</div>
-					{% endfor %}
+						{% for test in tests.filterSize %}
+						<div class="check-block">
+							<input class="check-block__input" type="checkbox" id="{{test.id}}">
+							<label class="check-block__text" for="{{test.id}}"> 
+								<i class="check-block__icon"></i> 
+								{{test.opt}}
+							</label>
+						</div>
+						{% endfor %}
 					</div>
 				</div>
 				<!-- end cfilter__option -->

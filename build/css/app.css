@@ -1483,10 +1483,6 @@ a {
   margin-bottom: 22px;
 }
 
-.cfilter__wrapper {
-  display: none;
-}
-
 .cfilter__price-input {
   padding: 12px 8px;
   background-color: #f3f3f3;
@@ -1517,6 +1513,26 @@ a {
 
 .cfilter__price-input:last-of-type {
   margin-right: 0;
+}
+
+.cfilter__slider {
+  margin-bottom: 15px;
+}
+
+.cfilter__price-min, .cfilter__price-max {
+  width: 50%;
+  font-family: "ProximaNova-Semibold", sans-serif;
+  font-size: 16px;
+  color: #c2c2c2;
+  display: inline-block;
+}
+
+.cfilter__price-max {
+  text-align: right;
+}
+
+.cfilter__wrapper {
+  display: none;
 }
 
 .cfilter__option {

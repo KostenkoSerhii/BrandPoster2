@@ -46,8 +46,6 @@
 	&__price-wrapper
 		font-size: 0
 		margin-bottom: 22px
-	&__wrapper
-		display: none
 	&__price-input
 		padding: 12px 8px
 		background-color: #f3f3f3
@@ -61,6 +59,18 @@
 		+placeholder-color($gray)
 		&:last-of-type
 			margin-right: 0
+	&__slider
+		margin-bottom: 15px
+	&__price-min, &__price-max
+		width: 50%
+		font-family: $PS
+		font-size: 16px
+		color: $gray
+		display: inline-block
+	&__price-max
+		text-align: right
+	&__wrapper
+		display: none
 	&__option
 		padding-bottom: 37px
 		padding-top: 26px
