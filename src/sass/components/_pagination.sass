@@ -1,0 +1,40 @@
+.pagin
+	margin: 110px 0
+	&__list
+		text-align: center
+		font-size: 0
+	&__item
+		display: inline-block
+		transition: all .3s
+		&:hover
+			background-color: #efefef
+	&__prev-item
+		margin-right: 60px
+	&__next-item
+		margin-left: 60px
+	&__link
+		font-family: $PS
+		font-size: 26px
+		line-height: 56px
+		color: $gray
+		display: inline-block
+		vertical-align: middle
+		width: 56px
+		height: 56px
+	&__link--active
+		color: $white
+		background-color: $pink
+	&__prev-link, &__next-link
+
+		position: relative
+
+		&:before
+			content: ''
+			+vcenter
+	&__prev-link
+
+		&:before
+			+arr(11, 13, #6b6b6b, l)
+	&__next-link
+		&:before
+			+arr(11, 13, #6b6b6b, r)
