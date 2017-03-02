@@ -11,28 +11,16 @@ a
 	font-family: $PS
 	font-size: 26px
 	text-transform: uppercase
+	+r(639)
+		font-size: 22px
 .h1--hidden
 	+hidetext
 .h2
-	display: table-cell
-	vertical-align: middle
-	color: $white
-	font-family: $PBK
+	font-family: $PS
+	color: $gray-darnest
+	font-size: 30px
+	line-height: 1em
 	font-weight: normal
-	line-height: 1.3em
-	text-transform: uppercase
-	+css-lock(52, 95, 991, 1599)
-	+r(991)
-		line-height: 0.6em
-	+r(639)
-		font-size: 24px
-	span
-		position: relative
-		font-family: $PT
-		+css-lock(35, 65, 991, 1599)
-		+css-lock(12, -42, 991, 1599, "top")
-		+r(639)
-			font-size: 20px
 .h3
 	text-align: center
 	color: $pink

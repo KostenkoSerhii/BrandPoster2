@@ -12,8 +12,13 @@ title: Index page
 {# partial example #}
 
 {% include "partials/_header.html" %}
-{% include "partials/_banners.html" %}
-{% include "partials/_catalog.html" %}
+<!--begin catalog-page-->
+<div class="catalog-page">
+	{% include "partials/_banners.html" %}
+	{% include "partials/_catalog.html" %}
+	{% include "partials/_banners.html" %}
+</div>
+<!--end catalog-page-->
 {% include "partials/_footer.html" %}
 {% include "partials/_popups.html" %}
 

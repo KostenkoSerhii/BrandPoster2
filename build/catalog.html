@@ -16,7 +16,7 @@
       <!-- 	
 <h1>Index page</h1>
 -->
-      <header class="header">
+      <header class="header header-js">
         <!-- begin container -->
         <!--begin topline-->
         <div class="topline">
@@ -100,50 +100,52 @@
         </div>
         <!-- end container -->
       </header>
-      <!-- begin banners -->
-      <div class="banners" id="banners">
-        <!-- begin container -->
-        <div class="container">
-          <div class="three-col-list">
-            <div class="banner three-col-list__item">
-              <a class="banner__link" href="#" style="background-image: url('img/banner1-bg.jpg');"> <strong class="banner__title">Постельное
+      <!--begin catalog-page-->
+      <div class="catalog-page">
+        <!-- begin banners -->
+        <div class="banners" id="banners">
+          <!-- begin container -->
+          <div class="container">
+            <div class="three-col-list">
+              <div class="banner three-col-list__item">
+                <a class="banner__link" href="#" style="background-image: url('img/banner1-bg.jpg');"> <strong class="banner__title">Постельное
 						белье
 					</strong>
-                <div class="banner__price">от 599<span>руб</span></div>
-              </a>
-            </div>
-            <div class="banner three-col-list__item">
-              <a class="banner__link" href="#" style="background-image: url('img/banner2-bg.jpg');"> <strong class="banner__title banner__title--large">Акция</strong> <span class="banner__date">02.03.17</span> </a>
-            </div>
-            <div class="banner three-col-list__item">
-              <a class="banner__link" href="#" style="background-image: url('img/banner3-bg.jpg');"> <strong class="banner__title">Постельное
+                  <div class="banner__price">от 599<span>руб</span></div>
+                </a>
+              </div>
+              <div class="banner three-col-list__item">
+                <a class="banner__link" href="#" style="background-image: url('img/banner2-bg.jpg');"> <strong class="banner__title banner__title--large">Акция</strong> <span class="banner__date">02.03.17</span> </a>
+              </div>
+              <div class="banner three-col-list__item">
+                <a class="banner__link" href="#" style="background-image: url('img/banner3-bg.jpg');"> <strong class="banner__title">Постельное
 						белье
 					</strong>
-                <div class="banner__price">от 599<span>руб</span></div>
-              </a>
+                  <div class="banner__price">от 599<span>руб</span></div>
+                </a>
+              </div>
             </div>
           </div>
+          <!-- end container -->
         </div>
-        <!-- end container -->
-      </div>
-      <!-- end banners -->
-      <!--begin catalog-->
-      <div class="catalog">
-        <!--begin ctopline-->
-        <div class="ctopline">
-          <!--begin container-->
-          <div class="container">
-            <div class="ctopline__wrapper">
-              <!--begin ctopline__left-->
-              <div class="ctopline__left">
-                <h1 class="h1 catalog__h1">Постельное белье</h1>
-                <p class="catalog__quantity"> <span>5 785</span> вариантов </p>
-              </div>
-              <!--end ctopline__left-->
-              <!--begin ctopline__right-->
-              <div class="ctopline__right">
-                <!--begin sorting-->
-                <div class="sorting"> <span class="sorting__title">Сортировка:</span> <select class="select">
+        <!-- end banners -->
+        <!--begin catalog-->
+        <div class="catalog">
+          <!--begin ctopline-->
+          <div class="ctopline">
+            <!--begin container-->
+            <div class="container">
+              <div class="ctopline__wrapper">
+                <!--begin ctopline__left-->
+                <div class="ctopline__left">
+                  <h1 class="h1 catalog__h1">Постельное белье</h1>
+                  <p class="catalog__quantity"> <span>5 785</span> вариантов </p>
+                </div>
+                <!--end ctopline__left-->
+                <!--begin ctopline__right-->
+                <div class="ctopline__right ctopline-js">
+                  <!--begin sorting-->
+                  <div class="sorting"> <span class="sorting__title">Сортировка:</span> <select class="select">
 							<option value="op1">По популярности</option>
 							<option value="op1">От дешевых к дорогим</option>
 							<option value="op2">По цене</option>
@@ -151,24 +153,28 @@
 							<option value="op1">Все</option>
 							<option value="op2">Не все</option>
 						</select> </div>
-                <!--end sorting-->
+                  <!--end sorting-->
+                </div>
+                <!--end ctopline__right-->
+                <div class="filter-btn js-filter-btn"></div>
               </div>
-              <!--end ctopline__right-->
             </div>
+            <!--end container-->
+            <!--begin cfilter-drop cfilter-drop-js-->
+            <div class="cfilter-dropbox cfilter-dropbox-js"> </div>
+            <!--end cfilter-drop cfilter-drop-js-->
           </div>
-          <!--end container-->
-        </div>
-        <!--end ctopline-->
-        <!--begin container-->
-        <div class="container catalog__container">
-          <!--begin cfilter-->
-          <div class="cfilter">
-            <form>
+          <!--end ctopline-->
+          <!--begin container-->
+          <div class="container catalog__container">
+            <!--begin cfilter-->
+            <div class="cfilter cfilter-js">
+              <!-- <form> -->
               <!-- begin cfilter__option -->
               <div class="cfilter__option cfilter__price"> <span class="cfilter__title cfilter__title--without-arrow ">Цена (руб):</span>
-                <div class="cfilter__price-wrapper"> <input class="cfilter__price-input" id="priceInput1" type="text" placeholder="от"> <input class="cfilter__price-input" id="priceInput2" type="text" placeholder="до"> </div>
+                <div class="cfilter__price-wrapper"> <input class="cfilter__price-input" id="priceInputMin" type="text" placeholder="от"> <input class="cfilter__price-input" id="priceInputMax" type="text" placeholder="до"> </div>
                 <div class="cfilter__slider" id="priceSlider"> </div>
-                <div class="cfilter__price-wrapper"> <span class="cfilter__price-min" id="cfilter-price-min">1</span> <span class="cfilter__price-max" id="cfilter-price-max"></span> </div>
+                <div class="cfilter__price-wrapper"> <span class="cfilter__price-min" id="cfilter-price-min">1290</span> <span class="cfilter__price-max" id="cfilter-price-max">9400</span> </div>
               </div>
               <!-- end cfilter__option -->
               <!-- begin cfilter__option -->
@@ -230,55 +236,59 @@
               <!-- begin cfilter__option -->
               <div class="cfilter__option "> <span class="cfilter__title js-drop-option">Рисунок</span>
                 <div class="cfilter__wrapper">
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage1"> <label class="check-block__text" for="filterImage1"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage1"> <label class="check-block__text" for="filterImage1">
 								<i class="check-block__icon"></i> 
 								3D эффект
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage2"> <label class="check-block__text" for="filterImage2"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage2"> <label class="check-block__text" for="filterImage2">
+								<i class="check-block__icon"></i> 
+								Цветы
+							</label> </div>
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage3"> <label class="check-block__text" for="filterImage3">
 								<i class="check-block__icon"></i> 
 								Узоры
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage3"> <label class="check-block__text" for="filterImage3"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage4"> <label class="check-block__text" for="filterImage4">
 								<i class="check-block__icon"></i> 
 								Геометрия
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage4"> <label class="check-block__text" for="filterImage4"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage5"> <label class="check-block__text" for="filterImage5">
 								<i class="check-block__icon"></i> 
 								Природа
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage5"> <label class="check-block__text" for="filterImage5"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage6"> <label class="check-block__text" for="filterImage6">
 								<i class="check-block__icon"></i> 
 								Море
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage6"> <label class="check-block__text" for="filterImage6"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage7"> <label class="check-block__text" for="filterImage7">
 								<i class="check-block__icon"></i> 
 								Города
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage7"> <label class="check-block__text" for="filterImage7"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage8"> <label class="check-block__text" for="filterImage8">
 								<i class="check-block__icon"></i> 
 								Люди
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage8"> <label class="check-block__text" for="filterImage8"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage9"> <label class="check-block__text" for="filterImage9">
 								<i class="check-block__icon"></i> 
 								Животные
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage9"> <label class="check-block__text" for="filterImage9"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage10"> <label class="check-block__text" for="filterImage10">
 								<i class="check-block__icon"></i> 
 								Птицы
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage10"> <label class="check-block__text" for="filterImage10"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage11"> <label class="check-block__text" for="filterImage11">
 								<i class="check-block__icon"></i> 
 								Бабочки
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage1"> <label class="check-block__text" for="filterImage1"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage12"> <label class="check-block__text" for="filterImage12">
 								<i class="check-block__icon"></i> 
 								Фрукты
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage12"> <label class="check-block__text" for="filterImage12"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage13"> <label class="check-block__text" for="filterImage13">
 								<i class="check-block__icon"></i> 
 								Искусство
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage13"> <label class="check-block__text" for="filterImage13"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterImage14"> <label class="check-block__text" for="filterImage14">
 								<i class="check-block__icon"></i> 
 								Техника
 							</label> </div>
@@ -288,43 +298,43 @@
               <!-- begin cfilter__option -->
               <div class="cfilter__option "> <span class="cfilter__title js-drop-option">Цвет</span>
                 <div class="cfilter__wrapper">
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor1"> <label class="check-block__text" for="filterColor1"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor1"> <label class="check-block__text" for="filterColor1">
 								<i class="check-block__icon"></i> 
 								Белый
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor2"> <label class="check-block__text" for="filterColor2"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor2"> <label class="check-block__text" for="filterColor2">
 								<i class="check-block__icon"></i> 
 								Кремовый
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor3"> <label class="check-block__text" for="filterColor3"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor3"> <label class="check-block__text" for="filterColor3">
 								<i class="check-block__icon"></i> 
 								Бежевый
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor4"> <label class="check-block__text" for="filterColor4"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor4"> <label class="check-block__text" for="filterColor4">
 								<i class="check-block__icon"></i> 
 								Персиковый
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor5"> <label class="check-block__text" for="filterColor5"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor5"> <label class="check-block__text" for="filterColor5">
 								<i class="check-block__icon"></i> 
 								Розовый
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor6"> <label class="check-block__text" for="filterColor6"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor6"> <label class="check-block__text" for="filterColor6">
 								<i class="check-block__icon"></i> 
 								Желтый
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor7"> <label class="check-block__text" for="filterColor7"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor7"> <label class="check-block__text" for="filterColor7">
 								<i class="check-block__icon"></i> 
 								Золотой
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor8"> <label class="check-block__text" for="filterColor8"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor8"> <label class="check-block__text" for="filterColor8">
 								<i class="check-block__icon"></i> 
 								Оранжевый
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor9"> <label class="check-block__text" for="filterColor9"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor9"> <label class="check-block__text" for="filterColor9">
 								<i class="check-block__icon"></i> 
 								Красный
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor10"> <label class="check-block__text" for="filterColor10"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterColor10"> <label class="check-block__text" for="filterColor10">
 								<i class="check-block__icon"></i> 
 								Бордовый
 							</label> </div>
@@ -334,35 +344,147 @@
               <!-- begin cfilter__option -->
               <div class="cfilter__option "> <span class="cfilter__title js-drop-option">Производитель</span>
                 <div class="cfilter__wrapper">
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer1"> <label class="check-block__text" for="filterManufacturer1"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer1"> <label class="check-block__text" for="filterManufacturer1">
 								<i class="check-block__icon"></i> 
 								Cleo
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer2"> <label class="check-block__text" for="filterManufacturer2"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer2"> <label class="check-block__text" for="filterManufacturer2">
 								<i class="check-block__icon"></i> 
 								Cotton Dreams
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer3"> <label class="check-block__text" for="filterManufacturer3"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer3"> <label class="check-block__text" for="filterManufacturer3">
 								<i class="check-block__icon"></i> 
 								Narcissa
 							</label> </div>
-                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer4"> <label class="check-block__text" for="filterManufacturer4"> 
+                  <div class="check-block"> <input class="check-block__input" type="checkbox" id="filterManufacturer4"> <label class="check-block__text" for="filterManufacturer4">
 								<i class="check-block__icon"></i> 
 								Prima Casa
 							</label> </div>
                 </div>
               </div>
-              <!-- end  cfilter__option --><button class="cfilter__btn" type="submit">Применить</button> </form>
+              <!-- end  cfilter__option --><button class="cfilter__btn" type="submit">Применить</button>
+              <!-- </form> -->
+            </div>
+            <!--end cfilter-->
+            <!--begin clist-->
+            <div class="clist">
+              <!--begin clist__item-->
+              <div class="clist__item">
+                <a class="clist__product-link" href="#">
+                  <div class="clist__img" style="background-image: url('img/cat1.jpg');"></div>
+                  <h2 class="h2 clist__h2">Постельное белье Kingsilk</h2> <span class="clist__option">2-х спальное</span>
+                  <div class="clist__old-price">3990 <span>руб</span></div>
+                  <div class="clist__price clist__price--pink ">2990<span> руб</span></div> <a href="#1" class="clist__basket-link">в корзину</a> </a>
+              </div>
+              <!--end clist__item-->
+              <!--begin clist__item-->
+              <div class="clist__item">
+                <a class="clist__product-link" href="#">
+                  <div class="clist__img" style="background-image: url('img/cat2.jpg');"></div>
+                  <h2 class="h2 clist__h2">Постельное белье Kingsilk</h2> <span class="clist__option">2-х спальное</span>
+                  <div class="clist__old-price">2990 <span>руб</span></div>
+                  <div class="clist__price ">2990<span> руб</span></div> <a href="#1" class="clist__basket-link">в корзину</a> </a>
+              </div>
+              <!--end clist__item-->
+              <!--begin clist__item-->
+              <div class="clist__item">
+                <a class="clist__product-link" href="#">
+                  <div class="clist__img" style="background-image: url('img/cat3.jpg');"></div>
+                  <h2 class="h2 clist__h2">Постельное белье Kingsilk</h2> <span class="clist__option">2-х спальное</span>
+                  <div class="clist__old-price">2990 <span>руб</span></div>
+                  <div class="clist__price ">3990<span> руб</span></div> <a href="#1" class="clist__basket-link">в корзину</a> </a>
+              </div>
+              <!--end clist__item-->
+              <!--begin clist__item-->
+              <div class="clist__item">
+                <a class="clist__product-link" href="#">
+                  <div class="clist__img" style="background-image: url('img/cat4.jpg');"></div>
+                  <h2 class="h2 clist__h2">Постельное белье Kingsilk</h2> <span class="clist__option">2-х спальное</span>
+                  <div class="clist__old-price">2990 <span>руб</span></div>
+                  <div class="clist__price ">2990<span> руб</span></div> <a href="#1" class="clist__basket-link">в корзину</a> </a>
+              </div>
+              <!--end clist__item-->
+              <!--begin clist__item-->
+              <div class="clist__item">
+                <a class="clist__product-link" href="#">
+                  <div class="clist__img" style="background-image: url('img/cat5.jpg');"></div>
+                  <h2 class="h2 clist__h2">Постельное белье Kingsilk</h2> <span class="clist__option">2-х спальное</span>
+                  <div class="clist__old-price">2990 <span>руб</span></div>
+                  <div class="clist__price ">4990<span> руб</span></div> <a href="#1" class="clist__basket-link">в корзину</a> </a>
+              </div>
+              <!--end clist__item-->
+              <!--begin clist__item-->
+              <div class="clist__item">
+                <a class="clist__product-link" href="#">
+                  <div class="clist__img" style="background-image: url('img/cat6.jpg');"></div>
+                  <h2 class="h2 clist__h2">Постельное белье Kingsilk</h2> <span class="clist__option">2-х спальное</span>
+                  <div class="clist__old-price">2990 <span>руб</span></div>
+                  <div class="clist__price clist__price--pink ">2990<span> руб</span></div> <a href="#1" class="clist__basket-link">в корзину</a> </a>
+              </div>
+              <!--end clist__item-->
+              <!--begin clist__item-->
+              <div class="clist__item">
+                <a class="clist__product-link" href="#">
+                  <div class="clist__img" style="background-image: url('img/cat4.jpg');"></div>
+                  <h2 class="h2 clist__h2">Постельное белье Kingsilk</h2> <span class="clist__option">2-х спальное</span>
+                  <div class="clist__old-price">2990 <span>руб</span></div>
+                  <div class="clist__price ">5990<span> руб</span></div> <a href="#1" class="clist__basket-link">в корзину</a> </a>
+              </div>
+              <!--end clist__item-->
+              <!--begin clist__item-->
+              <div class="clist__item">
+                <a class="clist__product-link" href="#">
+                  <div class="clist__img" style="background-image: url('img/cat5.jpg');"></div>
+                  <h2 class="h2 clist__h2">Постельное белье Kingsilk</h2> <span class="clist__option">2-х спальное</span>
+                  <div class="clist__old-price">2990 <span>руб</span></div>
+                  <div class="clist__price ">2990<span> руб</span></div> <a href="#1" class="clist__basket-link">в корзину</a> </a>
+              </div>
+              <!--end clist__item-->
+              <!--begin clist__item-->
+              <div class="clist__item">
+                <a class="clist__product-link" href="#">
+                  <div class="clist__img" style="background-image: url('img/cat6.jpg');"></div>
+                  <h2 class="h2 clist__h2">Постельное белье Kingsilk</h2> <span class="clist__option">2-х спальное</span>
+                  <div class="clist__old-price">2990 <span>руб</span></div>
+                  <div class="clist__price ">2990<span> руб</span></div> <a href="#1" class="clist__basket-link">в корзину</a> </a>
+              </div>
+              <!--end clist__item-->
+            </div>
+            <!--end clist-->
           </div>
-          <!--end cfilter-->
-          <!--begin clist-->
-          <div class="clist"> dfgdf </div>
-          <!--end clist-->
+          <!--end container-->
         </div>
-        <!--end container-->
+        <!--end catalog-->
+        <!-- begin banners -->
+        <div class="banners" id="banners">
+          <!-- begin container -->
+          <div class="container">
+            <div class="three-col-list">
+              <div class="banner three-col-list__item">
+                <a class="banner__link" href="#" style="background-image: url('img/banner1-bg.jpg');"> <strong class="banner__title">Постельное
+						белье
+					</strong>
+                  <div class="banner__price">от 599<span>руб</span></div>
+                </a>
+              </div>
+              <div class="banner three-col-list__item">
+                <a class="banner__link" href="#" style="background-image: url('img/banner2-bg.jpg');"> <strong class="banner__title banner__title--large">Акция</strong> <span class="banner__date">02.03.17</span> </a>
+              </div>
+              <div class="banner three-col-list__item">
+                <a class="banner__link" href="#" style="background-image: url('img/banner3-bg.jpg');"> <strong class="banner__title">Постельное
+						белье
+					</strong>
+                  <div class="banner__price">от 599<span>руб</span></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- end container -->
+        </div>
+        <!-- end banners -->
       </div>
-      <!--end catalog-->
-      <footer class="footer">
+      <!--end catalog-page-->
+      <footer class="footer footer-js">
         <!-- begin container -->
         <div class="container">
           <div class="footer-main-content">

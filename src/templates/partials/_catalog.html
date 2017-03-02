@@ -14,7 +14,7 @@
 				</div>
 				<!--end ctopline__left-->
 				<!--begin ctopline__right-->
-				<div class="ctopline__right">
+				<div class="ctopline__right ctopline-js">
 					<!--begin sorting-->
 					<div class="sorting">
 						<span class="sorting__title">Сортировка:</span>
@@ -29,127 +29,27 @@
 						</select>
 					</div>
 					<!--end sorting-->
+
 				</div>
 				<!--end ctopline__right-->
+				<div class="filter-btn js-filter-btn"></div>
 			</div>	
 		</div>
 		<!--end container-->
+		<!--begin cfilter-drop cfilter-drop-js-->
+		<div class="cfilter-dropbox cfilter-dropbox-js">
+		</div>
+		<!--end cfilter-drop cfilter-drop-js-->
 	</div>
 	<!--end ctopline-->
+
+
 	<!--begin container-->
 	<div class="container catalog__container">
 		<!--begin cfilter-->
 
-
-		{% import "data/data.html" as tests %}
-
-		<div class="cfilter">
-			<form>
-				<!-- begin cfilter__option -->
-				<div class="cfilter__option cfilter__price">
-					<span class="cfilter__title cfilter__title--without-arrow ">Цена (руб):</span>
-					<div class="cfilter__price-wrapper">
-						<input class="cfilter__price-input" id="priceInput1" type="text" placeholder="от">
-						<input class="cfilter__price-input" id="priceInput2" type="text" placeholder="до">
-					</div>
-					<div class="cfilter__slider"  id="priceSlider">
-					</div>
-					<div class="cfilter__price-wrapper">
-						<span class="cfilter__price-min" id="cfilter-price-min">1</span>
-						<span class="cfilter__price-max" id="cfilter-price-max"></span>
-					</div>
-				</div>
-				<!-- end cfilter__option -->
-				<!-- begin cfilter__option -->
-				<div class="cfilter__option ">
-					<span class="cfilter__title js-drop-option">Размер</span>
-					<div class="cfilter__wrapper">			
-						{% for test in tests.filterSize %}
-						<div class="check-block">
-							<input class="check-block__input" type="checkbox" id="{{test.id}}">
-							<label class="check-block__text" for="{{test.id}}"> 
-								<i class="check-block__icon"></i> 
-								{{test.opt}}
-							</label>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-				<!-- end cfilter__option -->
-				<!-- begin cfilter__option -->
-				<div class="cfilter__option ">
-					<span class="cfilter__title js-drop-option">Материал</span>
-					<div class="cfilter__wrapper">
-						{% for test in tests.filterMaterial %}
-						<div class="check-block">
-							<input class="check-block__input" type="checkbox" id="{{test.id}}">
-							<label class="check-block__text" for="{{test.id}}"> 
-								<i class="check-block__icon"></i> 
-								{{test.opt}}
-							</label>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-				<!-- end cfilter__option -->
-				<!-- begin cfilter__option -->
-				<div class="cfilter__option ">
-					<span class="cfilter__title js-drop-option">Рисунок</span>
-					<div class="cfilter__wrapper">
-						{% for test in tests.filterImage %}
-						<div class="check-block">
-							<input class="check-block__input" type="checkbox" id="{{test.id}}">
-							<label class="check-block__text" for="{{test.id}}"> 
-								<i class="check-block__icon"></i> 
-								{{test.opt}}
-							</label>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-				<!-- end cfilter__option -->
-				<!-- begin cfilter__option -->
-				<div class="cfilter__option ">
-					<span class="cfilter__title js-drop-option">Цвет</span>
-					<div class="cfilter__wrapper">
-						{% for test in tests.filterColor %}
-						<div class="check-block">
-							<input class="check-block__input" type="checkbox" id="{{test.id}}">
-							<label class="check-block__text" for="{{test.id}}"> 
-								<i class="check-block__icon"></i> 
-								{{test.opt}}
-							</label>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-				<!-- end  cfilter__option -->
-				<!-- begin cfilter__option -->
-				<div class="cfilter__option ">
-					<span class="cfilter__title js-drop-option">Производитель</span>
-					<div class="cfilter__wrapper">
-						{% for test in tests.filterManufacturer %}
-						<div class="check-block">
-							<input class="check-block__input" type="checkbox" id="{{test.id}}">
-							<label class="check-block__text" for="{{test.id}}"> 
-								<i class="check-block__icon"></i> 
-								{{test.opt}}
-							</label>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-				<!-- end  cfilter__option -->
-				<button class="cfilter__btn" type="submit">Применить</button>
-			</form>
-		</div>
-		<!--end cfilter-->
-
-		<!--begin clist-->
-		<div class="clist">
-			dfgdf
-		</div>
-		<!--end clist-->
+		{% include "partials/_cfilter.html" %}
+		{% include "partials/_clist.html" %}
 
 	</div>
 	<!--end container-->

@@ -4,22 +4,41 @@
 		margin-bottom: 43px
 	+r(767)
 		margin-bottom: 51px
-.slider
+.main-slider
 	overflow: hidden
-.slider__slide
+.main-slider__slide
 	+css-lock(400, 670, 991, 1599, "min-height")
 	+cover
 	position: relative
 	+r(639)
 		min-height: 250px
-.slider__content
+.main-slider__content
 	text-align: center
 	display: table
 	+css-lock(400, 670, 991, 1599, "min-height")
 	width: 100%
 	+r(639)
 		min-height: 250px
-
+.main-slider__h2
+	display: table-cell
+	vertical-align: middle
+	color: $white
+	font-family: $PBK
+	font-weight: normal
+	line-height: 1.3em
+	text-transform: uppercase
+	+css-lock(52, 95, 991, 1599)
+	+r(991)
+		line-height: 0.6em
+	+r(639)
+		font-size: 24px
+	span
+		position: relative
+		font-family: $PT
+		+css-lock(35, 65, 991, 1599)
+		+css-lock(12, -42, 991, 1599, "top")
+		+r(639)
+			font-size: 20px
 .slick-prev, .slick-next
 	top: auto
 	bottom: 30px

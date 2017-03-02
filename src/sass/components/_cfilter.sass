@@ -1,0 +1,153 @@
+.cfilter
+	width: 280px
+	float: left
+	+r(991)
+		float: none
+		width: 100%
+	&__wrapper
+		display: none
+	&__option
+		padding-bottom: 37px
+		padding-top: 26px
+		border-top: 1px solid #dfdfdf
+		&:first-of-type
+			border-top: none
+		+r(991)
+			padding-left: 24px
+			padding-right: 24px
+	&__title
+		cursor: pointer
+		display: inline-block
+		color: #9f9f9f
+		margin-bottom: 9px
+		position: relative
+		font-family: $PS
+		font-size: 20px
+		line-height: 1em
+		&:after
+			content: ''
+			position: absolute
+			right: -22px
+			top: 50%
+			margin-top: -3px
+			+arr(14, 7, #9ea2a3, b)
+			transition: all .3s
+	&__title.is-open
+		&:after
+			transform: rotateX(180deg)
+	&__title--without-arrow 
+		cursor: default
+		margin-bottom: 16px
+		+r(991)
+			margin-bottom: 14px
+		&:after
+			display: none
+	&__btn
+		padding: 24px 
+		background: $pink
+		font-family: $PS
+		font-size: 22px
+		text-transform: uppercase
+		color: $white
+		text-align: center
+		display: block
+		width: 100%
+		margin-top: 45px
+	&__price
+		padding-bottom: 0
+		+r(991)
+			padding-top: 40px
+	&__price-wrapper
+		font-size: 0
+		margin-bottom: 31px
+		+clr
+		+r(991)
+			margin-bottom: 36px
+	&__price-input
+		padding: 7px 8px
+		background-color: #f3f3f3
+		border: 1px solid #e6e6e6
+		width: 128px
+		display: block
+		float: left
+		color: $gray
+		font-family: $PR
+		font-size: 20px
+		+placeholder-color($gray)
+		&:last-of-type
+			float: right
+		+r(991)
+			width: 46%
+			padding: 20px 15px
+			font-size: 22px
+		+r(639)
+			
+			margin: 0 auto 15px
+		+r(550)
+			width: 280px
+			float: none
+			&:last-of-type
+				float: none
+				margin-bottom: 0
+	&__slider
+		margin-bottom: 20px
+	&__price-min, &__price-max
+		width: 50%
+		font-family: $PS
+		font-size: 16px
+		color: $gray
+		display: inline-block
+	&__price-max
+		text-align: right
+.check-block
+	&__input
+		display: none
+		&:checked + label >.check-block__icon
+			&:before
+				background: $pink
+	&__text
+		+nosel
+		display: inline-block
+		color: $black
+		font-family: $PR
+		font-size: 18px
+		line-height: 1.4em
+		cursor: pointer
+	&__icon
+		margin-right: 9px
+		display: inline-block
+		cursor: pointer
+		width: 25px
+		height: 25px
+		background-color: #f3f3f3
+		border: 1px solid #e6e6e6
+		position: relative
+		top: 5px
+		&:before
+			content: ''
+			transition: all .2s
+			+vcenter
+			width: 13px
+			height: 13px
+			background: transparent
+		&:hover
+			&:before
+				background-color: #e6e6e6
+.filter-btn
+	display: inline-block
+	+s(filter)
+	position: absolute
+	right: 7px
+	top: 50%
+	transform: translateY(-50%)
+	+rmin(992)
+		display: none
+	+r(639)
+		right: -15px
+.cfilter-dropbox
+	display: none
+	position: absolute
+	width: 100%
+	z-index: 2
+	background: #fff
+	left: 0

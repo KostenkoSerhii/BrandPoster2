@@ -1,0 +1,122 @@
+.clist
+	font-size: 0
+	float: right
+	margin-top: 36px
+	+css-lock(972, 1257, 1350, 1599, "width")
+	+r(1300)
+		width: 70%
+		text-align: center
+	+r(991)
+		margin-top: 66px
+		width: 100%
+	+r(639)
+		margin-top: 20px
+	&__item
+		text-align: center
+		+css-lock(300, 400, 1350, 1599, "width")
+		padding: 16px 0px 22px
+		margin-right: 28px
+		+css-lock(36, 65, 1350, 1599, "margin-bottom")
+		display: inline-block
+		border: 1px solid #ddd
+		position: relative
+		overflow: hidden
+		transition: all .3s
+		&:nth-of-type(3n)
+			margin-right: 0
+		+rmin(992)
+			&:hover
+				border-color: $pink
+				.clist__basket-link
+					transform: translateY(0%)
+				.clist__old-price
+					opacity: 0
+		+r(1300)
+			margin: 0 10px 36px 
+			&:nth-of-type(3n)
+				margin: 0 10px 36px
+		+r(991)
+			padding: 12px 0px 0px
+		+r(800)
+			&:nth-of-type(odd)
+				margin-left: 0
+				margin-right: 10px
+			&:nth-of-type(even)
+				margin-left: 10px
+				margin-right: 0
+		+r(639)
+			margin-left: auto!important
+			margin-right: auto!important
+			display: block
+	&__product-link
+		display: block
+	&__img
+		+cover
+		+css-lock(270, 361, 1350, 1599, "width")
+		+css-lock(270, 361, 1350, 1599, "height")
+		margin: 0	auto
+	&__h2
+		margin-top: 22px
+		margin-bottom: 5px
+		padding: 0 20px
+		+css-lock(26, 30, 992, 1599)
+		+r(1300)
+			margin-top: 14px
+		+r(991)
+			margin-bottom: 0
+		+r(639)
+			font-size: 22px
+	&__option
+		color: $gray
+		display: inline-block
+		+css-lock(22, 26, 992, 1599)
+		margin-bottom: 20px
+		font-family: $PR
+		+r(1300)
+			margin-bottom: 15px
+		+r(639)
+			font-size: 18px
+	&__old-price
+		color: #d5d5d5
+		text-decoration: line-through
+		font-size: 22px
+		margin-bottom: 8px
+		font-family:  $PS
+		transition: all .2s
+		opacity: 1
+		+r(1300)
+			margin-bottom: 0
+		+r(639)
+			font-size: 18px
+		span
+			font-family:  $PL
+	&__price
+		color: $black
+		font-family:  $PS
+		+css-lock(32, 42, 992, 1599)
+		+r(639)
+			font-size: 22px
+		span
+			font-family:  $PL
+	&__price--pink
+		color: $pink
+	&__basket-link
+		transition: all .3s
+		background: $pink
+		color: $white
+		font-family:  $PS
+		+css-lock(24, 33, 1350, 1599)
+		text-transform: uppercase
+		text-align: center
+		padding: 30px 20px
+		width: 100%
+		display: block
+		+rmin(992)
+			position: absolute
+			transform: translateY(100%)
+			left: 0
+			bottom: 0
+		+r(639)
+			padding: 15px
+			font-size: 20px
+

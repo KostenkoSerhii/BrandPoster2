@@ -1,31 +1,72 @@
+.catalog-page
+	.banners
+		&:first-of-type
+			display: none
+			+rmin(992)
+				display: block
+		&:last-of-type
+			display: none
+			+r(991)
+				display: block
 .catalog
 	padding-top: 48px
+	+r(991)
+		padding-top: 17px
 	&__quantity
 		display: inline-block
 		font-family: $PS
 		font-size: 26px
+		color: $gray
+		+r(991)
+			font-size: 18px
+			line-height: 0.75em
+		+r(639)
+			font-size: 16px
+			line-height: 1em
 	&__h1
 		margin-right: 34px
-	&__quantity
-		color: $gray
+		+r(991)
+			display: block
+			margin-right: 0
+			font-size: 
 	&__container
+		font-size: 0
 		+clr
+		+r(767)
+			padding: 0 9px
 .ctopline
 	background: $catalog-topline-color
-	margin-bottom: 40px
+	margin-bottom: 11px
+	position: relative
+	+r(991)
+		margin-bottom: 0
 	&__wrapper
-		+clr
-		padding: 14px 8px 14px 18px
+		+clr	
 		font-size: 0
+		position: relative
+		padding: 13px 8px 13px 18px
 		+vertical
+		+r(991)
+			padding: 13px 40px
+		+r(639)
+			padding: 13px 18px
 	&__left, &__right
 		display: inline-block
 		width: 50%
 		vertical-align: middle
 	&__left
 		text-align: left
+		+r(991)
+			float: none
+			width: 100%
+			text-align: center
 	&__right
 		text-align: right
+		+r(991)
+			width: 100%
+			text-align: center
+			padding: 25px 10px
+			border-bottom: 1px solid $gray-darken
 .sorting
 	font-size: 18px
 	.select_wrapper
@@ -40,111 +81,5 @@
 		color: #cacaca
 		font-family: $PR
 		margin-right: 26px
-.cfilter
-	width: 280px
-	float: left
-	&__price-wrapper
-		font-size: 0
-		margin-bottom: 22px
-	&__price-input
-		padding: 12px 8px
-		background-color: #f3f3f3
-		border: 1px solid #e6e6e6
-		width: 128px
-		display: inline-block
-		margin-right: 24px
-		color: $gray
-		font-family: $PR
-		font-size: 20px
-		+placeholder-color($gray)
-		&:last-of-type
-			margin-right: 0
-	&__slider
-		margin-bottom: 15px
-	&__price-min, &__price-max
-		width: 50%
-		font-family: $PS
-		font-size: 16px
-		color: $gray
-		display: inline-block
-	&__price-max
-		text-align: right
-	&__wrapper
-		display: none
-	&__option
-		padding-bottom: 37px
-		padding-top: 26px
-		border-top: 1px solid #dfdfdf
-		&:first-of-type
-			border-top: none
-	&__title
-		cursor: pointer
-		display: inline-block
-		color: #9f9f9f
-		margin-bottom: 16px
-		position: relative
-		font-family: $PS
-		font-size: 20px
-		line-height: 1em
-		&:after
-			content: ''
-			position: absolute
-			right: -22px
-			top: 50%
-			margin-top: -3px
-			+arr(14, 7, #9ea2a3, b)
-			transition: all .3s
-	&__title.is-open
-		&:after
-			transform: rotateX(180deg)
-	&__title--without-arrow 
-		cursor: default
-		&:after
-			display: none
-	&__btn
-		padding: 30px 
-		background: $pink
-		font-family: $PS
-		font-size: 22px
-		text-transform: uppercase
-		color: $white
-		text-align: center
-		display: block
-		width: 100%
-.check-block
-	&__input
-		display: none
-		&:checked + label >.check-block__icon
-			&:before
-				background: $pink
-	&__text
-		+nosel
-		display: inline-block
-		color: $black
-		font-family: $PR
-		font-size: 18px
-		line-height: 1.78em
-		cursor: pointer
-	&__icon
-		margin-right: 12px
-		display: inline-block
-		cursor: pointer
-		width: 25px
-		height: 25px
-		background-color: #f3f3f3
-		border: 1px solid #e6e6e6
-		position: relative
-		top: 5px
-		&:before
-			content: ''
-			transition: all .2s
-			+vcenter
-			width: 13px
-			height: 13px
-			background: transparent
-		&:hover
-			&:before
-				background-color: #e6e6e6
-.clist
-	float: right
-	max-width: 1257px
+
+

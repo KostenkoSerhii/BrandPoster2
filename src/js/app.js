@@ -3,6 +3,7 @@
 //=include lib/jquery.min.js
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
+//=include lib/wNumb.js
 //=include lib/nouislider.min.js
 
 sayHello();
@@ -13,7 +14,7 @@ $(document).ready(function(){
 		windowWidth = $(window).width();
 	});
 
-	$('.slider').slick({
+	$('.main-slider').slick({
 		infinite: true,
 		arrows: true
 	});
@@ -29,13 +30,31 @@ $(document).ready(function(){
 
 //=include components/select.js
 //=include components/noUiSlider.js
+//=include components/catalog.js
+if(windowWidth <= 991){
+	
+	var sortFilter = $(".ctopline-js").detach();
+	var cfilter = $(".cfilter-js").detach();
+	$(".cfilter-dropbox-js").append(sortFilter);
+	$(".cfilter-dropbox-js").append(cfilter);
 
-// filter drop
-$(".js-drop-option").on("click", function(){
-	var _this = $(this);
-	_this.toggleClass("is-open").next(".cfilter__wrapper").slideToggle();
 
-});
+	$(".js-filter-btn").on("click", function(){
+		$(".cfilter-dropbox-js").slideToggle(300);
+	});
+};
+
+
+if(windowWidth >= 992){
+	// filter drop
+
+}
+
+	$(".js-drop-option").on("click", function(){
+		var _this = $(this);
+		_this.toggleClass("is-open").next(".cfilter__wrapper").slideToggle();
+
+	});
 
 	//$(".scroll-js").on("click", function(e){
 	//	e.preventDefault();
