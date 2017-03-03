@@ -2,18 +2,18 @@
 		<div class="clist">
 			{% import "data/data.html" as tests %}
 			{% for test in tests.clist %}
-			<!--begin clist__item-->
-			<div class="clist__item">
-				<a class="clist__product-link" href="#">
-					<div class="clist__img" style="background-image: url('{{test.img}}');"></div>
-					<h2 class="h2 clist__h2">{{test.title}}</h2>
-					<span class="clist__option">{{test.option}}</span>
-					<div class="clist__old-price">{{test.oldPrice}} <span>руб</span></div>
-					<div class="clist__price {% if test.pinkPrice %}clist__price--pink {% endif %}">{{test.newPrice}}<span> руб</span></div>
-					<a href="#1" class="clist__basket-link">в корзину</a>
+			<!--begin cproduct-->
+			<div class="cproduct">
+				<a class="cproduct__main-link" href="#">
+					<div class="cproduct__img" style="background-image: url('{{test.img}}');"></div>
+					<h2 class="h2 cproduct__h2">{{test.title}}</h2>
+					<span class="cproduct__option">{{test.option}}</span>
+					<div class="cproduct__old-price">{{test.oldPrice}} <span>руб</span></div>
+					<div class="cproduct__price {% if test.pinkPrice %}cproduct__price--pink {% endif %}">{{test.newPrice}}<span> руб</span></div>
+					<a href="#1" class="cproduct__basket-link">в корзину</a>
 				</a>
 			</div>
-			<!--end clist__item-->		
+			<!--end cproduct-->		
 			{% endfor %}
 		</div>
 		<!--end clist-->

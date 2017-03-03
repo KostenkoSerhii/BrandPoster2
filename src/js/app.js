@@ -2,6 +2,7 @@
 //=include lib/sayHello.js
 //=include lib/jquery.min.js
 //=include lib/slick.min.js
+//=include lib/owl.carousel.min.js
 //=include lib/svgxuse.min.js
 //=include lib/wNumb.js
 //=include lib/nouislider.min.js
@@ -19,6 +20,7 @@ $(document).ready(function(){
 		arrows: true
 	});
 
+
 	$(".menu-btn").on("click", function(){
 		var _this = $(this);
 		_this.toggleClass("menu-btn-is-active");
@@ -29,7 +31,7 @@ $(document).ready(function(){
 	});
 
 //=include components/select.js
-//=include components/noUiSlider.js
+
 //=include components/catalog.js
 if(windowWidth <= 991){
 	
@@ -42,19 +44,40 @@ if(windowWidth <= 991){
 	$(".js-filter-btn").on("click", function(){
 		$(".cfilter-dropbox-js").slideToggle(300);
 	});
+
+	$('.banner-slider-js').slick({
+		infinite: true,
+		arrows: false,
+		centerMode:true,
+		slidesToShow: 1,
+		variableWidth: true,
+		responsive:[
+		{
+			breakpoint: 639,
+			settings: {
+				variableWidth: false,
+				centerMode: false
+			}
+		}
+		]
+	});
+
+	//$('.banner-slider-js').owlCarousel({
+	//	center: true,
+	//	items:3,
+	//	loop:true,
+	//	margin:10,
+	//	autoWidth: false,
+	//});
+
 };
 
 
-if(windowWidth >= 992){
-	// filter drop
+$(".js-drop-option").on("click", function(){
+	var _this = $(this);
+	_this.toggleClass("is-open").next(".cfilter__wrapper").slideToggle();
 
-}
-
-	$(".js-drop-option").on("click", function(){
-		var _this = $(this);
-		_this.toggleClass("is-open").next(".cfilter__wrapper").slideToggle();
-
-	});
+});
 
 	//$(".scroll-js").on("click", function(e){
 	//	e.preventDefault();
@@ -76,4 +99,6 @@ if(windowWidth >= 992){
 
 
 	//ready
+
+	// =include components/noUiSlider.js
 });

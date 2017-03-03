@@ -2,19 +2,23 @@
 	width: 280px
 	float: left
 	+r(991)
-		float: none
-		width: 100%
+		display: none
+	.noUi-horizontal
+		.noUi-handle
+			+rmin(992)
+				left: -2px
+	.noUi-base
+		+rmin(992)
+			width: 91%
 	&__wrapper
 		display: none
+		font-size: 0
 	&__option
 		padding-bottom: 37px
 		padding-top: 26px
 		border-top: 1px solid #dfdfdf
 		&:first-of-type
 			border-top: none
-		+r(991)
-			padding-left: 24px
-			padding-right: 24px
 	&__title
 		cursor: pointer
 		display: inline-block
@@ -38,13 +42,12 @@
 	&__title--without-arrow 
 		cursor: default
 		margin-bottom: 16px
-		+r(991)
-			margin-bottom: 14px
 		&:after
 			display: none
 	&__btn
 		padding: 24px 
 		background: $pink
+		border: 1px solid $pink
 		font-family: $PS
 		font-size: 22px
 		text-transform: uppercase
@@ -53,16 +56,17 @@
 		display: block
 		width: 100%
 		margin-top: 45px
+		+rmin(1200)
+			transition: all .3s
+			&:hover
+				background: transparent
+				color: $pink
 	&__price
 		padding-bottom: 0
-		+r(991)
-			padding-top: 40px
 	&__price-wrapper
 		font-size: 0
 		margin-bottom: 31px
 		+clr
-		+r(991)
-			margin-bottom: 36px
 	&__price-input
 		padding: 7px 8px
 		background-color: #f3f3f3
@@ -76,19 +80,6 @@
 		+placeholder-color($gray)
 		&:last-of-type
 			float: right
-		+r(991)
-			width: 46%
-			padding: 20px 15px
-			font-size: 22px
-		+r(639)
-			
-			margin: 0 auto 15px
-		+r(550)
-			width: 280px
-			float: none
-			&:last-of-type
-				float: none
-				margin-bottom: 0
 	&__slider
 		margin-bottom: 20px
 	&__price-min, &__price-max
@@ -133,17 +124,6 @@
 		&:hover
 			&:before
 				background-color: #e6e6e6
-.filter-btn
-	display: inline-block
-	+s(filter)
-	position: absolute
-	right: 7px
-	top: 50%
-	transform: translateY(-50%)
-	+rmin(992)
-		display: none
-	+r(639)
-		right: -15px
 .cfilter-dropbox
 	display: none
 	position: absolute

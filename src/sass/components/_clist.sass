@@ -11,44 +11,44 @@
 		width: 100%
 	+r(639)
 		margin-top: 20px
-	&__item
-		text-align: center
-		+css-lock(300, 400, 1350, 1599, "width")
-		padding: 16px 0px 22px
-		margin-right: 28px
-		+css-lock(36, 65, 1350, 1599, "margin-bottom")
-		display: inline-block
-		border: 1px solid #ddd
-		position: relative
-		overflow: hidden
-		transition: all .3s
+.cproduct
+	text-align: center
+	+css-lock(300, 400, 1350, 1599, "width")
+	padding: 16px 0px 22px
+	margin-right: 28px
+	+css-lock(36, 65, 1350, 1599, "margin-bottom")
+	display: inline-block
+	border: 1px solid #ddd
+	position: relative
+	overflow: hidden
+	transition: all .3s
+	&:nth-of-type(3n)
+		margin-right: 0
+	+rmin(992)
+		&:hover
+			border-color: $pink
+			.cproduct__basket-link
+				transform: translateY(0%)
+			.cproduct__old-price
+				opacity: 0
+	+r(1300)
+		margin: 0 10px 36px 
 		&:nth-of-type(3n)
+			margin: 0 10px 36px
+	+r(991)
+		padding: 12px 0px 0px
+	+r(800)
+		&:nth-of-type(odd)
+			margin-left: 0
+			margin-right: 10px
+		&:nth-of-type(even)
+			margin-left: 10px
 			margin-right: 0
-		+rmin(992)
-			&:hover
-				border-color: $pink
-				.clist__basket-link
-					transform: translateY(0%)
-				.clist__old-price
-					opacity: 0
-		+r(1300)
-			margin: 0 10px 36px 
-			&:nth-of-type(3n)
-				margin: 0 10px 36px
-		+r(991)
-			padding: 12px 0px 0px
-		+r(800)
-			&:nth-of-type(odd)
-				margin-left: 0
-				margin-right: 10px
-			&:nth-of-type(even)
-				margin-left: 10px
-				margin-right: 0
-		+r(639)
-			margin-left: auto!important
-			margin-right: auto!important
-			display: block
-	&__product-link
+	+r(639)
+		margin-left: auto!important
+		margin-right: auto!important
+		display: block
+	&__main-link
 		display: block
 	&__img
 		+cover
@@ -119,4 +119,3 @@
 		+r(639)
 			padding: 15px
 			font-size: 20px
-

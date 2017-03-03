@@ -8,6 +8,9 @@
 			display: none
 			+r(991)
 				display: block
+				margin-bottom: 70px
+			+r(767)
+				margin-bottom: 64px
 .catalog
 	padding-top: 48px
 	+r(991)
@@ -63,10 +66,7 @@
 	&__right
 		text-align: right
 		+r(991)
-			width: 100%
-			text-align: center
-			padding: 25px 10px
-			border-bottom: 1px solid $gray-darken
+			display: none
 .sorting
 	font-size: 18px
 	.select_wrapper
@@ -81,5 +81,14 @@
 		color: #cacaca
 		font-family: $PR
 		margin-right: 26px
-
-
+.filter-btn
+	display: inline-block
+	+s(filter)
+	position: absolute
+	right: 7px
+	top: 50%
+	transform: translateY(-50%)
+	+rmin(992)
+		display: none
+	+r(639)
+		right: -15px
