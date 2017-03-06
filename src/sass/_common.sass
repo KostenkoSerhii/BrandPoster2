@@ -15,12 +15,19 @@ a
 		font-size: 22px
 .h1--hidden
 	+hidetext
+.h1--big
+	font-size: 36px
+	color: $black
+	font-family: $PEB
+
 .h2
 	font-family: $PS
 	color: $gray-darnest
 	font-size: 30px
 	line-height: 1em
 	font-weight: normal
+.h2--small
+	font-size: 19px
 .h3
 	text-align: center
 	color: $pink
@@ -59,6 +66,7 @@ a
 	font-family: $PR
 .three-col-list
 	text-align: center
+	font-size: 0
 .three-col-list__item
 	vertical-align: top
 	display: inline-block
@@ -82,3 +90,35 @@ a
 	transition: opacity .4s
 .is-hidden
 	opacity: 0
+.close-default
+	width: 22px
+	height: 22px
+	position: absolute
+	transition: all .3s
+	background-color: transparent
+	font-size: 18px
+	font-family: $PR
+	line-height: 22px
+	text-align: center
+	cursor: pointer
+	color: #eaeaea
+	&:hover
+		background-color: #f3f3f3
+		color: $white
+.btn
+	padding: 24px 
+	background: $pink
+	border: 1px solid $pink
+	font-family: $PEB
+	font-size: 22px
+	text-transform: uppercase
+	color: $white
+	text-align: center
+	display: block
+	+rmin(1200)
+		transition: all .3s
+		&:hover
+			background: transparent
+			color: $pink
+	&--small
+		padding: 15px 15px

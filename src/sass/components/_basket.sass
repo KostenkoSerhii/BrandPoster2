@@ -1,0 +1,214 @@
+//.basket-page
+//	.header__wrapper
+//		padding-bottom: 0
+.basket
+	font-size: 0
+	padding-top: 13px
+	margin-bottom: 126px
+	&__left, &__right
+		display: inline-block
+		vertical-align: top
+	&__left
+		width: 722px
+	&__right
+		width: 829px
+		margin-left: 27px
+		padding: 43px 53px 53px
+		background-color: #f3f3f3
+		margin-top: 6px
+		+clr
+	&__total-count
+		margin-top: 30px
+		padding: 20px 0
+		color: $gray-semi-light
+		font-size: 20px
+		line-height: 1em
+		font-family: $PR
+		border-top: 1px solid  #f3f3f3
+		border-bottom: 1px solid  #f3f3f3
+.bproduct-list
+	margin-top: 33px
+	margin-bottom: 126px
+.bproduct
+	position: relative
+	font-size: 0
+	border-top: 1px solid  #f3f3f3
+	border-bottom: 1px solid  #f3f3f3
+	margin-bottom: 19px
+	&__img
+		width: 110px
+		height: 110px
+		+cover
+		display: inline-block
+		margin-right: 24px
+	&__desc
+		display: inline-block
+		vertical-align: top
+		padding: 10px 0 0
+		width: calc(100% - 134px)
+	&__h2
+		display: inline-block
+		color: $gray-middle
+		line-height: 1.7em
+		letter-spacing: -0.4px
+	&__h2link
+		display: inline-block
+	&__option, &__count
+		font-size: 16px
+		font-family: $PR
+		color: $gray
+		line-height: 1em
+	&__option
+		position: relative
+		top: -7px
+		letter-spacing: -0.4px
+	&__inner
+		border-top: 1px solid  #f3f3f3
+		min-height: 45px
+		+vertical
+		text-align: left
+		margin-top: 6px
+		line-height: 45px
+	&__count, &__sum
+		display: inline-block
+		vertical-align: middle
+	&__sum
+		color: $black
+		font-family: $PS
+		font-size: 20px
+		padding-right: 10px
+		border-right: 1px solid  #f3f3f3
+		min-height: 45px
+	&__count
+		padding-left: 14px
+		display: inline-block
+		vertical-align: middle
+		font-size: 0
+		span
+			vertical-align: top
+			display: inline-block
+			border-top: 1px solid  #d4d4d4
+			border-bottom: 1px solid  #d4d4d4
+			height: 20px
+			line-height: 20px
+			color: #636363
+			width: 38px
+			font-size: 16px
+			text-align: center
+			&:first-of-type
+				border: none
+				margin-right: 7px
+				width: auto
+				text-align: left
+	&__minus, &__plus
+		display: inline-block
+		width: 20px
+		height: 20px	
+		border: 1px solid #d4d4d4
+		position: relative
+		cursor: pointer
+		transition: all .2s
+		+nosel
+		&:hover
+			background: #d4d4d4 + 20%
+		&:before
+			+vcenter
+			content: ''
+	&__minus
+		&:before
+			+arr(5, 9, #bababa, l)
+	&__plus
+		&:before
+			+arr(5, 9, #bababa, r)
+	&__close
+		right: 5px
+		top: 5px
+.btotal-sum
+	border-top: 1px solid  #c7c7c7
+	border-bottom: 1px solid $pink
+	padding: 15px 0 15px
+	&__left, &__right
+		display: inline-block
+		width: 50%
+	&__left
+		color: $gray1
+		font-family: $PR
+		font-size: 20px
+		line-height: 1em
+	&__right
+		text-align: right
+		color: $pink
+		font-size: 24px
+		line-height: 1em
+		font-family: $PR
+	&__value
+		font-family: $PB
+		font-weight: 700
+.delivery
+	width: 357px
+	float: left
+	&__input, &__textarea
+		width: 100%
+		color: $gray
+		font-family: $PR
+		font-size: 20px
+		line-height: 1em
+		border: 1px solid #c7c7c7
+		padding: 15px 15px
+	&__input
+		margin-bottom: 8px
+	&__textarea
+		resize: none
+		min-height: 178px
+		width: 100%
+.delivery__title, .payment__title
+	color: $gray
+	font-size: 30px
+	text-transform: uppercase
+	font-family: $PEB
+	margin-bottom: 24px
+.payment
+	float: right
+	width: 310px
+	&__input
+		display: none
+		&:checked+label .payment__icon
+			&:before
+				width: 15px
+				height: 15px
+	&__label
+		color: $black-light
+		font-family: $PR	
+		font-size: 20px
+		vertical-align: top
+		padding-left: 52px
+		margin-bottom: 20px
+		padding-top: 9px
+		display: block
+		cursor: pointer
+	&__desc
+		font-size: 15px
+		color: $gray2
+	&__inner
+		position: relative
+	&__icon
+		left: 0 
+		top: 2px
+		width: 35px
+		height: 35px
+		background-color: white
+		border: 1px solid #c7c7c7
+		border-radius: 50%
+		position: absolute
+		display: inline-block
+		&:before
+			transition: all .3s
+			content: ''
+			+vcenter
+			border-radius: 50%
+			width: 0
+			height: 0
+			background: $pink
+	&__btn
+		width: 310px
+		margin-top: 164px

@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>basket page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- 	
+<h1>basket page</h1>
+-->
+      <!--begin basket-page-->
+      <div class="basket-page">
+        <header class="header header-js">
+          <!-- begin container -->
+          <!--begin topline-->
+          <div class="topline">
+            <!--begin container-->
+            <div class="container ">
+              <!--begin topline__wrapper-->
+              <div class="topline__wrapper">
+                <!-- begin topline__left -->
+                <div class="topline__left">
+                  <div class="search-block">
+                    <form> <input class="search-block__input" name="search" placeholder="Поиск по сайту">
+                      <a class="search-block__button" href="#"></a>
+                    </form>
+                  </div>
+                </div>
+                <!-- end topline__left -->
+                <!-- begin topline__middle -->
+                <div class="topline__middle">
+                  <ul class="topline__list">
+                    <li class="topline__list-item"> <i class="topline__icon topline__icon-bag"></i> <a class="topline__list-link" href="#">Магазины в Москве</a> </li>
+                    <li class="topline__list-item"> <i class="topline__icon topline__icon-car"></i> <a class="topline__list-link" href="#">Бесплатная доставка</a> </li>
+                    <li class="topline__list-item"> <i class="topline__icon topline__icon-reload"></i> <a class="topline__list-link" href="#">Возврат 365</a> </li>
+                    <li class="topline__list-item"> <i class="topline__icon topline__icon-certificate"></i> <a class="topline__list-link" href="#">Сертификаты</a> </li>
+                  </ul>
+                </div>
+                <!-- end topline__middle -->
+                <!-- begin topline__right -->
+                <div class="topline__right">
+                  <div class="phone-callback topline__phone-callback js-hidden"> <a class="phone" href="tel:+71234567890">+7 (123) <span>456 78 90</span></a> <a class="callback" href="#">Заказать звонок</a> </div>
+                  <div class="authorization-block js-hidden"> <a class="login" href="#">Вход</a> <a class="registration" href="#">Регистрация</a> </div>
+                  <div class="menu-btn">
+                    <div></div>
+                  </div>
+                </div>
+                <!-- end topline__right -->
+              </div>
+              <!--end topline__wrapper-->
+            </div>
+            <!--end container-->
+          </div>
+          <!--end topline-->
+          <div class="header__wrapper">
+            <div class="container">
+              <a class="header__logo" href="#" style="background-image: url('img/logo.png');"></a>
+              <ul class="header__menu">
+                <li class="header__menu-item"><a class="header__menu-link scroll-js" href="#catalog1">Постельное белье</a></li>
+                <li class="header__menu-item"><a class="header__menu-link scroll-js" href="#catalog2">подушки</a></li>
+                <li class="header__menu-item"><a class="header__menu-link scroll-js" href="#catalog3">одеяла</a></li>
+                <li class="header__menu-item"><a class="header__menu-link scroll-js" href="#catalog4">покрывала</a></li>
+                <li class="header__menu-item"><a class="header__menu-link scroll-js" href="#catalog5">пледы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link scroll-js" href="#catalog6">полотенца</a></li>
+                <li class="header__menu-item"><a class="header__menu-link scroll-js" href="#">простыни</a></li>
+                <li class="header__menu-item "><a class="header__menu-link scroll-js header__menu-link--pink" href="#banners">sale!</a></li>
+              </ul>
+              <a class="basket-link" href="#">
+                <div class="basket-link__text"> <strong class="basket-link__title">Корзина</strong>
+                  <p class="basket-link__count"><span>6</span> товаров</p>
+                </div>
+                <div class="basket-link__img" style="background-image: url('img/basket.png');"></div>
+              </a>
+            </div>
+            <!--begin mobile-menu-->
+            <div class="nav-responsive js-nav-responsive">
+              <ul class="mobnav-main">
+                <li class="mobnav-main__item"><a class="mobnav-main__link mob-scroll-js" href="#catalog1">Постельное белье</a></li>
+                <li class="mobnav-main__item"><a class="mobnav-main__link mob-scroll-js" href="#catalog2">подушки</a></li>
+                <li class="mobnav-main__item"><a class="mobnav-main__link mob-scroll-js" href="#catalog3">одеяла</a></li>
+                <li class="mobnav-main__item"><a class="mobnav-main__link mob-scroll-js" href="#catalog4">покрывала</a></li>
+                <li class="mobnav-main__item"><a class="mobnav-main__link mob-scroll-js" href="#catalog5">пледы</a></li>
+                <li class="mobnav-main__item"><a class="mobnav-main__link mob-scroll-js" href="#catalog6">полотенца</a></li>
+                <li class="mobnav-main__item"><a class="mobnav-main__link mob-scroll-js" href="#">простыни</a></li>
+                <li class="mobnav-main__item"><a class="mobnav-main__link mob-scroll-js mobnav-main__link--pink" href="#banners">sale!</a></li>
+              </ul>
+              <ul class='mobnav-second'>
+                <li class="mobnav-second__item"> <a class="mobnav-second__link" href="#">Магазины в Москве</a> </li>
+                <li class="mobnav-second__item"> <a class="mobnav-second__link" href="#">Бесплатная доставка</a> </li>
+                <li class="mobnav-second__item"> <a class="mobnav-second__link" href="#">Возврат 365</a> </li>
+                <li class="mobnav-second__item"> <a class="mobnav-second__link" href="#">Сертификаты</a> </li>
+              </ul> <a class="phone nav-responsive__phone" href="tel:+71234567890">+7 (123) <span>456 78 90</span></a> <a class="callback nav-responsive__callback" href="#">Заказать звонок</a> </div>
+            <!--end mobile-menu-->
+          </div>
+          <!-- end container -->
+        </header>
+        <!--begin basket-->
+        <div class="basket">
+          <!--begin container-->
+          <div class="container">
+            <div class="basket__left">
+              <h1 class="h1 h1--big">Корзина</h1>
+              <div class="basket__total-count"> Товаров в вашей корзине: <span>3</span> </div>
+              <!--begin bproduct-list-->
+              <div class="bproduct-list">
+                <div class="bproduct">
+                  <div class="bproduct__img" style="background-image: url('img/brod-img1.jpg');"> </div>
+                  <div class="bproduct__desc">
+                    <a class="bproduct__h2link" href="#">
+                      <h2 class="h2 h2--small bproduct__h2"> Постельное белье Kingsilk </h2>
+                    </a>
+                    <p class="bproduct__option">2-х спальное</p>
+                    <!--begin bproduct__inner-->
+                    <div class="bproduct__inner">
+                      <p class=bproduct__sum><span>2 990</span>руб</p>
+                      <!--begin bproduct__count-->
+                      <div class="bproduct__count"> <span>Количество: </span>
+                        <div class="bproduct__minus"></div> <span>1</span>
+                        <div class="bproduct__plus"></div>
+                      </div>
+                      <!--end bproduct__count-->
+                    </div>
+                    <!--end bproduct__inner-->
+                  </div>
+                  <div class="bproduct__close close-default">X</div>
+                </div>
+                <div class="bproduct">
+                  <div class="bproduct__img" style="background-image: url('img/brod-img1.jpg');"> </div>
+                  <div class="bproduct__desc">
+                    <a class="bproduct__h2link" href="#">
+                      <h2 class="h2 h2--small bproduct__h2"> Постельное белье Kingsilk </h2>
+                    </a>
+                    <p class="bproduct__option">2-х спальное</p>
+                    <!--begin bproduct__inner-->
+                    <div class="bproduct__inner">
+                      <p class=bproduct__sum><span>2 990</span>руб</p>
+                      <!--begin bproduct__count-->
+                      <div class="bproduct__count"> <span>Количество: </span>
+                        <div class="bproduct__minus"></div> <span>1</span>
+                        <div class="bproduct__plus"></div>
+                      </div>
+                      <!--end bproduct__count-->
+                    </div>
+                    <!--end bproduct__inner-->
+                  </div>
+                  <div class="bproduct__close close-default">X</div>
+                </div>
+              </div>
+              <!--end bproduct-list-->
+              <!--begin btotal-sum-->
+              <div class="btotal-sum"> <span class="btotal-sum__left">ИТОГО:</span>
+                <p class="btotal-sum__right"> <span class="btotal-sum__value">6 290</span>руб </p>
+              </div>
+              <!--end btotal-sum-->
+            </div>
+            <div class="basket__right">
+              <form>
+                <!--begin delivery-->
+                <div class="delivery">
+                  <p class="delivery__title"> Доставка </p> <input class="delivery__input" name="name" type="text" placeholder="Имя"> <input class="delivery__input" name="second_name" type="text" placeholder="Фамилия"> <input class="delivery__input" name="phone" type="text" placeholder="Телефон">                  <input class="delivery__input" name="adress" type="text" placeholder="Адрес доставки"> <textarea class="delivery__textarea" name="comment" placeholder="Комментарий к заказу"></textarea> </div>
+                <!--end delivery-->
+                <!--begin payment-->
+                <div class="payment">
+                  <p class="payment__title">Способ оплаты</p>
+                  <div class="payment__inner"> <input class="payment__input" type="radio" name="pay" id="cash"> <label class="payment__label" for="cash"><i class="payment__icon"></i>Наличными курьеру
+							</label> </div>
+                  <div class="payment__inner"> <input class="payment__input" type="radio" name="pay" id="card" checked> <label class="payment__label" for="card"><i class="payment__icon"></i>
+								Электронными деньгами
+								<p class="payment__desc">Мы принимаем платежи Web Money,
+									PayPal, Qiwi, Yandex.Деньги
+								</p>
+							</label> </div>
+                  <div class="payment__inner"> <input class="payment__input" type="radio" name="pay" id="cashless"> <label class="payment__label" for="cashless">
+								<i class="payment__icon"></i>
+								Безналичный расчет
+								<p class="payment__desc">
+									Наш менеджер сообщит вам все
+									детали по телефону
+								</p>
+							</label> </div> <button class="btn btn--small payment__btn" type="submit">купить</button> </div>
+                <!--end payment-->
+              </form>
+            </div>
+          </div>
+          <!--end container-->
+        </div>
+        <!--end basket-->
+        <footer class="footer footer-js">
+          <!-- begin container -->
+          <div class="container">
+            <div class="footer-main-content">
+              <!-- begin footer__left -->
+              <div class="footer__left">
+                <div class="footer__contact"> <span class="footer__location">Москва</span> <a class="footer__phone" href="tel:+84997535555">8 (499) 753-55-55</a> </div>
+                <div class="footer__contact"> <span class="footer__location">РФ</span> <a class="footer__phone" href="tel:+88001001202"> 8 (800) 100-12-02</a> </div>
+              </div>
+              <!-- end footer__left -->
+              <!-- begin footer__middle -->
+              <div class="footer__middle">
+                <ul class="footer__menu">
+                  <li class="footer__menu-item">
+                    <ul class="footer_submenu">
+                      <li class="footer_submenu-item"><a class="footer_submenu-link" href="#">Доставка и оплата</a></li>
+                      <li class="footer_submenu-item"><a class="footer_submenu-link" href="#">Возврат</a></li>
+                    </ul>
+                  </li>
+                  <li class="footer__menu-item">
+                    <ul class="footer_submenu">
+                      <li class="footer_submenu-item"><a class="footer_submenu-link" href="#">Клубная карта</a></li>
+                      <li class="footer_submenu-item"><a class="footer_submenu-link" href="#">Отзывы и вопросы</a></li>
+                    </ul>
+                  </li>
+                  <li class="footer__menu-item">
+                    <ul class="footer_submenu">
+                      <li class="footer_submenu-item"><a class="footer_submenu-link" href="#">Таблица размеров</a></li>
+                      <li class="footer_submenu-item"><a class="footer_submenu-link" href="#">Скидки и акции</a></li>
+                    </ul>
+                  </li>
+                  <li class="footer__menu-item">
+                    <ul class="footer_submenu">
+                      <li class="footer_submenu-item"><a class="footer_submenu-link" href="#">Города доставки</a></li>
+                      <li class="footer_submenu-item"><a class="footer_submenu-link" href="#">Контакты</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- end footer__middle -->
+              <!-- begin footer__right -->
+              <div class="footer__right">
+                <div class="form-block">
+                  <form> <input class="form-block__input" type="text" name="email" placeholder="Email рассылка"> <button class="form-block__btn" type="submit"></button> </form>
+                </div>
+              </div>
+              <!-- end footer__right -->
+            </div>
+          </div>
+          <!-- end container -->
+          <div class="footer__bottomline">
+            <!--begin container-->
+            <div class="container">
+              <p>ТМ Brand Postel. 2015-2017. All rights reserved</p>
+            </div>
+            <!--end container-->
+          </div>
+        </footer>
+      </div>
+      <!--end basket-page-->
+      <!-- 	
+	
+<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+ -->
+      <!-- 	
+	
+	
+	
+	 -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
