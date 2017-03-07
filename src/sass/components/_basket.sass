@@ -57,6 +57,8 @@
 .bproduct-list
 	margin-top: 33px
 	margin-bottom: 126px
+	+r(639)
+		margin-bottom: 60px
 .bproduct
 	position: relative
 	font-size: 0
@@ -131,22 +133,22 @@
 		+r(639)
 			padding-left: 0
 			display: block
-		span
-			vertical-align: top
-			display: inline-block
-			border-top: 1px solid  #d4d4d4
-			border-bottom: 1px solid  #d4d4d4
-			height: 20px
-			line-height: 20px
-			color: #636363
-			width: 38px
-			font-size: 16px
-			text-align: center
-			&:first-of-type
-				border: none
-				margin-right: 7px
-				width: auto
-				text-align: left
+	&__count-title, &__count-value
+		vertical-align: top
+		display: inline-block
+		border-top: 1px solid  #d4d4d4
+		border-bottom: 1px solid  #d4d4d4
+		height: 20px
+		line-height: 20px
+		color: #636363
+		width: 38px
+		font-size: 16px
+		text-align: center
+	&__count-title
+		border: none
+		margin-right: 7px
+		width: auto
+		text-align: left
 	&__minus, &__plus
 		display: inline-block
 		width: 20px
@@ -199,6 +201,8 @@
 		width: 357px
 	+r(767)
 		width: 259px
+	+r(639)
+		width: 100%
 	&__input, &__textarea
 		width: 100%
 		color: $gray
