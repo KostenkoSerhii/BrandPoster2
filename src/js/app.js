@@ -112,7 +112,7 @@ $('.callback-close-js, .overlay').on("click", function(){
 // callback popup
 
 /*callback validate*/
-$('.callback-modal form').submit(function(e) {
+$('#callback-form').submit(function(e) {
 	e.preventDefault();
 	var name=$(this).find("input[name=name]").val();
 	var phone=$(this).find("input[name=phone]").val();
@@ -120,25 +120,25 @@ $('.callback-modal form').submit(function(e) {
 
 	if(isValidPhope(phone)){
 		setTimeout(function(){
-			$("form input[name=phone]").removeClass('error_form');
-			$("form input[name=phone]").addClass('valid_form');
+			$("#callback-form input[name=phone]").removeClass('error_form');
+			$("#callback-form input[name=phone]").addClass('valid_form');
 		},300);
 	}else{
 		setTimeout(function(){
-			$("form input[name=phone]").addClass('error_form');
-			$("form input[name=phone]").removeClass('valid_form');
+			$("#callback-form input[name=phone]").addClass('error_form');
+			$("#callback-form input[name=phone]").removeClass('valid_form');
 		},300);
 		status=0;
 	}
 	if(name!=''){
 		setTimeout(function(){
-			$("form input[name=name]").addClass('valid_form');
-			$("form input[name=name]").removeClass('error_form');
+			$("#callback-form input[name=name]").addClass('valid_form');
+			$("#callback-form input[name=name]").removeClass('error_form');
 		},300);
 	}else{
 		setTimeout(function(){
-			$("form input[name=name]").addClass('error_form');
-			$("form input[name=name]").removeClass('valid_form');
+			$("#callback-form input[name=name]").addClass('error_form');
+			$("#callback-form input[name=name]").removeClass('valid_form');
 		},300);
 		status=0;
 	}
@@ -149,10 +149,10 @@ $('.callback-modal form').submit(function(e) {
 			data: $(this).serialize()
 		}).done(function() {
 			/*$(this).find("input").val("");*/
-			$("form").trigger("reset");
-			$("form input").removeClass('valid_form');
-			$(".callback-close-js").trigger('click');
+			$("#callback-form").trigger("reset");
+			$("#callback-form input").removeClass('valid_form');
 		});
+		$(".callback-close-js").trigger('click');
 	}
 });
 
