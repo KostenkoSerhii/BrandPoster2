@@ -4231,20 +4231,32 @@ $(document).ready(function () {
 				}
 			}]
 		});
-
-		//$('.banner-slider-js').owlCarousel({
-		//	center: true,
-		//	items:3,
-		//	loop:true,
-		//	margin:10,
-		//	autoWidth: false,
-		//});
 	};
 
+	// filter option
 	$(".js-drop-option").on("click", function () {
 		var _this = $(this);
 		_this.toggleClass("is-open").next(".cfilter__wrapper").slideToggle();
 	});
+	// filter option
+
+	// catalog popup
+	$('.cpopup-js').on("click", function (e) {
+		e.preventDefault();
+		$('.overlay').fadeIn(400, function () {
+			$('.cat-modal-js').css('display', 'block').animate({ opacity: 1, top: '49%' }, 200);
+			$("body").addClass("body-ovh");
+		});
+	});
+
+	$('.cat-close-js, .overlay').on("click", function () {
+		$('.cat-modal-js').animate({ opacity: 0, top: '45%' }, 200, function () {
+			$(this).css('display', 'none');
+			$('.overlay').fadeOut(400);
+			$("body").removeClass("body-ovh");
+		});
+	});
+	// catalog popup
 
 	//$(".scroll-js").on("click", function(e){
 	//	e.preventDefault();
