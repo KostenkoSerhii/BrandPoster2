@@ -2,20 +2,46 @@
 //	.header__wrapper
 //		padding-bottom: 0
 .basket
-	font-size: 0
+	//font-size: 0
 	padding-top: 13px
-	margin-bottom: 126px
-	&__left, &__right
-		display: inline-block
-		vertical-align: top
+	+css-lock(67, 126, 991, 1599, "margin-bottom")
+	+r(991)
+		padding-top: 55px
+	+r(767)
+		padding-top: 44px
+	&__container
+		+clr
 	&__left
-		width: 722px
+		+css-lock(600, 722, 1300, 1599, "width")
+		float: left
+		+r(1300)
+			width: 80%
+			float: none
+			margin: 0 auto
+		+r(991)
+			width: 100%
+			padding-left: 9px
 	&__right
-		width: 829px
-		margin-left: 27px
-		padding: 43px 53px 53px
+		+css-lock(650, 829, 1300, 1599, "width")
+		float: right
+		+css-lock(25, 53, 1300, 1599, "padding-left")
+		+css-lock(25, 53, 1300, 1599, "padding-right")
+		padding-top: 46px
+		padding-bottom: 47px
 		background-color: #f3f3f3
 		margin-top: 6px
+		+r(1300)
+			width: 80%
+			float: none
+			margin: 0 auto
+		+r(991)
+			width: 100%
+			margin-top: 55px
+			padding-left: 7px
+			padding-right: 7px
+		+r(639)
+			margin-top: 30px
+			padding: 15px 5px
 		+clr
 	&__total-count
 		margin-top: 30px
@@ -26,6 +52,8 @@
 		font-family: $PR
 		border-top: 1px solid  #f3f3f3
 		border-bottom: 1px solid  #f3f3f3
+		+r(639)
+			font-size: 17px
 .bproduct-list
 	margin-top: 33px
 	margin-bottom: 126px
@@ -41,11 +69,17 @@
 		+cover
 		display: inline-block
 		margin-right: 24px
+		+r(639)
+			margin: 10px auto
+			display: block
 	&__desc
 		display: inline-block
 		vertical-align: top
 		padding: 10px 0 0
 		width: calc(100% - 134px)
+		+r(639)
+			width: 100%
+			text-align: center
 	&__h2
 		display: inline-block
 		color: $gray-middle
@@ -64,11 +98,15 @@
 		letter-spacing: -0.4px
 	&__inner
 		border-top: 1px solid  #f3f3f3
-		min-height: 45px
+		//min-height: 45px
 		+vertical
 		text-align: left
 		margin-top: 6px
-		line-height: 45px
+		//line-height: 45px
+		+r(639)
+			text-align: center
+			min-height: auto
+			padding: 10px 0
 	&__count, &__sum
 		display: inline-block
 		vertical-align: middle
@@ -79,11 +117,20 @@
 		padding-right: 10px
 		border-right: 1px solid  #f3f3f3
 		min-height: 45px
+		padding-top: 9px
+		+r(639)
+			padding-right: 0
+			border: none
+			display: block
+			padding-top: 0
 	&__count
 		padding-left: 14px
 		display: inline-block
 		vertical-align: middle
 		font-size: 0
+		+r(639)
+			padding-left: 0
+			display: block
 		span
 			vertical-align: top
 			display: inline-block
@@ -127,6 +174,7 @@
 	border-top: 1px solid  #c7c7c7
 	border-bottom: 1px solid $pink
 	padding: 15px 0 15px
+	font-size: 0
 	&__left, &__right
 		display: inline-block
 		width: 50%
@@ -145,8 +193,12 @@
 		font-family: $PB
 		font-weight: 700
 .delivery
-	width: 357px
+	+css-lock(280, 357, 1300, 1599, "width")
 	float: left
+	+r(1300)
+		width: 357px
+	+r(767)
+		width: 259px
 	&__input, &__textarea
 		width: 100%
 		color: $gray
@@ -155,6 +207,9 @@
 		line-height: 1em
 		border: 1px solid #c7c7c7
 		padding: 15px 15px
+		+r(639)
+			padding: 10px
+			font-size: 16px
 	&__input
 		margin-bottom: 8px
 	&__textarea
@@ -166,10 +221,19 @@
 	font-size: 30px
 	text-transform: uppercase
 	font-family: $PEB
-	margin-bottom: 24px
+	margin-bottom: 28px
+	line-height: 1em
+	+r(639)
+		font-size: 20px
+		margin-bottom: 15px
 .payment
 	float: right
 	width: 310px
+	+r(767)
+		width: 293px
+	+r(639)
+		width: 100%
+		margin-top: 20px
 	&__input
 		display: none
 		&:checked+label .payment__icon
@@ -182,10 +246,11 @@
 		font-size: 20px
 		vertical-align: top
 		padding-left: 52px
-		margin-bottom: 20px
-		padding-top: 9px
+		margin-bottom: 19px
+		padding-top: 12px
 		display: block
 		cursor: pointer
+		line-height: 1em
 	&__desc
 		font-size: 15px
 		color: $gray2
@@ -211,4 +276,8 @@
 			background: $pink
 	&__btn
 		width: 310px
-		margin-top: 164px
+		margin-top: 161px
+		+r(991)
+			width: 100%
+		+r(639)
+			margin-top: 50px
