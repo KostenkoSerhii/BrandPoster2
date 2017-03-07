@@ -2781,6 +2781,7 @@ a {
 .payment__desc {
   font-size: 15px;
   color: #a0a0a0;
+  display: block;
 }
 
 .payment__inner {
