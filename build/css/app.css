@@ -2820,6 +2820,146 @@ a {
   margin-top: 161px;
 }
 
+.prod-page__container {
+  font-size: 0;
+}
+
+.prod-page__left {
+  width: 800px;
+  display: inline-block;
+}
+
+.prod-page__right {
+  width: 780px;
+  display: inline-block;
+}
+
+.pslider-for__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 650px;
+}
+
+.pslider-nav {
+  margin-top: 29px;
+  position: relative;
+}
+
+.pslider-nav .slick-prev, .pslider-nav .slick-next {
+  width: 32px;
+  height: 180px;
+  top: 0;
+  background-color: #ededed;
+  background-image: none;
+  margin-top: 0;
+  transition: all .2s;
+}
+
+.pslider-nav .slick-prev:before, .pslider-nav .slick-next:before {
+  transition: all .2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  content: '';
+}
+
+.pslider-nav .slick-prev:hover, .pslider-nav .slick-next:hover {
+  background-color: #474747;
+}
+
+.pslider-nav .slick-prev {
+  left: 0;
+  margin-left: 0;
+}
+
+.pslider-nav .slick-prev:before {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 8.5px 8px 8.5px 0;
+  border-color: transparent #c3c3c3 transparent transparent;
+}
+
+.pslider-nav .slick-prev:hover:before {
+  border-color: transparent white transparent transparent;
+}
+
+.pslider-nav .slick-next {
+  right: 0;
+  margin-right: 0;
+}
+
+.pslider-nav .slick-next:before {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 8.5px 0 8.5px 8px;
+  border-color: transparent transparent transparent #c3c3c3;
+}
+
+.pslider-nav .slick-next:hover:before {
+  border-color: transparent transparent transparent white;
+}
+
+.pslider-nav__item {
+  *zoom: 1;
+  width: 230px;
+  height: 180px;
+  cursor: pointer;
+  margin: 0 5px;
+  position: relative;
+}
+
+.pslider-nav__item:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.pslider-nav__item:before, .pslider-nav__item:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.pslider-nav__item:before {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  background-color: white;
+  transition: all .2s;
+}
+
+.pslider-nav__item:after {
+  transition: opacity 0.2s 0.1s, width 0.2s 0.1s, height 0.2s 0.1s;
+  background-image: url("../img/magnif-prod.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 127px;
+  height: 127px;
+  border: 1px solid white;
+}
+
+.pslider-nav__item:hover:before, .pslider-nav__item:hover:after {
+  opacity: 0.7;
+}
+
+.pslider-nav__item:hover:before {
+  width: 101px;
+  height: 101px;
+}
+
 .select-view {
   color: black;
   cursor: pointer;

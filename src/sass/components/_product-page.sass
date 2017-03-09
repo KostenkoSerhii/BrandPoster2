@@ -1,0 +1,82 @@
+.prod-page
+	&__container
+		font-size: 0
+	&__left
+		width: 800px
+		display: inline-block
+	&__right
+		width: 780px
+		display: inline-block
+.pslider-for
+	&__item
+		+cover
+		height: 650px
+.pslider-nav
+	margin-top: 29px
+	position: relative
+	.slick-prev, .slick-next
+		width: 32px
+		height: 180px
+		top: 0
+		background-color: #ededed
+		background-image: none
+		margin-top: 0
+		transition: all .2s
+		&:before
+			transition: all .2s
+			+vcenter
+			content: ''
+		&:hover
+			background-color: #474747
+			&:before
+	.slick-prev
+		left: 0
+		margin-left: 0
+		&:before
+			+arr(8, 17, #c3c3c3, l)
+		&:hover
+			&:before
+				border-color: transparent $white transparent transparent
+	.slick-next
+		right: 0
+		margin-right: 0
+		&:before
+			+arr(8, 17, #c3c3c3, r)
+		&:hover
+			&:before
+				border-color: transparent transparent transparent $white
+	&__item
+		+clr
+		width: 230px
+		height: 180px
+		cursor: pointer
+		margin: 0 5px
+		position: relative
+		&:before, &:after
+			content: ''
+			+vcenter
+			border-radius: 50%
+			opacity: 0
+		&:before
+			width: 70px
+			height: 70px
+			padding: 10px
+			background-color: white
+			transition: all .2s
+		&:after
+			transition: opacity .2s 0.1s, 
+			width .2s 0.1s,
+			height .2s 0.1s
+			background-image: url("../img/magnif-prod.png") 
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-color: transparent
+			width: 127px
+			height: 127px
+			border: 1px solid white
+		&:hover
+			&:before, &:after
+				opacity: 0.7
+			&:before
+				width: 101px
+				height: 101px
