@@ -18,20 +18,21 @@
 	&__quantity
 		display: inline-block
 		font-family: $PS
-		font-size: 26px
 		color: $gray
+		+css-lock(18, 26, 992, 1599)
 		+r(991)
-			font-size: 18px
 			line-height: 0.75em
 		+r(639)
 			font-size: 16px
 			line-height: 1em
 	&__h1
 		margin-right: 34px
+		+css-lock(0, 34, 992, 1599, "margin-left")
+		+css-lock(20, 26, 992, 1599)
 		+r(991)
 			display: block
+			font-size: 26px
 			margin-right: 0
-			font-size: 
 	&__container
 		font-size: 0
 		+clr
@@ -55,15 +56,17 @@
 			padding: 13px 18px
 	&__left, &__right
 		display: inline-block
-		width: 50%
+		//width: 50%
 		vertical-align: middle
 	&__left
 		text-align: left
+		width: 45%
 		+r(991)
 			float: none
 			width: 100%
 			text-align: center
 	&__right
+		width: 55%
 		text-align: right
 		+r(991)
 			display: none

@@ -1,15 +1,17 @@
 .cfilter
-	width: 280px
+	+css-lock(200, 280, 992, 1599, "width")
+	
+	//width: 280px
 	float: left
 	+r(991)
 		display: none
-	.noUi-horizontal
-		.noUi-handle
-			+rmin(992)
-				left: -2px
-	.noUi-base
-		+rmin(992)
-			width: 91%
+	//.noUi-horizontal
+	//	.noUi-handle
+	//		+rmin(992)
+	//			left: -2px
+	//.noUi-base
+	//	+rmin(992)
+	//		width: 91%
 	&__wrapper
 		display: none
 		font-size: 0
@@ -62,7 +64,8 @@
 		padding: 7px 8px
 		background-color: #f3f3f3
 		border: 1px solid #e6e6e6
-		width: 128px
+		//width: 128px
+		+css-lock(85, 128, 992, 1599, "width")
 		display: block
 		float: left
 		color: $gray

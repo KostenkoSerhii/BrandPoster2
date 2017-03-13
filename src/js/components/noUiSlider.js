@@ -1,3 +1,4 @@
+if($(".cfilter-js")){
 var priceSlider = document.getElementById('priceSlider');
 var priceInputMin = document.getElementById('priceInputMin');
 var priceInputMax = document.getElementById('priceInputMax');
@@ -5,33 +6,33 @@ var inputs = [priceInputMin, priceInputMax];
 //var cfilterMinSpan = document.getElementById('cfilter-price-min');
 //var cfilterMaxSpan = document.getElementById('cfilter-price-max');
 noUiSlider.create(priceSlider, {
-	start: [1290, 9400],
-	connect: true,
-	range: {
-		'min': [1290],
-		'max': [9400]
-	},
-	format: wNumb({
+  start: [1290, 9400],
+  connect: true,
+  range: {
+    'min': [1290],
+    'max': [9400]
+  },
+  format: wNumb({
     decimals: 0, 
     thousand: ' '
   })
 });
 
 //priceSlider.noUiSlider.on('update', function ( values, handle ) {
-//	if ( handle ) {
-//		cfilterMaxSpan.innerHTML = values[handle];
-//	} else {
-//		cfilterMinSpan.innerHTML = values[handle];
-//	}
+//  if ( handle ) {
+//    cfilterMaxSpan.innerHTML = values[handle];
+//  } else {
+//    cfilterMinSpan.innerHTML = values[handle];
+//  }
 //});
 priceSlider.noUiSlider.on('update', function( values, handle ) {
-	inputs[handle].value = values[handle];
+  inputs[handle].value = values[handle];
 });
 
 function setSliderHandle(i, value) {
-	var r = [null,null];
-	r[i] = value;
-	priceSlider.noUiSlider.set(r);
+  var r = [null,null];
+  r[i] = value;
+  priceSlider.noUiSlider.set(r);
 }
 
 // Listen to keydown events on the input field.
@@ -96,3 +97,5 @@ function setSliderHandle(i, value) {
       }
     });
   });
+
+};

@@ -9,8 +9,8 @@
 	&__logo
 		height: 40px
 		margin-top: 20px
-		width: 281px
-		//+css-lock(200, 281, 1200, 1600, "width")
+		//width: 281px
+		+css-lock(230, 281, 1300, 1600, "width")
 		+cover
 		background-size: contain
 		display: block
@@ -18,6 +18,7 @@
 		+r(991)
 			margin-top: 32px
 			margin-left: 13px
+			width: 281px
 		+r(767)
 			margin-left: 0
 		+r(560)
@@ -27,7 +28,9 @@
 	&__menu
 		float: left
 		margin-top: 35px
-		+css-lock(0, 99, 1300, 1600, "margin-left")
+		+css-lock(5, 50, 1300, 1550, "margin-left")
+		+rmin(1599)
+			margin-left: 99px
 		+r(1299)
 			margin-top: 23px
 			+css-lock(450, 750, 992, 1300, "width")
@@ -67,7 +70,7 @@
 					width: 100%
 .basket-link
 	float: right
-	width: 210px
+	//width: 210px
 	height: 99px
 	background-color: #e7e7e7
 	position: relative
@@ -83,8 +86,10 @@
 		border-style: solid
 		border-color: transparent #e7e7e7
 		border-width: 0px 28px 99px 0px
+	+css-lock(185, 210, 1300, 1600, "width")
 	+r(991)
 		right: -19px
+		width: 210px
 	+r(767)
 		right: -25px
 	+r(560)
@@ -125,6 +130,16 @@
 		border-radius: 50%
 		margin-right: 14px
 		background-size: 40px 40px
+		+r(1599)
+			width: 50px
+			height: 50px
+			background-size: 30px 30px
+			margin-top: 10px
+		+r(992)
+		width: 74px
+		height: 74px
+		background-size: 40px 40px
+		margin-top: 0
 		+r(560)
 			width: 40px
 			height: 40px

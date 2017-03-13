@@ -1,12 +1,13 @@
 $arr : "bag", "car", "reload" , "certificate"
 
-
 .topline
 	padding: 10px 0
 	background-color: #242424
 	width: 100%
 	+r(991)
 		padding:  11px 0
+	.container
+		padding: 0 10px
 .topline__wrapper
 	padding: 0 17px 0 10px
 	width: 100%
@@ -26,8 +27,8 @@ $arr : "bag", "car", "reload" , "certificate"
 .topline__left
 	width: 150px
 	margin-top: 3px
-	+r(1420)
-		width: 130px
+	//+r(1420)
+	//	width: 130px
 	+r(991)
 		width: 200px
 		float: left
@@ -77,6 +78,8 @@ $arr : "bag", "car", "reload" , "certificate"
 	margin: 0 15px
 	+r(1420)
 		margin: 0 5px
+	+r(1000)
+		margin: 0 2px
 .topline__list-link
 	@extend .grayLinkStyle
 	+r(1199)

@@ -4,13 +4,14 @@
 	margin-top: 36px
 	+css-lock(972, 1257, 1350, 1599, "width")
 	+r(1300)
-		width: 70%
+		width: 75%
 		text-align: center
 	+r(991)
 		margin-top: 66px
 		width: 100%
 	+r(639)
 		margin-top: 20px
+	
 .cproduct
 	text-align: center
 	+css-lock(300, 400, 1350, 1599, "width")
@@ -24,7 +25,7 @@
 	transition: all .3s
 	&:nth-of-type(3n)
 		margin-right: 0
-	+rmin(992)
+	+rmin(1300)
 		&:hover
 			border-color: $pink
 			.cproduct__basket-link
@@ -33,10 +34,14 @@
 				opacity: 0
 	+r(1300)
 		margin: 0 10px 36px 
+		width: 220px
+		padding: 12px 0px 0px
 		&:nth-of-type(3n)
 			margin: 0 10px 36px
+	+r(1100)
+		width: 200px
 	+r(991)
-		padding: 12px 0px 0px
+		width: 300px
 	+r(800)
 		&:nth-of-type(odd)
 			margin-left: 0
@@ -52,9 +57,12 @@
 		display: block
 	&__img
 		+cover
-		+css-lock(270, 361, 1350, 1599, "width")
-		+css-lock(270, 361, 1350, 1599, "height")
+		+css-lock(180, 361, 1350, 1599, "width")
+		+css-lock(180, 361, 1350, 1599, "height")
 		margin: 0	auto
+		+r(991)
+			height: 270px
+			width: 270px
 	&__h2
 		margin-top: 22px
 		margin-bottom: 5px
@@ -111,7 +119,7 @@
 		padding: 30px 20px
 		width: 100%
 		display: block
-		+rmin(992)
+		+rmin(1300)
 			position: absolute
 			transform: translateY(100%)
 			left: 0
