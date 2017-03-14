@@ -2477,25 +2477,25 @@ a {
   text-decoration: line-through;
   font-size: calc(18px + (22 - 18) * ((100vw - 992px) / (1599 - 992)));
   margin-bottom: 16px;
-  font-family: "ProximaNova-Semibold", sans-serif;
+  font-family: "ProximaNova-Light", sans-serif;
   transition: all .2s;
   opacity: 1;
   line-height: 1em;
 }
 
 .cproduct__old-price span {
-  font-family: "ProximaNova-Light", sans-serif;
+  font-family: "ProximaNova-Semibold", sans-serif;
 }
 
 .cproduct__price {
   color: black;
-  font-family: "ProximaNova-Semibold", sans-serif;
+  font-family: "ProximaNova-Light", sans-serif;
   line-height: 1em;
   font-size: calc(26px + (42 - 26) * ((100vw - 992px) / (1599 - 992)));
 }
 
 .cproduct__price span {
-  font-family: "ProximaNova-Light", sans-serif;
+  font-family: "ProximaNova-Semibold", sans-serif;
 }
 
 .cproduct__price--pink {
