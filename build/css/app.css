@@ -4716,6 +4716,7 @@ ul.select-options li:hover {
   }
   .cproduct__option{
     font-size: 18px;
+    margin-bottom: 10px;
   }
   .cproduct__old-price{
     font-size: 18px;
