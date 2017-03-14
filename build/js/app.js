@@ -4348,6 +4348,19 @@ $(document).ready(function () {
 	};
 	/*product sliders*/
 
+	/*other prod slider on product page*/
+	if ($(".otherslider-js")) {
+
+		$(".otherslider-js").slick({
+			infinite: true,
+			slidesToShow: 4,
+			/*		slidesToScroll: 1,*/
+			variableWidth: true
+		});
+	} /*		centerPadding: '20px'*/
+	;
+	/*other prod slider on product page*/
+
 	//ready
 
 	if ($(".cfilter-js")) {
