@@ -4442,6 +4442,8 @@ ul.select-options li:hover {
   }
   .cproduct{
     width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .cproduct__img{
     height: 270px;
