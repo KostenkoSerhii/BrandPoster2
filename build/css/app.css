@@ -1491,7 +1491,7 @@ a {
   background-image: url("../img/sprite.png");
   width: 14px;
   height: 14px;
-  background-position: -20px -86px;
+  background-position: 0px -104px;
   left: 5px;
   display: block;
   position: absolute;
@@ -1520,28 +1520,28 @@ a {
   background-image: url("../img/sprite.png");
   width: 17px;
   height: 19px;
-  background-position: -73px -36px;
+  background-position: -119px 0px;
 }
 
 .topline__icon-car {
   background-image: url("../img/sprite.png");
   width: 25px;
   height: 16px;
-  background-position: -38px 0px;
+  background-position: 0px -50px;
 }
 
 .topline__icon-reload {
   background-image: url("../img/sprite.png");
   width: 16px;
   height: 16px;
-  background-position: -38px -54px;
+  background-position: -119px -29px;
 }
 
 .topline__icon-certificate {
   background-image: url("../img/sprite.png");
   width: 20px;
   height: 18px;
-  background-position: -38px -26px;
+  background-position: 0px -76px;
 }
 
 .phone-callback {
@@ -1868,7 +1868,7 @@ a {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 8px;
-  background-position: -73px -18px;
+  background-position: -35px -50px;
   left: 50%;
   margin-left: -40px;
 }
@@ -1877,7 +1877,7 @@ a {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 8px;
-  background-position: -73px 0px;
+  background-position: -30px -76px;
   right: 50%;
   margin-right: -40px;
 }
@@ -2176,7 +2176,7 @@ a {
   background-image: url("../img/sprite.png");
   width: 28px;
   height: 28px;
-  background-position: 0px 0px;
+  background-position: -51px 0px;
   position: absolute;
   right: 7px;
   top: 50%;
@@ -2840,18 +2840,188 @@ a {
   margin-top: 161px;
 }
 
+.prod-page {
+  margin-top: 20px;
+}
+
 .prod-page__container {
   font-size: 0;
+  text-align: justify;
+  line-height: 0;
+  font-size: 0;
+  text-justify: newspaper;
+  zoom: 1;
+  text-align-last: justify;
+}
+
+.prod-page__container:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0px;
+  visibility: hidden;
+  overflow: hidden;
 }
 
 .prod-page__left {
-  width: 800px;
+  width: 50.63%;
   display: inline-block;
+  position: relative;
+  vertical-align: top;
 }
 
 .prod-page__right {
-  width: 780px;
+  width: 46.7%;
   display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  border-top: 1px solid #e7e7e7;
+  padding-top: 35px;
+  text-align-last: left;
+}
+
+.prod-page__right .wrapper {
+  *zoom: 1;
+}
+
+.prod-page__right .wrapper:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.prod-page__labe {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 188px;
+  height: 187px;
+  font-family: "ProximaNova-Semibold", sans-serif;
+  color: white;
+  font-size: 22px;
+  line-height: 1em;
+  text-transform: uppercase;
+  position: absolute;
+  right: -8px;
+  top: -13px;
+}
+
+.prod-page__labe span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 36%;
+  left: 24%;
+}
+
+.prod-page__h1 {
+  color: black;
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 1.15em;
+  display: block;
+  padding-right: 105px;
+  letter-spacing: -0.6px;
+  margin-bottom: 49px;
+  padding-left: 5px;
+}
+
+.prod-page__price-block {
+  float: left;
+  display: inline-block;
+  width: 351px;
+}
+
+.prod-page__info-block {
+  float: right;
+  float-display: inline-block;
+}
+
+.prod-page__old-price {
+  color: silver;
+  text-decoration: line-through;
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-family: "ProximaNova-Light", sans-serif;
+  line-height: 1em;
+  padding-left: 16px;
+}
+
+.prod-page__old-price span {
+  font-family: "ProximaNova-Extrabld", sans-serif;
+}
+
+.prod-page__price {
+  color: #e5459c;
+  line-height: 1em;
+  padding-left: 12px;
+  font-family: "ProximaNova-Light", sans-serif;
+  font-size: 47px;
+  margin-bottom: 45px;
+}
+
+.prod-page__price span {
+  font-size: 59px;
+  font-family: "ProximaNova-Extrabld", sans-serif;
+}
+
+.prod-page__basket {
+  font-family: "ProximaNova-Bold", sans-serif;
+  color: white;
+  font-size: 30px;
+  line-height: 1;
+  display: inline-block;
+  padding: 28px 0px 28px 40px;
+  background: #e5459c;
+  text-transform: uppercase;
+  width: 348px;
+  position: relative;
+  margin-bottom: 65px;
+}
+
+.prod-page__basket:after {
+  content: '';
+  position: absolute;
+  background-color: #da3c92;
+  right: 0;
+  top: 0;
+  width: 97px;
+  height: 100%;
+  z-index: 1;
+}
+
+.prod-page__basket:before {
+  background-image: url("../img/sprite.png");
+  width: 41px;
+  height: 40px;
+  background-position: 0px 0px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 25px;
+  content: '';
+  z-index: 2;
+}
+
+.prod-page__desc-article {
+  color: #3a3a3a;
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+  margin-bottom: 25px;
+}
+
+.prod-page__desc-article:last-of-type {
+  margin-bottom: 0;
 }
 
 .pslider-for__item {
@@ -2978,6 +3148,63 @@ a {
 .pslider-nav__item:hover:before {
   width: 101px;
   height: 101px;
+}
+
+.pdetails {
+  width: 100%;
+  color: #686868;
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 1.37em;
+  padding: 20px 0 20px 22px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.pdetails__list {
+  list-style-type: disc;
+}
+
+.pdetails__item {
+  color: #c6c6c6;
+}
+
+.pdetails__value {
+  color: #686868;
+}
+
+.pdetails__count {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 0;
+  font-family: "ProximaNova-Regular", sans-serif;
+  color: #373737;
+  line-height: 48px;
+}
+
+.pdetails__minus, .pdetails__plus {
+  width: 20px;
+  height: 48px;
+  border: 1px solid #cfcfcf;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+}
+
+.pdetails__count-value {
+  display: inline-block;
+  vertical-align: top;
+  width: 44px;
+  height: 48px;
+  border: 1px solid #cfcfcf;
+  font-size: 26px;
+  text-align: center;
 }
 
 .select-view {

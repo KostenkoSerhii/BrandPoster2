@@ -1,12 +1,116 @@
 .prod-page
+	margin-top: 20px
 	&__container
 		font-size: 0
+		+justify
 	&__left
-		width: 800px
+		width: 50.63%
 		display: inline-block
+		position: relative
+		vertical-align: top
 	&__right
-		width: 780px
+		width: 46.7%
 		display: inline-block
+		vertical-align: top
+		text-align: left
+		border-top: 1px solid #e7e7e7
+		padding-top: 35px
+		//padding-left: 5px
+		text-align-last: left
+		.wrapper
+			+clr
+	&__labe
+		+cover
+		background-size: contain
+		width: 188px
+		height: 187px
+		font-family: $PS
+		color: $white
+		font-size: 22px
+		line-height: 1em
+		text-transform: uppercase
+		position: absolute
+		right: -8px
+		top: -13px
+		span
+			+vcenter
+			transform: rotate(45deg)
+			top: 36%
+			left: 24%
+	&__h1
+		color: $black
+		font-family: $PB
+		font-size: 32px
+		line-height: 1.15em
+		display: block
+		padding-right: 105px
+		letter-spacing: -0.6px
+		margin-bottom: 49px
+		padding-left: 5px
+	&__price-block
+		float: left
+		display: inline-block
+		width: 351px
+	&__info-block
+		float: right
+			display: inline-block
+	&__old-price
+		color: $silver
+		text-decoration: line-through
+		font-size: 26px
+		margin-bottom: 10px
+		font-family:  $PL
+		line-height: 1em
+		padding-left: 16px
+		span
+			font-family:  $PEB		
+	&__price
+		color: $pink
+		line-height: 1em
+		padding-left: 12px
+		font-family:  $PL
+		font-size: 47px
+		margin-bottom: 45px
+		span
+			font-size: 59px
+			font-family:  $PEB
+	&__basket
+		font-family: $PB
+		color: $white
+		font-size: 30px
+		line-height: 1
+		display: inline-block
+		padding: 28px 0px 28px 40px
+		background: $pink
+		text-transform: uppercase
+		width: 348px
+		position: relative
+		margin-bottom: 65px
+		&:after
+			content: ''
+			position: absolute
+			background-color: #da3c92
+			right: 0
+			top: 0
+			width: 97px
+			height: 100%
+			z-index: 1
+		&:before
+			+s(page-basket)
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 25px
+			content: ''
+			z-index: 2
+	&__desc-article
+		color: $gray-light
+		font-family: $PR
+		font-size: 16px
+		line-height: 1.375
+		margin-bottom: 25px
+		&:last-of-type
+			margin-bottom: 0
 .pslider-for
 	&__item
 		+cover
@@ -80,3 +184,44 @@
 			&:before
 				width: 101px
 				height: 101px
+.pdetails
+	width: 100%
+	color: $black-lighten
+	font-family: $PR
+	font-size: 16px
+	line-height: 1.37em
+	padding: 20px 0 20px 22px
+	border-top: 1px solid #e7e7e7
+	border-bottom: 1px solid #e7e7e7
+	position: relative
+	margin-bottom: 35px
+	&__list
+		list-style-type: disc
+	&__item
+		color: $gray4
+	&__value
+		color: $black-lighten
+	&__count
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 0
+		font-family: $PR
+		color: $black-light
+		line-height: 48px
+	&__minus, &__plus
+		width: 20px
+		height: 48px
+		border: 1px solid #cfcfcf
+		display: inline-block
+		vertical-align: top
+		font-size: 20px
+	&__count-value
+		display: inline-block
+		vertical-align: top
+		width: 44px
+		height: 48px
+		border: 1px solid #cfcfcf
+		font-size: 26px
+		text-align: center
