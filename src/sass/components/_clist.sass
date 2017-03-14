@@ -26,10 +26,6 @@
 	position: relative
 	overflow: hidden
 	transition: all .3s
-	//+r(1599)
-	//	margin-right: 50px
-	&:nth-of-type(3n)
-		margin-right: 0
 	+rmin(1300)
 		&:hover
 			border-color: $pink
@@ -41,11 +37,9 @@
 		width: 350px
 		+css-lock(300, 350, 1350, 1550, "width")
 	+r(1300)
-		margin: 0 10px 36px 
-		+css-lock(200, 275, 992, 1300, "width")
+		margin: 0 0px 36px 
+		+css-lock(220, 275, 992, 1300, "width")
 		padding: 12px 0px 0px
-		&:nth-of-type(3n)
-			margin: 0 10px 36px
 	+r(1100)
 		//width: 200px
 	+r(991)

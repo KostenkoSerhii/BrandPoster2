@@ -2422,10 +2422,6 @@ a {
   transition: all .3s;
 }
 
-.cproduct:nth-of-type(3n) {
-  margin-right: 0;
-}
-
 .cproduct__main-link {
   display: block;
 }
@@ -3818,7 +3814,7 @@ ul.select-options li:hover {
 
 @media only screen and (max-width: 1300px) and (max-width: 992px){
   .cproduct{
-    width: 200px;
+    width: 220px;
   }
 }
 
@@ -3973,12 +3969,9 @@ ul.select-options li:hover {
     width: 75%;
   }
   .cproduct{
-    margin: 0 10px 36px;
-    width: calc(200px + (275 - 200) * ((100vw - 992px) / (1300 - 992)));
+    margin: 0 0px 36px;
+    width: calc(220px + (275 - 220) * ((100vw - 992px) / (1300 - 992)));
     padding: 12px 0px 0px;
-  }
-  .cproduct:nth-of-type(3n){
-    margin: 0 10px 36px;
   }
   .cproduct__h2{
     margin-top: 14px;
