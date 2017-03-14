@@ -2,27 +2,32 @@
 	font-size: 0
 	float: right
 	margin-top: 36px
-	+css-lock(972, 1257, 1350, 1599, "width")
+	width: 1257px
+	+justify
+	+r(1599)
+		+css-lock(972, 1150, 1350, 1550, "width")
 	+r(1300)
 		width: 75%
-		text-align: center
 	+r(991)
 		margin-top: 66px
 		width: 100%
+		text-align: center
 	+r(639)
 		margin-top: 20px
-	
 .cproduct
 	text-align: center
-	+css-lock(300, 400, 1350, 1599, "width")
-	padding: 16px 0px 22px
-	margin-right: 28px
+	text-align-last: center
+	width: 400px
+	padding: 16px 0px 27px
+	//margin-right: 28px
 	+css-lock(36, 65, 1350, 1599, "margin-bottom")
 	display: inline-block
 	border: 1px solid #ddd
 	position: relative
 	overflow: hidden
 	transition: all .3s
+	//+r(1599)
+	//	margin-right: 50px
 	&:nth-of-type(3n)
 		margin-right: 0
 	+rmin(1300)
@@ -32,14 +37,17 @@
 				transform: translateY(0%)
 			.cproduct__old-price
 				opacity: 0
+	+r(1599)
+		width: 350px
+		+css-lock(300, 350, 1350, 1550, "width")
 	+r(1300)
 		margin: 0 10px 36px 
-		width: 220px
+		+css-lock(200, 275, 992, 1300, "width")
 		padding: 12px 0px 0px
 		&:nth-of-type(3n)
 			margin: 0 10px 36px
 	+r(1100)
-		width: 200px
+		//width: 200px
 	+r(991)
 		width: 300px
 	+r(800)
@@ -57,9 +65,17 @@
 		display: block
 	&__img
 		+cover
-		+css-lock(180, 361, 1350, 1599, "width")
-		+css-lock(180, 361, 1350, 1599, "height")
+		width: 361px
+		height: 361px
+		+r(1599)
+			width: 320px
+			height: 320px
+		+r(1550)
+			+css-lock(270, 320, 1350, 1550, "width")
+			+css-lock(270, 320, 1350, 1550, "height")
 		margin: 0	auto
+		+r(1350)
+
 		+r(991)
 			height: 270px
 			width: 270px
@@ -67,33 +83,41 @@
 		margin-top: 22px
 		margin-bottom: 5px
 		padding: 0 20px
-		+css-lock(26, 30, 992, 1599)
+		+css-lock(22, 30, 992, 1599)
 		+r(1300)
 			margin-top: 14px
 		+r(991)
 			margin-bottom: 0
+			font-size: 26px
 		+r(639)
 			font-size: 22px
 	&__option
 		color: $gray
 		display: inline-block
-		+css-lock(22, 26, 992, 1599)
-		margin-bottom: 20px
+		+css-lock(18, 26, 992, 1599)
+		margin-bottom: 28px
 		font-family: $PR
+		line-height: 1em
 		+r(1300)
 			margin-bottom: 15px
+		+r(991)
+			font-size: 22px
+			margin-bottom: 26px
 		+r(639)
 			font-size: 18px
 	&__old-price
 		color: #d5d5d5
 		text-decoration: line-through
-		font-size: 22px
-		margin-bottom: 8px
+		+css-lock(18, 22, 992, 1599)
+		margin-bottom: 16px
 		font-family:  $PS
 		transition: all .2s
 		opacity: 1
+		line-height: 1em
 		+r(1300)
 			margin-bottom: 0
+		+r(991)
+			font-size: 22px
 		+r(639)
 			font-size: 18px
 		span
@@ -101,7 +125,12 @@
 	&__price
 		color: $black
 		font-family:  $PS
-		+css-lock(32, 42, 992, 1599)
+		line-height: 1em
+		+css-lock(26, 42, 992, 1599)
+		+r(1300)
+			margin-bottom: 10px
+		+r(991)
+			font-size: 32px
 		+r(639)
 			font-size: 22px
 		span
@@ -116,7 +145,8 @@
 		+css-lock(24, 33, 1350, 1599)
 		text-transform: uppercase
 		text-align: center
-		padding: 30px 20px
+		padding: 33px 20px
+		line-height: 1em
 		width: 100%
 		display: block
 		+rmin(1300)
@@ -124,6 +154,12 @@
 			transform: translateY(100%)
 			left: 0
 			bottom: 0
+		+r(1150)
+			padding: 25px 20px
+		+r(1050)
+			padding: 18px 20px
+		+r(991)
+			padding: 33px 20px
 		+r(639)
 			padding: 15px
 			font-size: 20px
