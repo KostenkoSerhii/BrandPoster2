@@ -1,20 +1,60 @@
 .prod-page
 	margin-top: 20px
+	+r(991)
+		margin-top: 30px
+	+r(767)
+		margin-top: 55px
 	&__container
 		font-size: 0
 		+clr
+		+r(1199)
+			border-bottom: 1px solid #ddd
+			padding-bottom: 74px!important
+			// padding-bottom: 55px!important
+		+r(767)
+			padding-bottom: 45px!important
 	&__left
 		width: 50.63%
 		float: left
 		position: relative
+		+r(1365)
+			width: 46%
+		+r(1199)
+			float: none
+			width: 100%
+			//max-width: 800px
+			margin: 0 auto
+		//+r(991)
+		//	max-width: 730px
 	&__right
 		width: 46.7%
 		float: right
 		border-top: 1px solid #e7e7e7
-		padding-top: 35px
+		//padding-top: 35px
+		+css-lock(14, 35, 1200, 1599, "padding-top")
+		+r(1365)
+			width: 52%
+		+r(1199)
+			width: 100%
+			float: none
+			border-top: none
+			//max-width: 800px
+			margin: 45px auto 0
+			padding-top: 0
+		+r(767)
+			margin-top: 52px
+		+r(639)
+			margin-top: 25px
 		.wrapper
 			+clr
-			margin-bottom: 65px
+			//margin-bottom: 65px
+			+css-lock(15, 65, 1200, 1599, "margin-bottom")
+			+r(1199)
+				margin-bottom: 60px
+			+r(767)
+				margin-bottom: 50px
+			+r(639)
+				margin-bottom: 30px
 	&__labe
 		+cover
 		background-size: contain
@@ -28,6 +68,12 @@
 		position: absolute
 		right: -8px
 		top: -13px
+		+r(639)
+			width: 110px
+			height: 110px
+			font-size: 12px
+			right: -5px
+			top: -8px
 		span
 			+vcenter
 			transform: rotate(45deg)
@@ -39,25 +85,64 @@
 		font-size: 32px
 		line-height: 1.15em
 		display: block
-		padding-right: 105px
+		//padding-right: 105px
 		letter-spacing: -0.6px
-		margin-bottom: 49px
+		//margin-bottom: 49px
 		padding-left: 5px
+		+css-lock(15, 49, 1200, 1599, "margin-bottom")
+		+r(1199)
+			text-align: center
+			margin-bottom: 40px
+		+r(991)
+			text-align: left
+			padding-left: 0
+		+r(639)
+			+css-lock(15, 32, 320, 639)
 	&__h2
 		color: $silver
-		font-size: 45px
+		//font-size: 45px
+		+css-lock(35, 45, 992, 1599)
 		font-family: $PB
 		text-transform: uppercase
 		line-height: 1
 		text-align: center
+		+r(767)
+			font-size: 25px
+		+r(639)
+			font-size: 19px
 	&__price-block
 		float: left
-		width: 351px
+		//width: 351px
+		+css-lock(315, 351, 1366, 1599, "width")
+		+r(1199)
+			width: 351px
+			margin-left: 100px
+		+r(991)
+			margin-left: 20px
+		+r(767)
+			margin-left: 0
+			width: 320px
+		+r(639)
+			width: 100%
 	&__info-blocks
+		+css-lock(270, 315, 1366, 1599, "width")
+		+r(1365)
+			width: 240px
 		float: right
-		width: 315px
+		//width: 315px
 		border: 1px solid #e7e7e7
 		margin-top: 7px
+		+r(1199)
+			width: 315px
+			margin-right: 100px
+		+r(991)
+			margin-right: 20px
+		+r(767)
+			margin-right: 0
+			width: 245px
+		+r(639)
+			width: 100%
+			margin-top: 30px
 	&__info-block
 		color: #d5d5d5
 		font-size: 14px
@@ -65,7 +150,7 @@
 		line-height: 1
 		text-align: center
 		border-bottom: 1px solid #e7e7e7
-		height: 124px
+		height: 123px
 		padding-top: 20px
 		&:last-of-type
 			border-bottom: none
@@ -103,6 +188,11 @@
 		font-family:  $PL
 		line-height: 1em
 		padding-left: 16px
+		+r(767)
+			padding-left: 0
+		+r(639)
+			font-size: 18px
+			text-align: center
 		span
 			font-family:  $PEB		
 	&__price
@@ -112,9 +202,17 @@
 		font-family:  $PL
 		font-size: 47px
 		margin-bottom: 45px
+		+r(767)
+			padding-left: 0
+		+r(639)
+			margin-bottom: 15px
+			font-size: 26px
+			text-align: center
 		span
 			font-size: 59px
 			font-family:  $PEB
+			+r(639)
+				font-size: 28px
 	&__basket
 		font-family: $PB
 		color: $white
@@ -122,10 +220,18 @@
 		line-height: 1
 		display: inline-block
 		padding: 28px 0px 28px 40px
+		+css-lock(20, 40, 1366, 1599, "padding-left")
 		background: $pink
 		text-transform: uppercase
-		width: 348px
+		//width: 348px
+		width: 100%
 		position: relative
+		+r(639)
+			padding: 15px 0px 15px 15px
+			width: 260px
+			margin-left: auto
+			margin-right: auto
+			display: block
 		&:after
 			content: ''
 			position: absolute
@@ -135,6 +241,8 @@
 			width: 97px
 			height: 100%
 			z-index: 1
+			+r(639)
+				width: 65px
 		&:before
 			+s(page-basket)
 			position: absolute
@@ -143,24 +251,49 @@
 			right: 25px
 			content: ''
 			z-index: 2
+			+r(639)
+				right: 11px
 	&__desc-article
 		color: $gray-light
 		font-family: $PR
 		font-size: 16px
 		line-height: 1.375
-		margin-bottom: 25px
+		//margin-bottom: 25px
+		+css-lock(5, 25, 1200, 1599, "margin-bottom")
 		&:last-of-type
 			margin-bottom: 0
+		+r(1199)
+			margin-bottom: 25px
 .pslider-for
 	&__item
 		+cover
-		height: 650px
+		+css-lock(480, 650, 1366, 1599, "height")
+		//height: 650px
+		//+r(1365)
+		//	height: 570px
+		+r(1199)
+			+css-lock(570, 750, 992, 1199, "height")
+		+r(991)
+			height: 650px
+		+r(767)
+			height: 500px
+		+r(600)
+			height: 450px
+		+r(500)
+			height: 370px
+		+r(400)
+			height: 300px
+		+r(360)
+			height: 250px
 .pslider-nav
 	margin-top: 29px
 	position: relative
+	+r(767)
+		margin-top: 25px
 	.slick-prev, .slick-next
 		width: 32px
-		height: 180px
+		//height: 180px
+		height: 100%
 		top: 0
 		background-color: #ededed
 		background-image: none
@@ -191,8 +324,11 @@
 				border-color: transparent transparent transparent $white
 	&__item
 		+clr
-		width: 230px
-		height: 180px
+		+css-lock(160, 230, 1366, 1599, "width")
+		//width: 230px
+		+css-lock(140, 180, 1366, 1599, "height")
+		+cover
+		//height: 180px
 		cursor: pointer
 		margin: 0 5px
 		position: relative
@@ -220,10 +356,26 @@
 			border: 1px solid white
 		&:hover
 			&:before, &:after
-				opacity: 0.7
+				+rmin(640)
+					opacity: 0.7
 			&:before
 				width: 101px
 				height: 101px
+		+r(1199)
+			width: 230px
+			height: 180px
+		+r(767)
+			width: 180px
+			height: 140px
+		+r(600)
+			width: 140px
+			height: 140px
+		+r(500)
+			width: 100px
+			height: 100px
+		+r(400)
+			width: 65px
+			height: 65px
 .pdetails
 	width: 100%
 	color: $black-lighten
@@ -235,8 +387,13 @@
 	border-bottom: 1px solid #e7e7e7
 	position: relative
 	margin-bottom: 35px
+	+r(767)
+		padding-left: 14px
 	&__list
 		list-style-type: disc
+		+r(639)
+			text-align: center
+			list-style-type: none
 	&__item
 		color: $gray4
 	&__value
@@ -251,6 +408,11 @@
 		color: $black-light
 		line-height: 48px
 		text-align: center
+		+r(639)
+			position: relative
+			top: 0
+			transform: translateY(0%)
+			margin-top: 15px
 	&__minus, &__plus
 		width: 20px
 		height: 48px
@@ -269,12 +431,18 @@
 		font-size: 26px
 		margin: 0 4px
 .otherprod
-	margin-top: 140px
+	margin-top: 134px
+	+r(1199)
+		margin-top: 46px
+	+r(767)
+		margin-top: 33px
 	&__slider
-		margin-top: 68px
+		margin-top: 47px
+		+r(767)
+			margin-top: 37px
 	&__slide
 		width: 380px
-		margin: 0 10px
+		margin: 0 10px!important
 		margin-bottom: 0!important
 		+rmin(1300)
 			&:hover
@@ -285,13 +453,56 @@
 					opacity: 1
 		+r(1599)
 			margin: 0 8px
+		+r(1300)
+			margin:  0 8px
+		+r(767)
+			width: 290px
+			margin:  0 3px!important
+		+r(639)
+			width: 260px
+			margin:  0 10px!important
+		.cproduct__img
+			+css-lock(250, 344, 1365, 1599, "height")
+			+css-lock(250, 344, 1365, 1599, "width")
+			+r(1364)
+				+css-lock(240, 380, 992, 1599, "height")
+				+css-lock(240, 380, 992, 1599, "width")
+			//width: 344px
+			//height: 344px
+			+r(991)
+				+css-lock(270, 340, 768, 991, "height")
+				+css-lock(270, 340, 768, 991, "width")
+				//width: 270px
+				//height: 270px
+			+r(767)
+				width: 90%
+				height: 260px
+			+r(639)
+				height: 200px
+		.cproduct__h2
+			margin-top: 17px
+		.cproduct__option
+			margin-bottom: 20px
+		.cproduct__old-price
+			+r(991)
+				margin-bottom: 5px
+		.cproduct__price 
+			margin-bottom: 16px
 .previews
-	margin-top: 120px
+	margin-top: 116px
 	text-align: center
 	overflow: hidden
 	margin-bottom: 174px
+	+r(991)
+		margin-top: 95px
+		margin-bottom: 106px
 	&__wrapper
-		margin-top: 75px
+		margin-top: 71px
+		+r(639)
+			margin-top: 50px
+	+r(639)
+		margin-top: 50px
+		margin-bottom: 30px
 .preview
 	font-family: $PR
 	padding-bottom: 100px
@@ -301,6 +512,10 @@
 		padding-bottom: 58px
 		border-bottom: 1px solid #ddd
 		margin-bottom: 55px
+	+r(639)
+		padding-bottom: 50px
+		&:last-of-type
+			margin-bottom: 30px
 	&__author
 		font-family: $PS
 		font-size: 22px
@@ -314,6 +529,8 @@
 		line-height: 1
 		display: block
 		margin-bottom: 36px
+		+r(639)
+			margin-bottom: 15px
 	&__article
 		font-size: 16px
 		line-height: 1.37
@@ -321,6 +538,9 @@
 		margin: 0 auto
 		color: $gray-light
 		margin-bottom: 40px
+		+r(639)
+			margin-bottom: 20px
+			font-size: 14px
 	&__question
 		color: #b9b9b9
 		font-size: 16px
@@ -361,6 +581,8 @@
 		left: -330px
 	&:after
 		right: -330px
+	+r(639)
+		margin-bottom: 20px
 	&__icon
 		display: inline-block
 		margin-right: 1px

@@ -4350,16 +4350,56 @@ $(document).ready(function () {
 
 	/*other prod slider on product page*/
 	if ($(".otherslider-js")) {
-
 		$(".otherslider-js").slick({
 			infinite: true,
 			slidesToShow: 4,
-			/*		slidesToScroll: 1,*/
-			variableWidth: true
+			slidesToScroll: 2,
+			variableWidth: true,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			arrows: false,
+			responsive: [{
+				breakpoint: 1599,
+				settings: {
+					centerMode: true,
+					variableWidth: false
+				}
+			}, {
+				breakpoint: 1365,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					autoplaySpeed: 3000,
+					centerMode: true,
+					variableWidth: false
+				}
+			}, {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					autoplaySpeed: 2500,
+					centerMode: true,
+					variableWidth: false
+				}
+			}, {
+				breakpoint: 639,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+					variableWidth: true
+				}
+			}]
 		});
-	} /*		centerPadding: '20px'*/
-	;
+	};
 	/*other prod slider on product page*/
+
+	/*detach replace h1 on rpoduct page*/
+	if ($(".prod-h1-js") && windowWidth <= 1199) {
+		var tempProdH1 = $(".prod-h1-js").detach();
+		$(".prodleft-js").before(tempProdH1);
+	};
+	/*detach replace h1 on rpoduct page*/
 
 	//ready
 
