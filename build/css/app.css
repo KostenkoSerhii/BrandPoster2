@@ -3977,28 +3977,6 @@ ul.select-options li:hover {
     background: transparent;
     color: #e5459c;
   }
-  .header__menu-link{
-    position: relative;
-    transition: all .3s;
-  }
-  .header__menu-link:before{
-    content: '';
-    position: absolute;
-    bottom: -12px;
-    height: 1px;
-    width: 0px;
-    background: #e5459c;
-    transition: all .3s;
-  }
-  .header__menu-link:hover{
-    color: #e5459c;
-  }
-  .header__menu-link:hover:before{
-    width: 52px;
-  }
-  .header__menu-link--pink:hover:before{
-    width: 100%;
-  }
 }
 
 @media (min-width: 1200px){
