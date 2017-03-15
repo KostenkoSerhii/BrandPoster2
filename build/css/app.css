@@ -3058,6 +3058,7 @@ a {
   text-transform: uppercase;
   width: 100%;
   position: relative;
+  transition: all .2s;
 }
 
 .prod-page__basket:after {
@@ -3084,6 +3085,10 @@ a {
   right: 25px;
   content: '';
   z-index: 2;
+}
+
+.prod-page__basket:hover {
+  background-color: #da3c92;
 }
 
 .prod-page__desc-article {
