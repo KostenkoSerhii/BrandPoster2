@@ -1,8 +1,4 @@
-//.basket-page
-//	.header__wrapper
-//		padding-bottom: 0
 .basket
-	//font-size: 0
 	padding-top: 13px
 	+css-lock(67, 126, 991, 1599, "margin-bottom")
 	+r(991)
@@ -12,7 +8,7 @@
 	&__container
 		+clr
 	&__left
-		+css-lock(600, 722, 1300, 1599, "width")
+		width: 45.7%
 		float: left
 		+r(1300)
 			width: 80%
@@ -22,7 +18,7 @@
 			width: 100%
 			padding-left: 9px
 	&__right
-		+css-lock(650, 829, 1300, 1599, "width")
+		width: 52.47%
 		float: right
 		+css-lock(25, 53, 1300, 1599, "padding-left")
 		+css-lock(25, 53, 1300, 1599, "padding-right")
@@ -48,7 +44,7 @@
 		padding: 20px 0
 		color: $gray-semi-light
 		font-size: 20px
-		line-height: 1em
+		line-height: 1
 		font-family: $PR
 		border-top: 1px solid  #f3f3f3
 		border-bottom: 1px solid  #f3f3f3
@@ -85,7 +81,7 @@
 	&__h2
 		display: inline-block
 		color: $gray-middle
-		line-height: 1.7em
+		line-height: 1.7
 		letter-spacing: -0.4px
 	&__h2link
 		display: inline-block
@@ -93,7 +89,7 @@
 		font-size: 16px
 		font-family: $PR
 		color: $gray
-		line-height: 1em
+		line-height: 1
 	&__option
 		position: relative
 		top: -7px
@@ -144,6 +140,8 @@
 		width: 38px
 		font-size: 16px
 		text-align: center
+	&__count-value
+		font-size: 15px
 	&__count-title
 		border: none
 		margin-right: 7px
@@ -184,19 +182,21 @@
 		color: $gray1
 		font-family: $PR
 		font-size: 20px
-		line-height: 1em
+		line-height: 1
 	&__right
 		text-align: right
 		color: $pink
 		font-size: 24px
-		line-height: 1em
+		line-height: 1
 		font-family: $PR
 	&__value
 		font-family: $PB
 		font-weight: 700
 .delivery
-	+css-lock(280, 357, 1300, 1599, "width")
+	width: 357px
 	float: left
+	+r(1599)
+		width: 43%
 	+r(1300)
 		width: 357px
 	+r(767)
@@ -208,7 +208,7 @@
 		color: $gray
 		font-family: $PR
 		font-size: 20px
-		line-height: 1em
+		line-height: 1
 		border: 1px solid #c7c7c7
 		padding: 15px 15px
 		+r(639)
@@ -226,7 +226,7 @@
 	text-transform: uppercase
 	font-family: $PEB
 	margin-bottom: 28px
-	line-height: 1em
+	line-height: 1
 	+r(639)
 		font-size: 20px
 		margin-bottom: 15px
@@ -254,7 +254,7 @@
 		padding-top: 12px
 		display: block
 		cursor: pointer
-		line-height: 1em
+		line-height: 1
 	&__desc
 		font-size: 15px
 		color: $gray2
