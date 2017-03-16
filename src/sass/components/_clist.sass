@@ -2,12 +2,9 @@
 	font-size: 0
 	float: right
 	margin-top: 36px
-	width: 1257px
-	+justify
+	width: calc(100% - 320px)
 	+r(1599)
-		+css-lock(972, 1150, 1350, 1550, "width")
-	+r(1300)
-		width: 75%
+		width: calc(100% - 260px)
 	+r(991)
 		margin-top: 66px
 		width: 100%
@@ -16,16 +13,17 @@
 		margin-top: 20px
 .cproduct
 	text-align: center
-	text-align-last: center
 	width: 400px
 	padding: 16px 0px 27px
-	//margin-right: 28px
+	margin-right: 28px
 	+css-lock(36, 65, 1350, 1599, "margin-bottom")
 	display: inline-block
 	border: 1px solid #ddd
 	position: relative
 	overflow: hidden
 	transition: all .3s
+	&:nth-of-type(3n)
+		margin-right: 0
 	+rmin(1300)
 		&:hover
 			border-color: $pink
@@ -34,19 +32,18 @@
 			.cproduct__old-price
 				opacity: 0
 	+r(1599)
-		width: 350px
-		+css-lock(300, 350, 1350, 1550, "width")
+		width: 32%
+		margin-right: 2%
 	+r(1300)
-		margin: 0 0px 36px 
-		+css-lock(220, 275, 992, 1300, "width")
+		margin-bottom: 32px
 		padding: 12px 0px 0px
-	+r(1100)
-		//width: 200px
 	+r(991)
 		width: 300px
-		margin-left: 10px
-		margin-right: 10px
-	+r(800)
+		margin-left: 15px
+		margin-right: 15px
+		&:nth-of-type(3n)
+			margin-right: 15px
+	+r(850)
 		&:nth-of-type(odd)
 			margin-left: 0
 			margin-right: 10px
@@ -61,20 +58,12 @@
 		display: block
 	&__img
 		+cover
-		width: 361px
-		height: 361px
-		+r(1599)
-			width: 320px
-			height: 320px
-		+r(1550)
-			+css-lock(270, 320, 1350, 1550, "width")
-			+css-lock(270, 320, 1350, 1550, "height")
+		width: 90%
+		+css-lock(180, 360, 992, 1599, "height")
 		margin: 0	auto
-		+r(1350)
-
 		+r(991)
-			height: 270px
 			width: 270px
+			height: 270px
 	&__h2
 		margin-top: 22px
 		margin-bottom: 5px
@@ -93,7 +82,7 @@
 		+css-lock(18, 26, 992, 1599)
 		margin-bottom: 28px
 		font-family: $PR
-		line-height: 1em
+		line-height: 1
 		+r(1300)
 			margin-bottom: 15px
 		+r(991)
@@ -110,7 +99,7 @@
 		font-family:  $PL
 		transition: all .2s
 		opacity: 1
-		line-height: 1em
+		line-height: 1
 		+r(1300)
 			margin-bottom: 0
 		+r(991)
@@ -122,7 +111,7 @@
 	&__price
 		color: $black
 		font-family:  $PL
-		line-height: 1em
+		line-height: 1
 		+css-lock(26, 42, 992, 1599)
 		+r(1300)
 			margin-bottom: 10px
@@ -143,7 +132,7 @@
 		text-transform: uppercase
 		text-align: center
 		padding: 33px 20px
-		line-height: 1em
+		line-height: 1
 		width: 100%
 		display: block
 		+rmin(1300)
