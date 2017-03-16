@@ -1,7 +1,10 @@
 .cfilter
-	+css-lock(200, 280, 1300, 1500, "width")
+	//+css-lock(200, 280, 1300, 1500, "width")
 	//width: 280px
+	width: 220px
 	float: left
+	+rmin(1600)
+		width: 280px
 	+r(991)
 		display: none
 	//.noUi-horizontal
@@ -15,8 +18,9 @@
 		display: none
 		font-size: 0
 	&__option
-		padding-bottom: 37px
-		padding-top: 26px
+		//padding-bottom: 37px
+		//padding-top: 26px
+		padding: 10px 0
 		border-top: 1px solid #dfdfdf
 		&:first-of-type
 			border-top: none
@@ -55,6 +59,7 @@
 			margin-right: auto
 	&__price
 		padding-bottom: 0
+		padding-top: 26px
 	&__price-wrapper
 		font-size: 0
 		margin-bottom: 31px
@@ -64,7 +69,8 @@
 		background-color: #f3f3f3
 		border: 1px solid #e6e6e6
 		//width: 128px
-		+css-lock(85, 128, 1300, 1599, "width")
+		//+css-lock(85, 128, 1300, 1599, "width")
+		width: 45%
 		display: block
 		float: left
 		color: $gray
@@ -84,6 +90,10 @@
 	&__price-max
 		text-align: right
 .check-block
+	position: relative
+	padding-left: 34px
+	margin-bottom: 10px
+	padding-top: 1px
 	&__input
 		display: none
 		&:checked + label >.check-block__icon
@@ -91,7 +101,6 @@
 				background: $pink
 	&__text
 		+nosel
-		display: inline-block
 		color: $black
 		font-family: $PR
 		font-size: 18px
@@ -105,8 +114,9 @@
 		height: 25px
 		background-color: #f3f3f3
 		border: 1px solid #e6e6e6
-		position: relative
-		top: 5px
+		position: absolute
+		left: 0
+		top: 0px
 		&:before
 			content: ''
 			transition: all .2s

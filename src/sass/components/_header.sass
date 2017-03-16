@@ -10,11 +10,13 @@
 		height: 40px
 		margin-top: 20px
 		//width: 281px
-		+css-lock(230, 281, 1300, 1600, "width")
+		+css-lock(170, 281, 1300, 1600, "width")
 		+cover
 		background-size: contain
 		display: block
 		float: left
+		+r(1099)
+			margin-top: 16px
 		+r(991)
 			margin-top: 32px
 			margin-left: 13px
@@ -28,25 +30,40 @@
 	&__menu
 		float: left
 		margin-top: 35px
-		+css-lock(5, 50, 1300, 1550, "margin-left")
-		+rmin(1599)
+		+rmin(1600)
 			margin-left: 99px
-		+r(1299)
-			margin-top: 23px
-			+css-lock(450, 750, 992, 1300, "width")
+		+r(1599)
+			margin-left: 2%
+			margin-top: 32px
+		+r(1300)
+			margin-top: 31px
+		+r(1150)
+			margin-left: 1%
+		+r(1099)
+			width: 400px
+			margin-left: 10%
+			margin-top: 16px
+			+justify
 		+r(991)
 			display: none
 	&__menu-item
 		display: inline-block
 		margin-bottom: 10px
-		+css-lock(5, 15, 1300, 1600, "margin-right")
-		+css-lock(5, 15, 1300, 1600, "margin-left")
+		margin-left: 15px
+		margin-right: 15px
+		+r(1365)
+			margin-left: 10px
+			margin-right: 10px
+		+r(1200)
+			margin-left: 5px
+			margin-right: 5px
 	&__menu-link
 		text-transform: uppercase
 		color: $black
-		font-size: 15px
-		height: 1.3em
+		//font-size: 15px
+		line-height: 1.3
 		font-family: $PR
+		+css-lock(13, 15, 1250, 1600)
 		//+rmin(1200)
 		//	position: relative
 		//	transition: all .3s
@@ -77,6 +94,7 @@
 	z-index: 1
 	padding-top: 11px
 	text-align: right
+	+css-lock(160, 210, 1300, 1600, "width")
 	&:after
 		z-index: 2
 		position: absolute
@@ -86,10 +104,16 @@
 		border-style: solid
 		border-color: transparent #e7e7e7
 		border-width: 0px 28px 99px 0px
-	+css-lock(185, 210, 1300, 1600, "width")
+	+r(1300)
+		height: 75px
+		&:after
+			border-width: 0px 28px 75px 0px
 	+r(991)
 		right: -19px
 		width: 210px
+		height: 99px
+		&:after
+			border-width: 0px 28px 99px 0px
 	+r(767)
 		right: -25px
 	+r(560)
@@ -103,14 +127,21 @@
 		margin-right: 7px
 		display: inline-block
 		vertical-align: top
+		+r(1300)
+			margin-top: 10px
+		+r(991)
+			margin-top: 20px
 		+r(560)
 			margin-top: 5px
 	&__title
 		color: #242424
-		font-size: 21px
+		//font-size: 21px
 		line-height: 1em
 		font-family: $PR
 		text-transform: uppercase
+		+css-lock(16, 21, 1300, 1599)
+		+r(991)
+			font-size: 21px
 		+r(560)
 			font-size: 14px
 	&__count
@@ -118,6 +149,10 @@
 		font-size: 15px
 		line-height: 1em
 		font-family: $PR
+		+r(1300)
+			font-size: 13px
+		+r(991)
+			font-size: 15px
 		+r(560)
 			font-size: 12px
 	&__img
@@ -135,11 +170,13 @@
 			height: 50px
 			background-size: 30px 30px
 			margin-top: 10px
-		+r(992)
-		width: 74px
-		height: 74px
-		background-size: 40px 40px
-		margin-top: 0
+		+r(1300)
+			margin-top: 2px
+		+r(991)
+			width: 74px
+			height: 74px
+			background-size: 40px 40px
+			margin-top: 0
 		+r(560)
 			margin-top: 0
 			width: 40px
