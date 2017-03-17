@@ -6,105 +6,104 @@ $arr : "bag", "car", "reload" , "certificate"
 	width: 100%
 	+r(991)
 		padding:  11px 0
-.topline__wrapper
-	position: relative
-	+clr
-	+r(1420)
-		padding: 0
-	+r(991)
-		display: block
-.topline__left
-	width: 150px
-	margin-top: 3px
-	float: left
-	+r(991)
-		width: 200px
-.topline__middle
-	position: absolute
-	top: 50%
-	transform: translateY(-50%)
-	left: 22%
-	+r(1599)
-		left: 20%
-	+r(1500)
-		left: 18%
-	+r(1450)
-		left: 16%
-	+r(1300)
-		left: 15%
-	+r(1200)
-		left: 18%
-	+r(1150)
-		left: 16%
-	+r(1000)
-		left: 15%
-	+r(991)
-		display: none
-.topline__right
-	text-align: right
-	float: right
-	+r(991)
-		width: auto
-		margin-right: 69px
+	&__wrapper
+		position: relative
+		+clr
+		+r(1420)
+			padding: 0
+		+r(991)
+			display: block
+	&__left
+		width: 150px
+		margin-top: 3px
+		float: left
+		+r(991)
+			width: 200px
+	&__middle
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 22%
+		+r(1599)
+			left: 20%
+		+r(1500)
+			left: 18%
+		+r(1450)
+			left: 16%
+		+r(1300)
+			left: 15%
+		+r(1200)
+			left: 18%
+		+r(1150)
+			left: 16%
+		+r(1000)
+			left: 15%
+		+r(991)
+			display: none
+	&__right
+		text-align: right
+		float: right
+		+r(991)
+			width: auto
+			margin-right: 69px
+	&__search-block
+		margin-top: 4px
+	&__list-link
+		@extend .grayLinkStyle
+		+r(1199)
+			font-size: 12px
+	&__icon 
+		display: inline-block
+		vertical-align: bottom
+		@each $icon in $arr
+			&-#{$icon}
+				+s($icon)
+	&__list-item
+		display: inline-block
+		margin: 0 30px
+		&:first-of-type
+			margin-left: 0
+		&:last-of-type
+			margin-right: 0
+		+r(1420)
+			margin: 0 20px
+		+r(1270)
+			margin: 0 15px
+		+r(1100)
+			margin: 0 10px
+		+r(1030)
+			margin: 0 7px
+	&__phone-callback
+		display: inline-block
+		+css-lock(2, 12, 992, 1599, "margin-right")
+		+r(991)
+			margin-right: 10px
 .search-block
 	display: inline-block
 	position: relative
 	width: 100%
-.topline__search-block
-	margin-top: 4px
-.search-block__input
-	+placeholder-color($silver)
-	font-size: 14px
-	line-height: 1.4em
-	font-family: $PR
-	color: $silver
-	background: transparent
-	padding: 5px 0px 5px 27px
-	width: 100%
-.search-block__button
-	width: 14px
-	height: 14px
-	+s(magnifier)
-	left: 5px
-	display: block
-	position: absolute
-	top: 50%
-	transform: translateY(-50%)
-.topline__list
-.topline__list-item
-	display: inline-block
-	margin: 0 30px
-	&:first-of-type
-		margin-left: 0
-	&:last-of-type
-		margin-right: 0
-	+r(1420)
-		margin: 0 20px
-	+r(1270)
-		margin: 0 15px
-	+r(1100)
-		margin: 0 10px
-	+r(1030)
-		margin: 0 7px
-.topline__list-link
-	@extend .grayLinkStyle
-	+r(1199)
-		font-size: 12px
-.topline__icon 
-	display: inline-block
-	vertical-align: bottom
-	@each $icon in $arr
-		&-#{$icon}
-			+s($icon)
+	&__input
+		+placeholder-color($silver)
+		font-size: 14px
+		line-height: 1.4em
+		font-family: $PR
+		color: $silver
+		background: transparent
+		padding: 5px 0px 5px 27px
+		width: 100%
+	&__button
+		width: 14px
+		height: 14px
+		+s(magnifier)
+		left: 5px
+		display: block
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
 .phone-callback
 	text-align: right
 	+r(767)
 		display: none
-.topline__phone-callback
-	display: inline-block
-	+css-lock(2, 12, 992, 1599, "margin-right")
-	+r(991)
-		margin-right: 10px
 .authorization-block
 	display: inline-block
 	//+css-lock(140, 151, 992, 1599, "width")

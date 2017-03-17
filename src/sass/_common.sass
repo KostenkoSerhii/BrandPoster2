@@ -71,16 +71,19 @@ a
 	&__item
 		vertical-align: top
 		display: inline-block
-		+css-lock(300, 484, 992, 1599, "width")
+		//+css-lock(300, 484, 992, 1599, "width")
+		width: 484px
 		margin-right: 64px
+		&:nth-of-type(3n)
+			margin-right: 0px
 		+r(1599)
 			width: 32%
 			margin-right: 2%
-		&:nth-of-type(3n)
-			margin-right: 0px
+			margin-bottom: 28px
+		+r(1300)
+			margin-bottom: 20px
 		+r(991)
 			width: 484px
-			margin-bottom: 34px
 			margin-right: 0
 			&:last-of-type
 				margin-bottom: 0
