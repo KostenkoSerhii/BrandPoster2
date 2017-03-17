@@ -6,9 +6,6 @@ $arr : "bag", "car", "reload" , "certificate"
 	width: 100%
 	+r(991)
 		padding:  11px 0
-	.container
-		padding-right: 10px
-		padding-left: 0
 .topline__wrapper
 	position: relative
 	+clr
@@ -20,7 +17,6 @@ $arr : "bag", "car", "reload" , "certificate"
 	width: 150px
 	margin-top: 3px
 	float: left
-
 	+r(991)
 		width: 200px
 .topline__middle
@@ -30,16 +26,16 @@ $arr : "bag", "car", "reload" , "certificate"
 	left: 22%
 	+r(1599)
 		left: 20%
-	//+r(1420)
-	//	left: 18%
-	+r(1400)
+	+r(1500)
 		left: 18%
+	+r(1450)
+		left: 16%
 	+r(1300)
 		left: 15%
 	+r(1200)
 		left: 18%
 	+r(1150)
-		left: 17%
+		left: 16%
 	+r(1000)
 		left: 15%
 	+r(991)
@@ -47,7 +43,6 @@ $arr : "bag", "car", "reload" , "certificate"
 .topline__right
 	text-align: right
 	float: right
-
 	+r(991)
 		width: auto
 		margin-right: 69px
@@ -81,8 +76,12 @@ $arr : "bag", "car", "reload" , "certificate"
 	margin: 0 30px
 	&:first-of-type
 		margin-left: 0
+	&:last-of-type
+		margin-right: 0
 	+r(1420)
 		margin: 0 20px
+	+r(1270)
+		margin: 0 15px
 	+r(1100)
 		margin: 0 10px
 	+r(1030)
@@ -108,7 +107,8 @@ $arr : "bag", "car", "reload" , "certificate"
 		margin-right: 10px
 .authorization-block
 	display: inline-block
-	+css-lock(140, 151, 992, 1599, "width")
+	//+css-lock(140, 151, 992, 1599, "width")
+	padding-left: 15px
 	margin-top: 5px
 	vertical-align: top
 	position: relative
@@ -137,6 +137,8 @@ $arr : "bag", "car", "reload" , "certificate"
 	line-height: 1em
 	font-family: $PR
 	letter-spacing: -0.5px
+	+r(1250)
+		font-size: 16px
 	span
 		font-weight: 600
 .callback
@@ -154,6 +156,8 @@ $arr : "bag", "car", "reload" , "certificate"
 	font-size: 17px
 	line-height: 1.3em
 	font-family: $PR
+	+r(1250)
+		font-size: 15px
 .login
 	color: $white
 	margin-right: 8px
