@@ -72,7 +72,7 @@ $(".js-drop-option").on("click", function(){
 /*filter option*/
 
 /*catalog popup*/
-$('.cpopup-js').on("click", function(e){
+/*$('.cpopup-js').on("click", function(e){
 	e.preventDefault();
 	$('.overlay').fadeIn(400,	function(){
 		$('.cat-modal-js').css('display', 'block').animate({opacity: 1}, 200);
@@ -88,7 +88,7 @@ $('.cat-close-js, .overlay').on("click", function(){
 			$("body").removeClass("body-ovh");
 		}
 		);
-});
+});*/
 /*catalog popup*/
 
 /*callback popup*/

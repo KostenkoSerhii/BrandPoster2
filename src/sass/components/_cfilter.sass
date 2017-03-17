@@ -1,26 +1,35 @@
 .cfilter
-	//+css-lock(200, 280, 1300, 1500, "width")
-	//width: 280px
 	width: 220px
 	float: left
 	+rmin(1600)
 		width: 280px
 	+r(991)
 		display: none
-	//.noUi-horizontal
-	//	.noUi-handle
-	//		+rmin(992)
-	//			left: -2px
-	//.noUi-base
-	//	+rmin(992)
-	//		width: 91%
+	.noUi-horizontal
+		.noUi-handle-lower
+			left: -1px
+		.noUi-handle-upper
+			left: -23px
+		.noUi-handle
+			+rmin(992)
+				left: -2px
+	.noUi-base
+		+rmin(320)
+			//width: 96.9%
+			//margin-left: 11px
+		+rmin(992)
+			width: 89.2%
+			margin-left: 2px
+		+rmin(1599)
+			width: 91.8%
+			margin-left: 1px
 	&__wrapper
 		display: none
 		font-size: 0
 	&__option
 		//padding-bottom: 37px
 		//padding-top: 26px
-		padding: 10px 0
+		padding: 19px 0 10px
 		border-top: 1px solid #dfdfdf
 		&:first-of-type
 			border-top: none
@@ -51,12 +60,15 @@
 			display: none
 	&__btn
 		font-family: $PS
-		width: 100%
+		width: 70%
+		margin-left: auto
+		margin-right: auto
+		padding: 14px 0
+		+r(1599)
+		padding: 8px 0
 		+r(991)
 			margin-top: 45px
 			width: 220px
-			margin-left: auto
-			margin-right: auto
 	&__price
 		padding-bottom: 0
 		padding-top: 26px
@@ -68,8 +80,6 @@
 		padding: 7px 8px
 		background-color: #f3f3f3
 		border: 1px solid #e6e6e6
-		//width: 128px
-		//+css-lock(85, 128, 1300, 1599, "width")
 		width: 45%
 		display: block
 		float: left

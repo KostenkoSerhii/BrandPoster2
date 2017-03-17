@@ -4240,21 +4240,23 @@ $(document).ready(function () {
 	/*filter option*/
 
 	/*catalog popup*/
-	$('.cpopup-js').on("click", function (e) {
-		e.preventDefault();
-		$('.overlay').fadeIn(400, function () {
-			$('.cat-modal-js').css('display', 'block').animate({ opacity: 1 }, 200);
-			$("body").addClass("body-ovh");
-		});
-	});
-
-	$('.cat-close-js, .overlay').on("click", function () {
-		$('.cat-modal-js').animate({ opacity: 0 }, 200, function () {
-			$(this).css('display', 'none');
-			$('.overlay').fadeOut(400);
-			$("body").removeClass("body-ovh");
-		});
-	});
+	/*$('.cpopup-js').on("click", function(e){
+ 	e.preventDefault();
+ 	$('.overlay').fadeIn(400,	function(){
+ 		$('.cat-modal-js').css('display', 'block').animate({opacity: 1}, 200);
+ 		$("body").addClass("body-ovh");
+ 	});
+ });
+ 
+ $('.cat-close-js, .overlay').on("click", function(){
+ 	$('.cat-modal-js').animate({opacity: 0}, 200,
+ 		function(){
+ 			$(this).css('display', 'none');
+ 			$('.overlay').fadeOut(400);
+ 			$("body").removeClass("body-ovh");
+ 		}
+ 		);
+ });*/
 	/*catalog popup*/
 
 	/*callback popup*/

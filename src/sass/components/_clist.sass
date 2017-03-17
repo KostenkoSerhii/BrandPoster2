@@ -16,7 +16,7 @@
 	width: 400px
 	padding: 16px 0px 27px
 	margin-right: 28px
-	+css-lock(36, 65, 1350, 1599, "margin-bottom")
+	+css-lock(15, 25, 1350, 1599, "margin-bottom")
 	display: inline-block
 	border: 1px solid #ddd
 	position: relative
@@ -24,18 +24,13 @@
 	transition: all .3s
 	&:nth-of-type(3n)
 		margin-right: 0
-	+rmin(1300)
+	+rmin(992)
 		&:hover
 			border-color: $pink
-			.cproduct__basket-link
-				transform: translateY(0%)
-			.cproduct__old-price
-				opacity: 0
 	+r(1599)
 		width: 32%
 		margin-right: 2%
 	+r(1300)
-		margin-bottom: 32px
 		padding: 12px 0px 0px
 	+r(991)
 		width: 300px
@@ -68,84 +63,61 @@
 		margin-top: 22px
 		margin-bottom: 5px
 		padding: 0 20px
-		+css-lock(22, 30, 992, 1599)
+		font-size: 22px
+		//+css-lock(22, 30, 992, 1599)
 		+r(1300)
 			margin-top: 14px
 		+r(991)
 			margin-bottom: 0
-			font-size: 26px
-		+r(639)
-			font-size: 22px
+		//	font-size: 26px
+		//+r(639)
+		//	font-size: 22px
 	&__option
 		color: $gray
 		display: inline-block
-		+css-lock(18, 26, 992, 1599)
-		margin-bottom: 28px
+		//+css-lock(18, 26, 992, 1599)
+		font-size: 18px
+		margin-bottom: 20px
 		font-family: $PR
 		line-height: 1em
 		+r(1300)
 			margin-bottom: 15px
 		+r(991)
-			font-size: 22px
-			margin-bottom: 26px
+			//font-size: 22px
+			//margin-bottom: 26px
 		+r(639)
-			font-size: 18px
+			//font-size: 18px
 			margin-bottom: 10px
 	&__old-price
 		color: #d5d5d5
 		text-decoration: line-through
-		+css-lock(18, 22, 992, 1599)
-		margin-bottom: 16px
+		//+css-lock(18, 22, 992, 1599)
+		font-size: 18px
+		margin-bottom: 12px
 		font-family:  $PL
 		transition: all .2s
 		opacity: 1
 		line-height: 1em
-		+r(1300)
-			margin-bottom: 0
+		//+r(1300)
+		//	margin-bottom: 0
 		+r(991)
 			font-size: 22px
 		+r(639)
-			font-size: 18px
+			//font-size: 18px
 		span
 			font-family:  $PS
 	&__price
 		color: $black
 		font-family:  $PL
 		line-height: 1em
-		+css-lock(26, 42, 992, 1599)
+		+css-lock(22, 32, 992, 1599)
 		+r(1300)
 			margin-bottom: 10px
 		+r(991)
 			font-size: 32px
-		+r(639)
-			font-size: 22px
+		//+r(639)
+		//	font-size: 22px
 		span
 			font-family:  $PS
 	&__price--pink
 		color: $pink
-	&__basket-link
-		transition: all .3s
-		background: $pink
-		color: $white
-		font-family:  $PS
-		+css-lock(24, 33, 1350, 1599)
-		text-transform: uppercase
-		text-align: center
-		padding: 33px 20px
-		line-height: 1em
-		width: 100%
-		display: block
-		+rmin(1300)
-			position: absolute
-			transform: translateY(100%)
-			left: 0
-			bottom: 0
-		+r(1150)
-			padding: 25px 20px
-		+r(1050)
-			padding: 18px 20px
-		+r(991)
-			padding: 33px 20px
-		+r(639)
-			padding: 15px
-			font-size: 20px
