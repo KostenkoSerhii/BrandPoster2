@@ -5438,6 +5438,9 @@ ul.select-options li:hover {
     margin-top: 20px;
   }
   .payment__btn{
+    width: 255px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
   }
   .prod-page__right{
