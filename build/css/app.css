@@ -2936,11 +2936,11 @@ a {
 .prod-page__h1 {
   color: black;
   font-family: "ProximaNova-Bold", sans-serif;
-  font-size: 32px;
   line-height: 1.15em;
   display: block;
   letter-spacing: -0.6px;
   padding-left: 5px;
+  font-size: calc(15px + (29 - 15) * ((100vw - 320px) / (639 - 320)));
   margin-bottom: calc(15px + (49 - 15) * ((100vw - 1200px) / (1599 - 1200)));
 }
 
@@ -3041,22 +3041,22 @@ a {
   line-height: 1em;
   padding-left: 12px;
   font-family: "ProximaNova-Light", sans-serif;
-  font-size: 47px;
+  font-size: 42px;
   margin-bottom: 45px;
 }
 
 .prod-page__price span {
-  font-size: 59px;
+  font-size: 50px;
   font-family: "ProximaNova-Extrabld", sans-serif;
 }
 
 .prod-page__basket {
   font-family: "ProximaNova-Bold", sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 27px;
   line-height: 1;
   display: inline-block;
-  padding: 28px 0px 28px 40px;
+  padding: 24px 0px 24px 40px;
   padding-left: calc(20px + (40 - 20) * ((100vw - 1366px) / (1599 - 1366)));
   background: #e5459c;
   text-transform: uppercase;
@@ -3242,7 +3242,7 @@ a {
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 52px;
 }
 
 .pdetails__list {
@@ -3938,6 +3938,9 @@ ul.select-options li:hover {
   .nav-responsive__callback{
     font-size: 18px;
   }
+  .prod-page__h1{
+    font-size: 29px;
+  }
 }
 
 @media only screen and (min-width: 640px){
@@ -3954,7 +3957,6 @@ ul.select-options li:hover {
     font-size: 0;
     text-justify: newspaper;
     zoom: 1;
-    -moz-text-align-last: justify;
     text-align-last: justify;
   }
   .bslider:after{
@@ -4312,18 +4314,6 @@ ul.select-options li:hover {
   }
 }
 
-@media only screen and (max-width: 639px) and (min-width: 639px){
-  .prod-page__h1{
-    font-size: 32px;
-  }
-}
-
-@media only screen and (max-width: 639px) and (max-width: 320px){
-  .prod-page__h1{
-    font-size: 15px;
-  }
-}
-
 @media only screen and (max-width: 1599px){
   .three-col-list__item{
     width: 32%;
@@ -4444,6 +4434,24 @@ ul.select-options li:hover {
   }
 }
 
+@media (max-width: 1300px){
+  .header__logo{
+    width: 170px;
+  }
+  .basket-link{
+    width: 160px;
+  }
+  .basket-link__title{
+    font-size: 16px;
+  }
+  .basket__right{
+    padding-left: 25px;
+  }
+  .basket__right{
+    padding-right: 25px;
+  }
+}
+
 @media only screen and (max-width: 1300px){
   .three-col-list__item{
     margin-bottom: 20px;
@@ -4499,27 +4507,15 @@ ul.select-options li:hover {
   }
 }
 
-@media (max-width: 1300px){
-  .header__logo{
-    width: 170px;
-  }
-  .basket-link{
-    width: 160px;
-  }
-  .basket-link__title{
-    font-size: 16px;
-  }
-  .basket__right{
-    padding-left: 25px;
-  }
-  .basket__right{
-    padding-right: 25px;
-  }
-}
-
 @media only screen and (max-width: 1270px){
   .topline__list-item{
     margin: 0 15px;
+  }
+}
+
+@media (max-width: 1250px){
+  .header__menu-link{
+    font-size: 13px;
   }
 }
 
@@ -4529,12 +4525,6 @@ ul.select-options li:hover {
   }
   .login, .registration{
     font-size: 15px;
-  }
-}
-
-@media (max-width: 1250px){
-  .header__menu-link{
-    font-size: 13px;
   }
 }
 
@@ -4655,7 +4645,6 @@ ul.select-options li:hover {
     font-size: 0;
     text-justify: newspaper;
     zoom: 1;
-    -moz-text-align-last: justify;
     text-align-last: justify;
   }
   .header__menu:after{
@@ -5464,9 +5453,6 @@ ul.select-options li:hover {
     right: -5px;
     top: -8px;
   }
-  .prod-page__h1{
-    font-size: calc(15px + (32 - 15) * ((100vw - 320px) / (639 - 320)));
-  }
   .prod-page__h2{
     font-size: 19px;
   }
@@ -5725,6 +5711,12 @@ ul.select-options li:hover {
 @media only screen and (max-width: 360px){
   .pslider-for__item{
     height: 250px;
+  }
+}
+
+@media (max-width: 320px){
+  .prod-page__h1{
+    font-size: 15px;
   }
 }
 
