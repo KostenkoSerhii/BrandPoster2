@@ -4489,18 +4489,15 @@ ul.select-options li:hover {
   .cproduct__price{
     margin-bottom: 10px;
   }
-  .basket__left{
-    width: 80%;
-    float: none;
-    margin: 0 auto;
+  .payment{
+    width: 270px;
   }
-  .basket__right{
-    width: 80%;
-    float: none;
-    margin: 0 auto;
+  .payment__label{
+    font-size: 18px;
   }
-  .delivery{
-    width: 357px;
+  .payment__btn{
+    width: 100%;
+    margin-top: 155px;
   }
   .otherprod__slide{
     margin: 0 8px;
@@ -4654,6 +4651,25 @@ ul.select-options li:hover {
     height: 0px;
     visibility: hidden;
     overflow: hidden;
+  }
+  .basket__left{
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+  }
+  .basket__right{
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+  }
+  .payment{
+    width: 310px;
+  }
+  .payment__label{
+    font-size: 20px;
+  }
+  .payment__btn{
+    margin-top: 161px;
   }
 }
 
@@ -5082,9 +5098,6 @@ ul.select-options li:hover {
     margin-top: 55px;
     padding-left: 7px;
     padding-right: 7px;
-  }
-  .payment__btn{
-    width: 100%;
   }
   .prod-page{
     margin-top: 30px;

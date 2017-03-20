@@ -10,7 +10,7 @@
 	&__left
 		width: 45.7%
 		float: left
-		+r(1300)
+		+r(1099)
 			width: 80%
 			float: none
 			margin: 0 auto
@@ -26,7 +26,7 @@
 		padding-bottom: 47px
 		background-color: #f3f3f3
 		margin-top: 6px
-		+r(1300)
+		+r(1099)
 			width: 80%
 			float: none
 			margin: 0 auto
@@ -197,8 +197,8 @@
 	float: left
 	+r(1599)
 		width: 43%
-	+r(1300)
-		width: 357px
+	//+r(1300)
+	//	width: 357px
 	+r(767)
 		width: 259px
 	+r(639)
@@ -233,6 +233,10 @@
 .payment
 	float: right
 	width: 310px
+	+r(1300)
+		width: 270px
+	+r(1099)
+		width: 310px
 	+r(767)
 		width: 293px
 	+r(639)
@@ -255,6 +259,10 @@
 		display: block
 		cursor: pointer
 		line-height: 1em
+		+r(1300)
+			font-size: 18px
+		+r(1099)
+			font-size: 20px
 	&__desc
 		font-size: 15px
 		color: $gray2
@@ -282,8 +290,13 @@
 	&__btn
 		width: 310px
 		margin-top: 161px
-		+r(991)
+		+r(1300)
 			width: 100%
+			margin-top: 155px
+		+r(1099)
+			margin-top: 161px
+		//+r(991)
+		//	width: 100%
 		+r(639)
 			width: 255px
 			margin-left: auto
